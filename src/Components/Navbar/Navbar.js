@@ -49,8 +49,8 @@ const Navbar = () => {
     
       <NavLink className="navbar-brand navbar-logo" to="/" exact>
         <img src='https://pictures.alignable.com/eyJidWNrZXQiOiJhbGlnbmFibGV3ZWItcHJvZHVjdGlvbiIsImtleSI6ImJ1c2luZXNzZXMvbG9nb3Mvc3F1YXJlLzUxMTI3NTEvMTU1NzIzOTk5NF9sb2dvLnBuZyIsImVkaXRzIjp7fX0='
-        height="40%"
-        width="40%"
+        height="50%"
+        width="50%"
         />
       </NavLink>
     
