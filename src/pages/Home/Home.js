@@ -5,24 +5,29 @@ import Paper from "@mui/material/Paper";
 import { Button } from "@mui/material";
 import MoonbeamLogo from "../../images/moonbeam-logo.png";
 import hex from "../../images/hex.jpg"
+import globe from "../../images/globe.jpg"
+
+
 
 
 const Home = () => {
   
-const imageStyle = {
-justifyContent: "center",
-maxHeight:"135%",
-maxWidth: "135%"
-  };
-
-
+  const backgroundStyle = {
+    backgroundImage: `url(${globe})`,
+    backgroundSize: "cover",
+    minHeight: "86vh",
+    minWidth: "100vw",
+    backgroundPosition: "right"
+  }
 
   const paperStyle1 = {
     margin: "90px",
     marginTop:"170px",
     backgroundColor: "#ffffff",
-    opacity: "60%",
+    opacity: "0%",
     borderRadius: "25px",
+    height: "100vh",
+    width: "100vw"
   };
 
 
@@ -40,16 +45,19 @@ maxWidth: "135%"
     marginBottom: "30px"
   }
 
+
+
   return (
-    <div className="column"  >
-   
-      <div className="row">  
-      <h1>Moonbeam Trading Company</h1> 
-      </div>
-      <div className="row" >
-        <img src={hex} style={imageStyle}></img>
-        </div>
-    </div>
+    <div 
+    className="container"
+     style={backgroundStyle}
+    >
+
+    <h1 className="text-center" style={{paddingTop: "30%"}}>
+      Home
+    </h1>
+
+  </div>
   );
 };
 export default Home;

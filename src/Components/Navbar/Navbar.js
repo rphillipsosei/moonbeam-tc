@@ -111,6 +111,13 @@ const Navbar = () => {
               </NavLink> 
             </li>
             <li className="nav-item">
+              <NavLink className="nav-link" to="/about" exact>
+                <i 
+                className="far fa-address-book">
+                </i>About
+              </NavLink> 
+            </li>
+            <li className="nav-item">
               <NavLink className="nav-link" to="/contact-us" exact>
                 <i 
                 className="far fa-copy">
