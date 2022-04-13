@@ -1,7 +1,7 @@
 import React from "react";
-import diversity from "../../images/diversity.jpeg";
+
 import walksoflife from "../../images/walksoflife.jpg";
-import brickwall from "../../images/brickwall.jpg"
+import diversity from "../../images/diversity.jpg"
 
 const imageProperties = {
   marginTop: "40px",
@@ -16,9 +16,17 @@ const accessStatement = {
   marginTop: "60px"
 }
 
+const backgroundStyle = {
+  backgroundImage: `url(${diversity})`,
+  backgroundSize: "cover",
+  minHeight: "120vh",
+  minWidth: "100vw",
+  backgroundPosition: "right",
+};
+
 const Careers = () => {
   return (
-    <div class="column">
+    <div class="column" style={backgroundStyle}>
       <h1 align="center"><i>Careers @ Moonbeam</i></h1>
       <div class="row" style={accessStatement}>
         <h5>
@@ -39,9 +47,7 @@ const Careers = () => {
           </p>
         </h5>
       </div>
-      <div class="row">
-        <img align="center" src={brickwall} style={imageProperties}></img>
-      </div>
+      
       
     </div>
   );

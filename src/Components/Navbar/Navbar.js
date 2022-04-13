@@ -87,13 +87,13 @@ const Navbar = () => {
                 </i>Services
               </NavLink>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <NavLink className="nav-link" to="/products-and-partnerships" exact>
                 <i 
                 className="far fa-address-book">
                 </i>Products & Partnerships
               </NavLink> 
-            </li>
+            </li> */}
            
             <li className="nav-item">
               <NavLink className="nav-link" to="/shop" exact>

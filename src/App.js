@@ -13,6 +13,7 @@ import Services from './pages/Services/Services';
 import Navbar from './Components/Navbar/Navbar';
 import Careers from './pages/Careers/Careers'
 import Shop from './pages/Shop/Shop'
+import About from './pages/About/About';
 
 const App = () => {
   return (
@@ -37,6 +38,9 @@ const App = () => {
         </Route>
          <Route path="/careers" exact>
           <Careers/>
+        </Route>
+        <Route path="/about" exact>
+          <About/>
         </Route>
       </Switch>
      
