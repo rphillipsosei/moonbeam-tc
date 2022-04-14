@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/core": "^10.0.0",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
@@ -17,11 +18,15 @@
     "@testing-library/user-event": "^12.6.3",
     "bootstrap": "^4.6.0",
     "jquery": "^3.5.1",
+    "node-sass": "^7.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.3.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.2",
+    "react-spring": "^9.0.0-rc.3",
+    "sass": "^1.50.0",
+    "styled-components": "^5.3.5",
     "theme-ui": "^0.14.2",
     "web-vitals": "^1.1.0"
   },

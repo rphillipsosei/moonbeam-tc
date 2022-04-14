@@ -4,18 +4,18 @@ import { TextField } from '@mui/material';
 import { Button } from '@mui/material';
 import typing from "../../images/typing.jpg"
 import protractor2 from "../../images/protractor2.jpg"
-
+import aboutbg from "../../images/about--bg.jpeg"
 
 const Contact = () => {
 
+  const backgroundStyle = {
+    backgroundImage: `url(${aboutbg})`,
+    backgroundSize: "cover",
+    minHeight: "205vh",
+    minWidth: "100vw",
+    backgroundPosition: "right",
+  };
 
-const backgroundStyle = {
-  backgroundImage: `url(${protractor2})`,
-  backgroundSize: "cover",
-  minHeight: "86vh",
-  minWidth: "100vw",
-  backgroundPosition: "right",
-};
 const topFont = {
   fontSize: "90px",
   color: "#000000",
@@ -29,7 +29,7 @@ const paperStyle = {
   backgroundColor: "rgba(60,60,60,0)",
   borderRadius: "50px 20px",
   marginTop: "15px",
-  marginLeft:"140px",
+  marginLeft:"150px",
   marginRight: "40px"
   
 };
@@ -41,7 +41,7 @@ const paperStyle2 = {
   backgroundColor: "rgba(240,240,240,0.5)",
   borderRadius: "50px 20px",
   marginTop: "175px",
-  marginLeft: "525px"
+  marginLeft: "555px"
   
 };
 
@@ -98,7 +98,7 @@ const footerStyle = {
           <h1 style={topFont} align="center">CONTACT US</h1>
       
           <h5 align="center"><i>
-          Any questions or inquiries? Send us a message to get more information!
+          Any suggestions or inquiries? Send us a message to get in touch!
         </i></h5>
         </p>
         <div>
