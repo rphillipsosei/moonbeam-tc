@@ -1,113 +1,48 @@
-import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheck, faSpinner } from "@fortawesome/free-solid-svg-icons";
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 
-
-const Apply = () => {
-  const [FirstName, setFirstName] = useState('');
-  const [LastName, setLastName] = useState('');
-  const [PreferredName, setPreferredName] = useState('');
-  const [Pronouns, setPronouns] = useState('');
-  const [LegallyEligibleToWork, setLegallyEligibleToWork] = useState({work: ''});
-  const [Email, setEmail] = useState('');
-  const [PhoneNumber, setPhoneNumber] = useState('');
-  const [Address, setAddress] = useState('');
-  const [PostalCode, setPostalCode] = useState('');
-  const [HighestLevelOfEducation, setHighestLevelOfEducation] = useState('');
-  const [FieldOfStudy, setFieldOfStudy] = useState('');
-  const [BarriersFacedCompletingEducation, setBarriersFacedCompletingEducation] = useState('');
-  const [BarriersFacedSeekingEmployment, setBarriersFacedSeekingEmployment] = useState('');
-  const [IdentifyAsMemberOfVisibleMinority, setIdentifyAsMemberOfVisibleMinority] = useState('');
-  const [PeriodsOfLifeTransitions, setPeriodsOfLifeTransitions] = useState('');
-  const [PositionApplyingFor, setPositionApplyingFor] = useState('')
-  const [SuitableForThisRole, setSuitableForThisRole] = useState('')
-  const [sent, setSent] = useState(false)
-  const [loading, setLoading] = useState(false)
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true)
-
-    console.log(FirstName, LastName, PreferredName, Pronouns, LegallyEligibleToWork, Email, PhoneNumber, Address, PostalCode, HighestLevelOfEducation, FieldOfStudy, BarriersFacedCompletingEducation, BarriersFacedSeekingEmployment, IdentifyAsMemberOfVisibleMinority, PeriodsOfLifeTransitions, PositionApplyingFor, SuitableForThisRole)
-
-    fetch("https://formsubmit.co/ajax/zeinabtmohamed@gmail.com", {
-      method: "POST",
-      headers: { 
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-      },
-      body: JSON.stringify({
-          FirstName,
-          LastName,
-          PreferredName,
-          Pronouns,
-          LegallyEligibleToWork,
-          Email,
-          PhoneNumber,
-          Address,
-          PostalCode,
-          HighestLevelOfEducation,
-          FieldOfStudy,
-          BarriersFacedCompletingEducation,
-          BarriersFacedSeekingEmployment,
-          IdentifyAsMemberOfVisibleMinority,
-          PeriodsOfLifeTransitions,
-          PositionApplyingFor,
-          SuitableForThisRole,
-
-      })
-  })
-      .then(response => response.json())
-      .then(data => {
-        setFirstName('')
-        setLastName('')
-        setPreferredName('')
-        setPronouns('')
-        setLegallyEligibleToWork('')
-        setEmail('')
-        setPhoneNumber('')
-        setAddress('')
-        setPostalCode('')
-        setHighestLevelOfEducation('')
-        setFieldOfStudy('')
-        setBarriersFacedCompletingEducation('')
-        setBarriersFacedSeekingEmployment('')
-        setIdentifyAsMemberOfVisibleMinority('')
-        setPeriodsOfLifeTransitions('')
-        setPositionApplyingFor('')
-        setSuitableForThisRole('')
-
-        setLoading(false)
-        setSent(true)
-        setTimeout(() => {
-          setSent(false)
-        }, 15000)
-        console.log(data)
-      })
-      .catch(error => console.log(error));
-
+function Apply() {
+  const [state, handleSubmit] = useForm("xknyqzly");
+  window.onbeforeunload = () => {
+    for(const form of document.getElementsByTagName('form')) {
+      form.reset();
+    }
   }
-
-
+  if (state.succeeded) {
+      return <p>Submitted sucessfully!</p>;
+  }
   return (
-    <>
-
+      <form onSubmit={handleSubmit}
+      action="https://formspree.io/f/xknyqzly"
+      method="post">
+      <label htmlFor="email">
+        Email Address
+      </label>
+      <input
+        name="email"
+        type="email" 
+        name="email"
+      />
+      <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
+      <textarea
+        name="message"
+        name="message"
+      />
+      <ValidationError 
+        prefix="Message" 
+        field="message"
+        errors={state.errors}
+      />
       
-        <h3 >Thank you for applying to Moonbeam trading company. We want to hear your story. Please take a few moments to reflect and complete this form. </h3>
-        <h3> If you are having trouble viewing this form, you can fill out the PDF form here and email it to example@example.com </h3>
-        <div as="form"   onSubmit={handleSubmit} action={'moonbeamtradingco@gmail.com'}>
-          <div as="label" htmlFor="subscribeEmail" variant="styles.srOnly">
-            Please fill out the application below 
-          </div>
-
-          <div  > First Name:
+      <div  > First Name:
           <input
             placeholder=""
             type="text"
-            id="FirstName"
-            
-            value={FirstName}
-            onChange={e => setFirstName(e.target.value)}
+            name="FirstName" 
           />
           </div>
 
@@ -115,10 +50,7 @@ const Apply = () => {
           <input
             placeholder=""
             type="text"
-            id="LastName"
-            
-            value={LastName}
-            onChange={e => setLastName(e.target.value)}
+            name="LastName"         
           />
           </div>
 
@@ -126,10 +58,7 @@ const Apply = () => {
           <input
             placeholder=""
             type="text"
-            id="PreferredName"
-            
-            value={PreferredName}
-            onChange={e => setPreferredName(e.target.value)}
+            name="PreferredName"
           />
           </div>
           
@@ -137,43 +66,31 @@ const Apply = () => {
           <input
             placeholder=""
             type="text"
-            id="Pronouns"
-            
-            value={Pronouns}
-            onChange={e => setPronouns(e.target.value)}
+            name="Pronouns"
           />
           </div>
 
           <label > Are you legally eligible to work in Canada?
             <select 
-            onChange={e => setLegallyEligibleToWork(e.target.value)} 
-            name ="work"
-            
-            value={LegallyEligibleToWork}>
+            name ="work">
               <option value="Yes">Yes</option>
               <option value="No">No</option>             
             </select>
           </label>
 
-          <div  > Email: 
+          <div> Email: 
           <input
             placeholder=""
             type="text"
-            id="Email"
-            
-            value={Email}
-            onChange={e => setEmail(e.target.value)}
+            name="Email"
           />
           </div>
 
-          <div  > Phone number: 
+          <div> Phone number: 
           <input
             placeholder=""
             type="text"
-            id="PhoneNumber"
-            
-            value={PhoneNumber}
-            onChange={e => setPhoneNumber(e.target.value)}
+            name="PhoneNumber"
           />
           </div>
 
@@ -181,10 +98,7 @@ const Apply = () => {
           <input
             placeholder=""
             type="text"
-            id="Address"
-            
-            value={Address}
-            onChange={e => setAddress(e.target.value)}
+            name="Address"
           />
           </div>
 
@@ -192,10 +106,7 @@ const Apply = () => {
           <input
             placeholder=""
             type="text"
-            id="PostalCode"
-            
-            value={PostalCode}
-            onChange={e => setPostalCode(e.target.value)}
+            name="PostalCode"
           />
           </div>
 
@@ -203,10 +114,7 @@ const Apply = () => {
           <input
             placeholder=""
             type="text"
-            id="HighestLevelOfEducation"
-            
-            value={HighestLevelOfEducation}
-            onChange={e => setHighestLevelOfEducation(e.target.value)}
+            name="HighestLevelOfEducation"
           />
           </div>
 
@@ -214,10 +122,7 @@ const Apply = () => {
           <input
             placeholder=""
             type="text"
-            id="FieldOfStudy"
-            
-            value={FieldOfStudy}
-            onChange={e => setFieldOfStudy(e.target.value)}
+            name="FieldOfStudy"
           />
           </div>
 
@@ -225,10 +130,7 @@ const Apply = () => {
           <input
             placeholder=""
             type="text"
-            id="BarriersFacedCompletingEducation"
-            
-            value={BarriersFacedCompletingEducation}
-            onChange={e => setBarriersFacedCompletingEducation(e.target.value)}
+            name="BarriersFacedCompletingEducation"
           />
           </div>
 
@@ -236,10 +138,7 @@ const Apply = () => {
           <input
             placeholder=""
             type="text"
-            id="BarriersFacedSeekingEmployment"
-            
-            value={BarriersFacedSeekingEmployment}
-            onChange={e => setBarriersFacedSeekingEmployment(e.target.value)}
+            name="BarriersFacedSeekingEmployment"
           />
           </div>
           
@@ -247,10 +146,7 @@ const Apply = () => {
           <input
             placeholder=""
             type="text"
-            id="IdentifyAsMemberOfVisibleMinority"
-            
-            value={IdentifyAsMemberOfVisibleMinority}
-            onChange={e => setIdentifyAsMemberOfVisibleMinority(e.target.value)}
+            name="IdentifyAsMemberOfVisibleMinority"
           />
           </div>
 
@@ -258,10 +154,7 @@ const Apply = () => {
           <input
             placeholder=""
             type="text"
-            id="PeriodsOfLifeTransitions"
-            
-            value={PeriodsOfLifeTransitions}
-            onChange={e => setPeriodsOfLifeTransitions(e.target.value)}
+            name="PeriodsOfLifeTransitions"
           />
           </div>
 
@@ -269,10 +162,7 @@ const Apply = () => {
           <input
             placeholder=""
             type="text"
-            id="PositionsApplyingFor"
-            
-            value={PositionApplyingFor}
-            onChange={e => setPositionApplyingFor(e.target.value)}
+            name="PositionsApplyingFor"
           />
           </div>
 
@@ -280,23 +170,15 @@ const Apply = () => {
           <input
             placeholder=""
             type="text"
-            id="SuitableForThisRole"
-            
-            value={SuitableForThisRole}
-            onChange={e => setSuitableForThisRole(e.target.value)}
+            name="SuitableForThisRole"
           />
           </div>
 
-
-          <button type="submit" >
-            {!loading ? `APPLY NOW!` : <FontAwesomeIcon icon={faSpinner}  />}
-          </button>
-         {sent && <div >Sent Successfully!<FontAwesomeIcon icon={faCheck} /></div>}
-        </div>
-      
-
-    </>    
-)}
+      <button type="submit" disabled={state.submitting}>
+        Submit
+      </button>
+    </form>
+  );
+}
 
 export default Apply;
-
