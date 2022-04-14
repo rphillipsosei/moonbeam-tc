@@ -4,32 +4,40 @@ import shopify from "../../images/shopify.png"
 import { Button } from '@mui/material'
 import auction from "../../images/auction.png"
 import { Paper } from '@mui/material'
+import whitenoise from "../../images/whitenoise.jpg"
+import shopifylogo from "../../images/shopify-logo.png"
+import auctionlogo from "../../images/auction-logo.png"
 
 const image = {
-  width: "35%",
-  height: "35%",
-  marginLeft: "260px",
-  paddingTop: "130px"
+  width: "45%",
+  height: "45%",
+  borderRadius: "80px",
+  marginLeft: "100px",
+  marginTop: "100px"
 
 }
 
 const shopifyIcon = {
-height: "15%"
+height: "7%",
+
 }
 
 const auctionIcon = {
-  height: "16%"
+  paddingTop: "10px",
+  height: "8%",
+  
   }
 
 const topFont = {
-  marginTop: "30px",
-  fontSize: "90px",
+  marginTop: "7px",
+  fontSize: "70px",
   color: "#000000"
 }
 
 const textPortion = {
   paddingLeft: "130px",
-  paddingTop: "40px"
+  paddingTop: "40px",
+
 
 }
 
@@ -38,7 +46,7 @@ const divSize = {
 }
 
 const backgroundStyle = {
-  backgroundImage: `url(${shopping})`,
+  backgroundImage: `url(${whitenoise})`,
   backgroundSize: "cover",
   minHeight: "86vh",
   minWidth: "100vw",
@@ -47,34 +55,39 @@ const backgroundStyle = {
 
 const paperStyle = {
   padding: "20px",
-  height: "70vh",
+  height: "50vh",
   width: "40vw",
-  backgroundColor: "#ffff",
-  opacity: "70%",
-  borderRadius: "50px 20px",
-  marginTop: "80px",
-  marginLeft: "1100px",
+  backgroundColor: "rgba(255,255,255,0.1)",
+  // opacity: "80%",
+  borderRadius: "80px",
+  marginTop: "135px",
+  marginLeft: "50px"
+ 
 };
 
+const footerStyle = {
+  marginTop: "100px"
+}
 const Shop = () => {
 
   return (
     
     <div className="column" style={backgroundStyle}>
-     
+      <h1 style={topFont} align="center">SHOP</h1>
+      <h6 align="center"><i>Browse a collection of fair trade, sustainable items from our partners.</i></h6>
     <div className="row">
-    {/* <img src={shopping} style={image}  /> */}
+    <img src={shopping} style={image}  />
     <Paper elevation={10} style={paperStyle}>
-    <h1 style={topFont} align="center">SHOP</h1>
+   
       <div className="column" style={textPortion}>
     <h3 >Visit our online store and auction</h3>
     <br></br>
     <div className="row"> 
     <div className="column" style={divSize}> 
-    <img src={shopify} style={shopifyIcon} />
+    <img src={shopifylogo} style={shopifyIcon} />
     <br></br>
     <br></br>
-    <img src={auction} style={auctionIcon} />
+    <img src={auctionlogo} style={auctionIcon} />
     </div>
     <div className="column"> 
     <h5>Shopify</h5>
@@ -98,9 +111,9 @@ const Shop = () => {
       </Paper>
     </div>
    
-    <footer align="center">
+    <footer align="center" style={footerStyle}>
   <h6>
-  © Moonbeam Trading Company, 2022
+  All Rights Reserved, Moonbeam Trading Company2022
   </h6>
   </footer>
   </div>

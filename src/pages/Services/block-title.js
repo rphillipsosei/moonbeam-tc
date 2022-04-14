@@ -15,10 +15,10 @@ export default BlockTitle;
 const styles = {
   blockTitle: {
     textAlign: "center",
-    mb: ["60px", null, null, null, "60px", null, "80px"],
+    mb: ["60px", null, null, null, "60px", null, "60px"],
     h3: {
-      color: "#0F2137",
-      fontSize: ["80px", null, null, "80px"],
+      color: "#000000",
+      fontSize: ["70px", null, null, "70px"],
       fontWeight: 700,
       fontFamily: "manrope",
       letterSpacing: "-1.5px",
@@ -27,9 +27,11 @@ const styles = {
     },
     p: {
       lineHeight: 1,
-      fontSize: "18px",
+      fontSize: "16px",
       color: "#000000",
-      fontFamily: "manrope"
+      fontFamily: "manrope",
+      fontStyle: "italic"
+    
     }
   }
 };

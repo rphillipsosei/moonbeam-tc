@@ -17,12 +17,12 @@ import mission from "../../images/mission.jpg";
 import helpinghands from "../../images/helping-hands.jpg";
 import growth from "../../images/growth.jpg"
 import aboutbg from  "../../images/about--bg.jpeg"
-
+import whitenoise from "../../images/whitenoise.jpg"
 
 const backgroundStyle = {
-  backgroundImage: `url(${aboutbg})`,
+  backgroundImage: `url(${whitenoise})`,
   backgroundSize: "cover",
-  minHeight: "205vh",
+  minHeight: "200vh",
   minWidth: "100vw",
   backgroundPosition: "right",
 };
@@ -31,7 +31,7 @@ const paperStyle = {
   paddingBottom: "20px",
   height: "56vh",
   width: "40vw",
-  backgroundColor: "rgba(60,60,60,0)",
+  backgroundColor: "rgba(255,255,255,0.1)",
   borderRadius: "50px 20px",
   marginTop: "60px",
   marginLeft: "150px",
@@ -69,6 +69,7 @@ const image = {
   height: "58vh",
   marginTop: "50px",
   marginLeft: "150px",
+  borderRadius: "80px"
 };
 
 
@@ -81,6 +82,7 @@ const image3 = {
   height: "50vh",
   marginTop: "145px",
   marginLeft: "70px",
+  borderRadius: "80px"
 };
 
 const image2 = {
@@ -90,14 +92,15 @@ const image2 = {
   marginTop: "50px",
   marginLeft: "150px",
   marginBottom: "50px",
+  borderRadius: "80px"
 };
 
 const paperStyle2 = {
   padding: "20px",
   height: "20%",
   width: "82%",
-  backgroundColor: "rgba(240,240,240,0.5)",
-  borderRadius: "50px 20px",
+  backgroundColor: "rgba(255,255,255,0.1)",
+  borderRadius: "80px",
   marginTop: "150px",
   marginLeft: "150px",
 };
@@ -106,9 +109,9 @@ const paperStyle3 = {
   padding: "20px",
   height: "95%",
   width: "45vw",
-  backgroundColor: "rgba(240,240,240,0.5)",
-  borderRadius: "50px 20px",
-  marginTop: "20px",
+  backgroundColor: "rgba(255,255,255,0.1)",
+  borderRadius: "80px",
+  marginTop: "55px",
   marginLeft: "150px",
 };
 const topFont = {
@@ -116,19 +119,25 @@ const topFont = {
   color: "#000000",
 };
 
+
+const footerStyle = {
+  paddingTop: "20px",
+  fontColor: "#000000"
+}
+
 const About = () => {
   return (
     <div className="column" style={backgroundStyle}>
-      
-      
+      <h1 style={topFont} align="center">
+                WHO WE ARE
+              </h1>
+      <h6 align="center"><i>Our story. Our values. Our successes.</i></h6>
       <div className="row">
         <div className="column" >
         <Paper elevation={10} style={paperStyle3}>
           <p>
            <h5 style={statementStyle}>
-              <h1 style={topFont} align="center">
-                WHO ARE WE?
-              </h1>
+              
               <br></br>
               Moonbeam Trading Company was founded in 2018 by former tech sector
               executive Mark McDonald <br></br>
@@ -238,8 +247,9 @@ const About = () => {
 
 
       <footer align="center">
-        <h6>© Moonbeam Trading Company, 2022</h6>
+        <h6>All Rights Reserved, Moonbeam Trading Company 2022</h6>
       </footer>
+
 
 
     </div>

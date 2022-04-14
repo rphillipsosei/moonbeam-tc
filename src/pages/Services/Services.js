@@ -13,7 +13,8 @@ import warehouse from "../../images/warehouse.jpg";
 import FeaturedCard from "./featured-card.js";
 import classes from './featured.module.css'
 import tractor from "../../images/tractor.jpg"
-
+import aboutbg from "../../images/about--bg.jpeg"
+import whitenoise from "../../images/whitenoise.jpg"
 
 
 const Services = () => {
@@ -54,10 +55,21 @@ const imageStyle = {
   borderRadius: "80px"
 }
 
+const backgroundStyle = {
+  backgroundImage: `url(${whitenoise})`,
+  backgroundSize: "cover",
+  minHeight: "85vh",
+  minWidth: "100vw",
+  backgroundPosition: "right",
+};
 
+const footerStyle = {
+  paddingTop: "20px",
+  fontColor: "#ffff"
+}
 
   return (
-    <div id="more" className={classes.featured}>
+    <div id="more" className={classes.featured} style={backgroundStyle}>
    
         <Container sx={styles.container}>
           <BlockTitle
@@ -102,7 +114,7 @@ const imageStyle = {
                 <Image style={imageStyle} src={programming} alt="tab image" className="tabImage" />
               )}
               {tab.active === "technology" && (
-                <FeaturedCard content={"We also have a passion for using technology to address current social problems while working collaboratively to alleviate societal issues. These challenges are complex and require dedication by multiple parties.\n We take on projects that create innovative solutions to address climate change, poverty, education, healthcare, senior isolation, public safety, farming and safe drinking water."}
+                <FeaturedCard content={"We have a passion for using technology to address current social problems while working collaboratively to alleviate societal issues. These challenges are complex and require dedication by multiple parties. We provide technology services and consultation to businesses in a variety of sectors, such as: software engineering, Software As A Service (SaaS), predictive analytics, machine learning/artificial intelligence."}
                 />
               )}
               {tab.active === "agri" && (
@@ -112,7 +124,9 @@ const imageStyle = {
               {tab.active === "trade" && (
                 <Image style={imageStyle} src={shipping} alt="tab image" className="tabImage" />
               )}
-              {tab.active === "trade" && (<FeaturedCard content="Moonbeam Trading Company is increasing its presence in the thriving import and export business. Through distributorships and setting up new import/export relationships, knowledge exchange or the introduction of new freight technologies, we are expanding our services to focus on creating mutually beneficial commercial success." />)}
+              {tab.active === "trade" && (<FeaturedCard content="We are increasing our presence in the thriving import and export business. Through distributorships and creating new import/export relationships, knowledge exchange or the introduction of new freight technologies, we are expanding our services to focus on creating mutually beneficial commercial success. Our purchasing team continuously sources products from around the world to meet the demands of our Canadian customers."
+
+/>)}
               {tab.active === "ecommerce" && (
                 <Image
                 style={imageStyle}
@@ -122,12 +136,18 @@ const imageStyle = {
                 />
               )}
               {tab.active === "ecommerce" && (
-                <FeaturedCard content="Our goal is to offer our customers a positive online shopping experience. Our sales and digital marketing team working with our ecommerce and drop shipping partners will allow us to enhance your shopping experience while growing our international ecommerce business to provide increased value and savings to all of our customers." />
+                <FeaturedCard content="Our marketing team works with artisans,
+                designers and technologists to create an experience that enables 
+                global shopping, borderless transactions, and blockchain purchasing." />
               )}
             </div>
           </Box>
         </Container>
-      
+        <footer align="center" style={footerStyle}>
+<h6>
+All Rights Reserved, Moonbeam Trading Company 2022
+</h6>
+</footer>
     </div>
   );
 };

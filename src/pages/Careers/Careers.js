@@ -3,7 +3,7 @@ import brickwall from "../../images/brickwall.jpg"
 import walksoflife from "../../images/walksoflife.jpg";
 import diversity from "../../images/diversity.jpg"
 import aboutbg from "../../images/about--bg.jpeg"
-
+import whitenoise from "../../images/whitenoise.jpg"
 const imageProperties = {
   marginTop: "40px",
   marginLeft: "540px",
@@ -19,7 +19,7 @@ const accessStatement = {
 }
 
 const backgroundStyle = {
-  backgroundImage: `url(${aboutbg})`,
+  backgroundImage: `url(${whitenoise})`,
   backgroundSize: "cover",
   minHeight: "205vh",
   minWidth: "100vw",
@@ -32,11 +32,22 @@ const divStyle = {
   height: "100vh",
 }
 
+const topFont = {
+  marginTop: "7px",
+  fontSize: "70px",
+  color: "#000000"
+}
+
+const footerStyle = {
+  paddingTop: "20px",
+  fontColor: "#ffff"
+}
 
 const Careers = () => {
   return (
     <div class="column" style={backgroundStyle}>
-      <h1 align="center"><i>Careers @ Moonbeam</i></h1>
+      <h1 align="center" style={topFont}>CAREERS</h1>
+      <h6 align="center"><i>Join our diverse, multi-faceted team.</i></h6>
       <div class="row" style={accessStatement}>
         <h5>
           AT MOONBEAM TRADING COMPANY, WE HIRE FROM A HOLISTIC PERSPECTIVE...
@@ -59,7 +70,11 @@ const Careers = () => {
       <div class="row" align="center">
         <img src={brickwall} style={imageProperties}></img>
       </div>
-      
+      <footer align="center" style={footerStyle}>
+<h6>
+All Rights Reserved, Moonbeam Trading Company 2022
+</h6>
+</footer>
     </div>
   );
 };

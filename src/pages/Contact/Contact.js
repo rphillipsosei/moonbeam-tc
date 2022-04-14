@@ -4,20 +4,20 @@ import { TextField } from '@mui/material';
 import { Button } from '@mui/material';
 import typing from "../../images/typing.jpg"
 import protractor2 from "../../images/protractor2.jpg"
-import aboutbg from "../../images/about--bg.jpeg"
+import whitenoise from "../../images/whitenoise.jpg"
 
 const Contact = () => {
 
   const backgroundStyle = {
-    backgroundImage: `url(${aboutbg})`,
+    backgroundImage: `url(${whitenoise})`,
     backgroundSize: "cover",
-    minHeight: "205vh",
+    minHeight: "87vh",
     minWidth: "100vw",
     backgroundPosition: "right",
   };
 
 const topFont = {
-  fontSize: "90px",
+  fontSize: "70px",
   color: "#000000",
   paddingTop: "20px"
 }
@@ -36,11 +36,11 @@ const paperStyle = {
 
 const paperStyle2 = {
   marginBottom: "15px",
-  height: "53vh",
+  height: "43vh",
   width: "43vw",
-  backgroundColor: "rgba(240,240,240,0.5)",
+  backgroundColor: "rgba(255,255,255,0.1)",
   borderRadius: "50px 20px",
-  marginTop: "175px",
+  marginTop: "105px",
   marginLeft: "555px"
   
 };
@@ -86,19 +86,22 @@ const footerStyle = {
   paddingTop: "20px"
 }
 
+const textStyle = {
+  marginTop: "65px"
+}
 
   return (
     <div className="column" style={backgroundStyle}>
-      
-      
+      <h1 style={topFont} align="center">CONTACT US</h1>
+      <h6 align="center"><i>Receive a response within 48 business hours.</i></h6>
       <div className="row">
 
           <Paper elevation={10} style={paperStyle2}>
           <p>
-          <h1 style={topFont} align="center">CONTACT US</h1>
+          
       
-          <h5 align="center"><i>
-          Any suggestions or inquiries? Send us a message to get in touch!
+          <h5 style={textStyle} align="center"><i>
+          Any suggestions or inquiries? Do not hesitate to get in touch!
         </i></h5>
         </p>
         <div>
@@ -147,7 +150,7 @@ const footerStyle = {
       <footer align="center" style={footerStyle}>
 
   <h6>
-  © Moonbeam Trading Company, 2022
+  All Rights Reserved, Moonbeam Trading Company 2022
   </h6>
   </footer>
     </div>

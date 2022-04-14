@@ -6,7 +6,7 @@ import { Button } from "@mui/material";
 import MoonbeamLogo from "../../images/moonbeam-logo.png";
 import hex from "../../images/hex.jpg";
 import globe from "../../images/globe.jpg";
-import bigdata from "../../images/bigdata.jpg";
+import bigdata from "../../images/bigdata2.jpg";
 import { Stack } from "@mui/material";
 import { TextField } from '@mui/material';
 
@@ -17,26 +17,26 @@ const Home = () => {
     width: "50vw",
     backgroundColor: "rgba(60,60,60,0.5)",
     borderRadius: "50px 20px",
-    marginTop: "275px",
+    marginTop: "190px",
     marginLeft: "500px",
   };
   const paperStyle2 = {
     marginBottom: "15px",
-    height: "36vh",
-    width: "43vw",
-    backgroundColor: "rgba(60,60,60,0)",
-    borderRadius: "50px 20px",
+    height: "26vh",
+    width: "30vw",
+    backgroundColor: "rgba(60,60,60,0.7)",
+    
     marginTop: "25px",
-    marginLeft:"525px",
+    marginLeft:"705px",
     marginRight: "40px"
     
   };
 
   const fieldStyle = {
-    marginTop: "30px",
-    marginLeft: "80px",
+    marginTop: "15px",
+    marginLeft: "60px",
     backgroundColor: "white",
-    width: "640px"
+    width: "440px"
   };
 
   const buttonStyle = {
@@ -48,15 +48,15 @@ const Home = () => {
   };
 
   const buttonStyle2 = {
-    marginTop: "25px",
-    marginLeft: "335px"
-    
+    marginTop: "15px",
+    marginLeft: "235px",
+    color: "#ffff",
     }
 
   const backgroundStyle = {
     backgroundImage: `url(${bigdata})`,
     backgroundSize: "cover",
-    minHeight: "86vh",
+    minHeight: "170vh",
     minWidth: "100vw",
     backgroundPosition: "right",
   };
@@ -68,8 +68,8 @@ const Home = () => {
   };
   const titleStyle2 = {
     fontFamily: "manrope",
-    color: "#000000",
-    paddingTop: "70px",
+    color: "#ffff",
+    paddingTop: "20px",
   };
 
   const sloganStyle = {
@@ -78,6 +78,15 @@ const Home = () => {
     opacity: "100%",
   };
 
+  const footerStyle = {
+    paddingTop: "20px",
+    fontColor: "#ffff"
+  }
+
+
+  const divStyle = {
+    marginTop: "725px"
+  }
   //cdn.corporatefinanceinstitute.com/assets/Types-of-Businesses-Opener_v2.jpeg"
 
   https: return (
@@ -96,13 +105,11 @@ const Home = () => {
             </Button>
           </Stack>
         </Paper>
-      </div>
-
-
-      <div className="row">
+          <div className="row">
+            <div style={divStyle}>
       <Paper elevation={10} style={paperStyle2}>
-      <p>
-        <h2 style={titleStyle2} align="center">
+      <p style={titleStyle2}>
+        <h2  align="center">
           <b>STAY IN THE KNOW</b>
         </h2>
         <h5 align="center"><i>
@@ -124,7 +131,18 @@ const Home = () => {
       <Button variant="outlined" align="center" style={buttonStyle2}>SUBSCRIBE</Button>
           </Paper>
         </div>
+        </div>
+      </div>
+
+
+      <footer align="center" style={footerStyle}>
+<h6>
+All Rights Reserved, Moonbeam Trading Company 2022
+</h6>
+</footer>
+
     </div>
+    
   );
 };
 export default Home;
