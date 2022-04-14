@@ -1,1 +1,3 @@
 /node_modules
+# Ignore files related to setup error
+.env
