@@ -90,6 +90,7 @@ const Home = () => {
   //cdn.corporatefinanceinstitute.com/assets/Types-of-Businesses-Opener_v2.jpeg"
 
   https: return (
+    
     <div className="column">
       <div className="row" style={backgroundStyle}>
         <Paper elevation={10} style={paperStyle}>
@@ -108,6 +109,10 @@ const Home = () => {
           <div className="row">
             <div style={divStyle}>
       <Paper elevation={10} style={paperStyle2}>
+      <form
+        action="https://formspree.io/f/xvolwbpy"
+        method="POST"
+        >
       <p style={titleStyle2}>
         <h2  align="center">
           <b>STAY IN THE KNOW</b>
@@ -129,6 +134,7 @@ const Home = () => {
       
       </div>
       <Button variant="outlined" align="center" style={buttonStyle2}>SUBSCRIBE</Button>
+      </form>
           </Paper>
         </div>
         </div>
