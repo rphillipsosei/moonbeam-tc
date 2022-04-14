@@ -14,7 +14,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Careers from './pages/Careers/Careers'
 import Shop from './pages/Shop/Shop'
 import About from './pages/About/About';
-import jobApplication from './pages/Careers/Apply';
+import Apply from './pages/Apply/Apply';
 
 const App = () => {
   return (
@@ -44,7 +44,7 @@ const App = () => {
           <About/>
         </Route>
         <Route path="/apply" exact>
-          <jobApplication/>
+          <Apply/>
         </Route>
       </Switch>
      
