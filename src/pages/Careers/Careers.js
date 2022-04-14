@@ -4,6 +4,8 @@ import walksoflife from "../../images/walksoflife.jpg";
 import diversity from "../../images/diversity.jpg"
 import aboutbg from "../../images/about--bg.jpeg"
 import whitenoise from "../../images/whitenoise.jpg"
+import { useForm, ValidationError } from '@formspree/react';
+
 const imageProperties = {
   marginTop: "40px",
   marginLeft: "540px",
@@ -44,38 +46,188 @@ const footerStyle = {
 }
 
 const Careers = () => {
+
+  const [state, handleSubmit] = useForm("xknyqzly");
+  window.onbeforeunload = () => {
+    for(const form of document.getElementsByTagName('form')) {
+      form.reset();
+    }
+  }
+  if (state.succeeded) {
+      return <p>Submitted sucessfully!</p>;
+
+
+  }
   return (
     <div class="column" style={backgroundStyle}>
-      <h1 align="center" style={topFont}>CAREERS</h1>
-      <h6 align="center"><i>Join our diverse, multi-faceted team.</i></h6>
-      <div class="row" style={accessStatement}>
-        <h5>
-          AT MOONBEAM TRADING COMPANY, WE HIRE FROM A HOLISTIC PERSPECTIVE...
-          <br></br>
-          <p>
-            <br></br>
-            We recognize all the different life transitions that you may have
-            had to encounter. <br></br>
-            We value everyone's opinion, and believe the key to success is
-            having a multitude<br></br> of perspectives.
-            <br></br>
-            <br></br>
-           
-            If you have faced any career obstacles relating to accessibility or life
-            challenges<br></br> or such as addition,  incarceration,or physical/mental
-            health , you are encouraged <br></br>to apply, and we would love to hear your story!
-          </p>
-        </h5>
-      </div>
-      <div class="row" align="center">
-        <img src={brickwall} style={imageProperties}></img>
-      </div>
-      <footer align="center" style={footerStyle}>
-<h6>
-All Rights Reserved, Moonbeam Trading Company 2022
-</h6>
-</footer>
-    </div>
+    <form onSubmit={handleSubmit}
+      action="https://formspree.io/f/xknyqzly"
+      method="post">
+      <label htmlFor="email">
+        Email Address
+      </label>
+      <input
+        name="email"
+        type="email" 
+        
+      />
+      <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
+      <textarea
+        name="message"
+       
+      />
+      <ValidationError 
+        prefix="Message" 
+        field="message"
+        errors={state.errors}
+      />
+      
+      <div  > First Name:
+          <input
+            placeholder=""
+            type="text"
+            name="FirstName" 
+          />
+          </div>
+
+          <div  > Last Name:
+          <input
+            placeholder=""
+            type="text"
+            name="LastName"         
+          />
+          </div>
+
+          <div  > Preferred name (if different from above)
+          <input
+            placeholder=""
+            type="text"
+            name="PreferredName"
+          />
+          </div>
+          
+          <div  > Pronouns 
+          <input
+            placeholder=""
+            type="text"
+            name="Pronouns"
+          />
+          </div>
+
+          <label > Are you legally eligible to work in Canada?
+            <select 
+            name ="work">
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>             
+            </select>
+          </label>
+
+          <div> Email: 
+          <input
+            placeholder=""
+            type="text"
+            name="Email"
+          />
+          </div>
+
+          <div> Phone number: 
+          <input
+            placeholder=""
+            type="text"
+            name="PhoneNumber"
+          />
+          </div>
+
+          <div  > Address: 
+          <input
+            placeholder=""
+            type="text"
+            name="Address"
+          />
+          </div>
+
+          <div  > Postal code: 
+          <input
+            placeholder=""
+            type="text"
+            name="PostalCode"
+          />
+          </div>
+
+          <div  > What is your highest level of education completed? 
+          <input
+            placeholder=""
+            type="text"
+            name="HighestLevelOfEducation"
+          />
+          </div>
+
+          <div  > Field of study:
+          <input
+            placeholder=""
+            type="text"
+            name="FieldOfStudy"
+          />
+          </div>
+
+          <div  > What are some barriers that you have faced in completing your education? 
+          <input
+            placeholder=""
+            type="text"
+            name="BarriersFacedCompletingEducation"
+          />
+          </div>
+
+          <div  > What are some barriers you have faced in seeking employment?
+          <input
+            placeholder=""
+            type="text"
+            name="BarriersFacedSeekingEmployment"
+          />
+          </div>
+          
+          <div  > Do you identify as a member of a visible minority?
+          <input
+            placeholder=""
+            type="text"
+            name="IdentifyAsMemberOfVisibleMinority"
+          />
+          </div>
+
+          <div  > Have you faced periods of life-transitions such as homelessness, drug addiction and/or mental health?
+          <input
+            placeholder=""
+            type="text"
+            name="PeriodsOfLifeTransitions"
+          />
+          </div>
+
+          <div  > Which position(s) are you applying for?
+          <input
+            placeholder=""
+            type="text"
+            name="PositionsApplyingFor"
+          />
+          </div>
+
+          <div  > What makes you suitable for this role?
+          <input
+            placeholder=""
+            type="text"
+            name="SuitableForThisRole"
+          />
+          </div>
+
+      <button type="submit" disabled={state.submitting}>
+        Submit
+      </button>
+    </form>
+</div>
+    
   );
 };
 export default Careers;
