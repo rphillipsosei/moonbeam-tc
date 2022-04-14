@@ -1,12 +1,14 @@
 import React from "react";
-
+import brickwall from "../../images/brickwall.jpg"
 import walksoflife from "../../images/walksoflife.jpg";
 import diversity from "../../images/diversity.jpg"
+import aboutbg from "../../images/about--bg.jpeg"
 
 const imageProperties = {
   marginTop: "40px",
-  marginLeft: "40px",
- 
+  marginLeft: "540px",
+  height: "40%",
+  width: "40%",
   alignItems: "center",
   justifyContent: "center",
 };
@@ -17,12 +19,19 @@ const accessStatement = {
 }
 
 const backgroundStyle = {
-  backgroundImage: `url(${diversity})`,
+  backgroundImage: `url(${aboutbg})`,
   backgroundSize: "cover",
-  minHeight: "120vh",
+  minHeight: "205vh",
   minWidth: "100vw",
   backgroundPosition: "right",
 };
+
+
+const divStyle = {
+  width: "100vw",
+  height: "100vh",
+}
+
 
 const Careers = () => {
   return (
@@ -47,7 +56,9 @@ const Careers = () => {
           </p>
         </h5>
       </div>
-      
+      <div class="row" align="center">
+        <img src={brickwall} style={imageProperties}></img>
+      </div>
       
     </div>
   );
