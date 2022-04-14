@@ -91,6 +91,10 @@ const textStyle = {
 }
 
   return (
+    <form
+  action="https://formspree.io/f/xknyqvwy"
+  method="POST"
+>
     <div className="column" style={backgroundStyle}>
       <h1 style={topFont} align="center">CONTACT US</h1>
       <h6 align="center"><i>Receive a response within 48 business hours.</i></h6>
@@ -138,7 +142,7 @@ const textStyle = {
             />
       
       </div>
-      <Button variant="outlined" align="center" style={buttonStyle2}>SEND</Button>
+      <Button type="submit" variant="outlined" align="center" style={buttonStyle2}>SEND</Button>
           </Paper>
         <div className="row"> 
     
@@ -154,6 +158,7 @@ const textStyle = {
   </h6>
   </footer>
     </div>
+    </form>
         );
 }
 export default Contact;
