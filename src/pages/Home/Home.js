@@ -9,8 +9,16 @@ import globe from "../../images/globe.jpg";
 import bigdata from "../../images/bigdata2.jpg";
 import { Stack } from "@mui/material";
 import { TextField } from '@mui/material';
+import { useForm, ValidationError } from '@formspree/react';
+
 
 const Home = () => {
+
+  const [state, handleSubmit] = useForm("xvolwbpy");
+  if (state.succeeded) {
+      return <p>Thanks for joining!</p>;
+  }
+
   const paperStyle = {
     padding: "20px",
     height: "30vh",
@@ -109,10 +117,9 @@ const Home = () => {
           <div className="row">
             <div style={divStyle}>
       <Paper elevation={10} style={paperStyle2}>
-      <form
-        action="https://formspree.io/f/xvolwbpy"
-        method="POST"
-        >
+
+      <form onSubmit={handleSubmit}>
+
       <p style={titleStyle2}>
         <h2  align="center">
           <b>STAY IN THE KNOW</b>
@@ -131,9 +138,14 @@ const Home = () => {
               required
               style={fieldStyle}
             />
+        <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
       
       </div>
-      <Button variant="outlined" align="center" style={buttonStyle2}>SUBSCRIBE</Button>
+      <Button type="submit" disabled={state.submitting} variant="outlined" align="center" style={buttonStyle2}>SUBSCRIBE</Button>
       </form>
           </Paper>
         </div>
