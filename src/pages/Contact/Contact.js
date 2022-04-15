@@ -5,8 +5,15 @@ import { Button } from '@mui/material';
 import typing from "../../images/typing.jpg"
 import protractor2 from "../../images/protractor2.jpg"
 import whitenoise from "../../images/whitenoise.jpg"
+import { useForm, ValidationError } from '@formspree/react';
+
 
 const Contact = () => {
+
+  const [state, handleSubmit] = useForm("xknyqvwy");
+  if (state.succeeded) {
+      return <p>Thanks for reaching out!</p>;
+  }
 
   const backgroundStyle = {
     backgroundImage: `url(${whitenoise})`,
@@ -91,6 +98,8 @@ const textStyle = {
 }
 
   return (
+    <form onSubmit={handleSubmit}>
+
     <div className="column" style={backgroundStyle}>
       <h1 style={topFont} align="center">CONTACT US</h1>
       <h6 align="center"><i>Receive a response within 48 business hours.</i></h6>
@@ -123,6 +132,11 @@ const textStyle = {
               required
               style={fieldStyle2}
             />
+          <ValidationError 
+          prefix="Email" 
+          field="email"
+          errors={state.errors}
+            />
       
       </div>
       <div>
@@ -138,7 +152,7 @@ const textStyle = {
             />
       
       </div>
-      <Button variant="outlined" align="center" style={buttonStyle2}>SEND</Button>
+      <Button type="submit" disabled={state.submitting} type="submit" variant="outlined" align="center" style={buttonStyle2}>SEND</Button>
           </Paper>
         <div className="row"> 
     
@@ -154,6 +168,7 @@ const textStyle = {
   </h6>
   </footer>
     </div>
+    </form>
         );
 }
 export default Contact;
