@@ -75,6 +75,7 @@ const Shop = () => {
     <div className="column" style={backgroundStyle}>
       <h1 style={topFont} align="center">SHOP</h1>
       <h6 align="center"><i>Browse a collection of fair trade, sustainable items from our partners.</i></h6>
+    
     <div className="row">
     <img src={shopping} style={image}  />
     <Paper elevation={10} style={paperStyle}>

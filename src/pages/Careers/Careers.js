@@ -5,30 +5,38 @@ import diversity from "../../images/diversity.jpg"
 import aboutbg from "../../images/about--bg.jpeg"
 import whitenoise from "../../images/whitenoise.jpg"
 import { useForm, ValidationError } from '@formspree/react';
+import { Paper } from "@mui/material";
+import { Button } from "theme-ui";
+import { Link } from "react-router-dom";
 
 const imageProperties = {
-  marginTop: "40px",
-  marginLeft: "540px",
-  height: "40%",
-  width: "40%",
+
+   height: "90%",
+  width: "90%",
   alignItems: "center",
   justifyContent: "center",
+  marginLeft: "40px",
+  borderRadius: "80px"
 };
 
 const accessStatement = {
-  marginLeft: "30px",
-  marginTop: "60px"
+ 
+  marginTop: "10px"
 }
 
 const backgroundStyle = {
   backgroundImage: `url(${whitenoise})`,
   backgroundSize: "cover",
-  minHeight: "205vh",
+  minHeight: "100vh",
   minWidth: "100vw",
   backgroundPosition: "right",
 };
 
-
+const buttonStyle = {
+  marginLeft: "390px",
+  backgroundColor: "#89AEB3",
+  marginBottom: "10px"
+}
 const divStyle = {
   width: "100vw",
   height: "100vh",
@@ -45,6 +53,17 @@ const footerStyle = {
   fontColor: "#ffff"
 }
 
+const paperStyle = {
+  padding: "20px",
+  height: "70vh",
+  width: "45vw",
+  backgroundColor: "rgba(245,245,245,0.6)",
+  borderRadius: "80px",
+  marginTop: "20px",
+  marginLeft: "500px"
+ 
+};
+
 const Careers = () => {
 
   const [state, handleSubmit] = useForm("xknyqzly");
@@ -55,179 +74,48 @@ const Careers = () => {
   }
   if (state.succeeded) {
       return <p>Submitted sucessfully!</p>;
-
-
+      
   }
   return (
+    <div style={divStyle}>
     <div class="column" style={backgroundStyle}>
-    <form onSubmit={handleSubmit}
-      action="https://formspree.io/f/xknyqzly"
-      method="post">
-      <label htmlFor="email">
-        Email Address
-      </label>
-      <input
-        name="email"
-        type="email" 
-        
-      />
-      <ValidationError 
-        prefix="Email" 
-        field="email"
-        errors={state.errors}
-      />
-      <textarea
-        name="message"
-       
-      />
-      <ValidationError 
-        prefix="Message" 
-        field="message"
-        errors={state.errors}
-      />
       
-      <div  > First Name:
-          <input
-            placeholder=""
-            type="text"
-            name="FirstName" 
-          />
-          </div>
-
-          <div  > Last Name:
-          <input
-            placeholder=""
-            type="text"
-            name="LastName"         
-          />
-          </div>
-
-          <div  > Preferred name (if different from above)
-          <input
-            placeholder=""
-            type="text"
-            name="PreferredName"
-          />
-          </div>
+      <h1 align="center" style={topFont}>CAREERS</h1>
+      <h6 align="center"><i>Join our diverse, multi-faceted team.</i></h6>
+      <Paper style={paperStyle}>
+      <div class="row" style={accessStatement}>
+        <p align="center"><h3>
+          AT MOONBEAM TRADING COMPANY, WE HIRE FROM A HOLISTIC PERSPECTIVE...
+          </h3>
+          <br></br>
           
-          <div  > Pronouns 
-          <input
-            placeholder=""
-            type="text"
-            name="Pronouns"
-          />
-          </div>
-
-          <label > Are you legally eligible to work in Canada?
-            <select 
-            name ="work">
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>             
-            </select>
-          </label>
-
-          <div> Email: 
-          <input
-            placeholder=""
-            type="text"
-            name="Email"
-          />
-          </div>
-
-          <div> Phone number: 
-          <input
-            placeholder=""
-            type="text"
-            name="PhoneNumber"
-          />
-          </div>
-
-          <div  > Address: 
-          <input
-            placeholder=""
-            type="text"
-            name="Address"
-          />
-          </div>
-
-          <div  > Postal code: 
-          <input
-            placeholder=""
-            type="text"
-            name="PostalCode"
-          />
-          </div>
-
-          <div  > What is your highest level of education completed? 
-          <input
-            placeholder=""
-            type="text"
-            name="HighestLevelOfEducation"
-          />
-          </div>
-
-          <div  > Field of study:
-          <input
-            placeholder=""
-            type="text"
-            name="FieldOfStudy"
-          />
-          </div>
-
-          <div  > What are some barriers that you have faced in completing your education? 
-          <input
-            placeholder=""
-            type="text"
-            name="BarriersFacedCompletingEducation"
-          />
-          </div>
-
-          <div  > What are some barriers you have faced in seeking employment?
-          <input
-            placeholder=""
-            type="text"
-            name="BarriersFacedSeekingEmployment"
-          />
-          </div>
           
-          <div  > Do you identify as a member of a visible minority?
-          <input
-            placeholder=""
-            type="text"
-            name="IdentifyAsMemberOfVisibleMinority"
-          />
-          </div>
-
-          <div  > Have you faced periods of life-transitions such as homelessness, drug addiction and/or mental health?
-          <input
-            placeholder=""
-            type="text"
-            name="PeriodsOfLifeTransitions"
-          />
-          </div>
-
-          <div  > Which position(s) are you applying for?
-          <input
-            placeholder=""
-            type="text"
-            name="PositionsApplyingFor"
-          />
-          </div>
-
-          <div  > What makes you suitable for this role?
-          <input
-            placeholder=""
-            type="text"
-            name="SuitableForThisRole"
-          />
-          </div>
-
-      <button type="submit" disabled={state.submitting}>
-        Submit
-      </button>
-    </form>
-</div>
-    
+            <h6>
+            We recognize all of the different life transitions that people may encounter in life. <br></br>
+            We value everyone's opinion, and believe the key to success is
+            having a multitude<br></br> of perspectives.
+            <br></br>
+            <br></br>
+           
+            If you have faced any career obstacles relating to accessibility, or life
+            challenges<br></br> such as addition,  incarceration, and/or physical/mental
+            health , you are encouraged <br></br>to apply. Tell us your story!
+          </h6></p>
+          <Link to="/careers/apply">
+        <Button variant="outlined" align="center" style={buttonStyle}>GO</Button>
+        </Link>
+      </div>
+      <div class="row" align="center">
+        <img align="center" src={brickwall} style={imageProperties}></img>
+      </div>
+      </Paper>
+      <footer align="center" style={footerStyle}>
+<h6>
+All Rights Reserved, Moonbeam Trading Company 2022
+</h6>
+</footer>
+    </div>
+    </div>
   );
 };
 export default Careers;

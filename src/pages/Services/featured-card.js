@@ -21,7 +21,7 @@ const styles = {
     color: "black",
     backgroundColor: '#FFFFFF',
     fontSize: "20px",
-    fontFamily: "DM Sans",
+    fontFamily: "Manrope",
     width: "100%",
     borderRadius: "40px",
     p: "10px",

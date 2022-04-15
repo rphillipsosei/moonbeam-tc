@@ -9,6 +9,7 @@ import globe from "../../images/globe.jpg";
 import bigdata from "../../images/bigdata2.jpg";
 import { Stack } from "@mui/material";
 import { TextField } from '@mui/material';
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const paperStyle = {
@@ -56,7 +57,7 @@ const Home = () => {
   const backgroundStyle = {
     backgroundImage: `url(${bigdata})`,
     backgroundSize: "cover",
-    minHeight: "170vh",
+    minHeight: "100vh",
     minWidth: "100vw",
     backgroundPosition: "right",
   };
@@ -89,7 +90,7 @@ const Home = () => {
   }
   //cdn.corporatefinanceinstitute.com/assets/Types-of-Businesses-Opener_v2.jpeg"
 
-  https: return (
+ return (
     <div className="column">
       <div className="row" style={backgroundStyle}>
         <Paper elevation={10} style={paperStyle}>
@@ -100,9 +101,12 @@ const Home = () => {
             <h3 style={sloganStyle} align="center">
               <i>Services that create business, customer, and community value</i>
             </h3>
+            <Link to="/services">
             <Button variant="contained" style={buttonStyle}>
+              
               <b>LEARN MORE</b>
             </Button>
+            </Link>
           </Stack>
         </Paper>
           <div className="row">
@@ -128,7 +132,9 @@ const Home = () => {
             />
       
       </div>
+      
       <Button variant="outlined" align="center" style={buttonStyle2}>SUBSCRIBE</Button>
+     
           </Paper>
         </div>
         </div>
