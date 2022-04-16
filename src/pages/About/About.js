@@ -18,127 +18,25 @@ import helpinghands from "../../images/helping-hands.jpg";
 import growth from "../../images/growth.jpg"
 import aboutbg from  "../../images/about--bg.jpeg"
 import whitenoise from "../../images/whitenoise.jpg"
+import "./About.css"
 
-const backgroundStyle = {
-  backgroundImage: `url(${whitenoise})`,
-  backgroundSize: "cover",
-  minHeight: "200vh",
-  minWidth: "100vw",
-  backgroundPosition: "right",
-};
-
-const paperStyle = {
-  paddingBottom: "20px",
-  height: "56vh",
-  width: "40vw",
-  backgroundColor: "rgba(255,255,255,0.1)",
-  borderRadius: "50px 20px",
-  marginTop: "60px",
-  marginLeft: "150px",
-};
-
-const buttonStyle = {
-  backgroundColor: "#5081a1",
-
-  width: "100vw",
-  height: "100vh",
-};
-
-const titleStyle = {
-  fontFamily: "manrope",
-  color: "#000000",
-  marginTop: "25px",
-};
-
-const captionStyle = {
-  fontFamily: "manrope",
-  color: "#000000",
-  opacity: "100%",
-};
-
-const statementStyle = {
-  fontFamily: "manrope",
-  color: "#000000",
-  opacity: "100%",
-  paddingRight: "20px",
-  paddingLeft: "20px",
-};
-
-const image = {
-  width: "82%",
-  height: "58vh",
-  marginTop: "50px",
-  marginLeft: "150px",
-  borderRadius: "80px"
-};
-
-
-const divSize = {
-  width: "60vw"
-}
-
-const image3 = {
-  width: "37vw",
-  height: "50vh",
-  marginTop: "145px",
-  marginLeft: "70px",
-  borderRadius: "80px"
-};
-
-const image2 = {
-  backgroundImage: `url(${aboutus})`,
-  width: "82%",
-  height: "60%",
-  marginTop: "50px",
-  marginLeft: "150px",
-  marginBottom: "50px",
-  borderRadius: "80px"
-};
-
-const paperStyle2 = {
-  padding: "20px",
-  height: "20%",
-  width: "82%",
-  backgroundColor: "rgba(255,255,255,0.1)",
-  borderRadius: "80px",
-  marginTop: "150px",
-  marginLeft: "150px",
-};
-
-const paperStyle3 = {
-  padding: "20px",
-  height: "95%",
-  width: "45vw",
-  backgroundColor: "rgba(255,255,255,0.1)",
-  borderRadius: "80px",
-  marginTop: "55px",
-  marginLeft: "150px",
-};
-const topFont = {
-  fontSize: "70px",
-  color: "#000000",
-};
-
-
-const footerStyle = {
-  paddingTop: "20px",
-  fontColor: "#000000"
-}
 
 const About = () => {
   return (
-    <div className="column" style={backgroundStyle}>
-      <h1 style={topFont} align="center">
-                WHO WE ARE
-              </h1>
-      <h6 align="center"><i>Our story. Our values. Our successes.</i></h6>
-      <div className="row">
-        <div className="column" >
-        <Paper elevation={10} style={paperStyle3}>
+<div >
+    <h1 align="center" className="title">WHO WE ARE</h1>
+    <h6 align="center"><i>Our story. Our values. Our successes.</i></h6>
+    <br></br>
+    <br></br>
+
+    <section className="wrapper-grid">
+        <div className="pic-card"><img id="img-growth" src={growth}></img></div>
+        <div className="text-card">
           <p>
-           <h5 style={statementStyle}>
-              
-              <br></br>
+           <h6 >
+            <br></br>
+            <h3 >OUR BACKGROUND</h3> <br></br>
+              2018 to Q1 2020 brought early success and a foundation for growth; <br></br><br></br>
               Moonbeam Trading Company was founded in 2018 by former tech sector
               executive Mark McDonald <br></br>
               <br></br>
@@ -150,7 +48,7 @@ const About = () => {
               <br></br>
               <br></br>
               <br></br>
-              <h3 align="center">EARLY SUCCESS</h3> <br></br>
+              <h3 >EARLY SUCCESS</h3> <br></br>
               2018 to Q1 2020 brought early success and a foundation for growth; <br></br><br></br>
               <i>
              
@@ -163,24 +61,16 @@ const About = () => {
               - technology partnership<br></br> 
               </i>
               <br></br>
-            </h5>
-          </p>
-        </Paper>
-        </div>
-        <img src={growth} style={image3} />
-      </div>
-    
-    
-
-
-      <div>
-        <Paper elevation={10} style={paperStyle2}>
-          <p>
-            <h1 style={titleStyle} align="center">
+            </h6>
+            </p></div>
+          <div class="pic-card"> 
+            <img id="img-helping-hands" src={helpinghands}></img></div>
+            <div className="text-card"> <p><h1>
+              
               <b>OUR VALUES</b>
             </h1>
             <br></br>
-            <h5 style={captionStyle} align="center">
+            <h6>
               We strive to provide world-class business and technology services
               in Canada, with the help of our valued employees and advancing
               technology.
@@ -194,26 +84,19 @@ const About = () => {
               <br></br>
               <br></br>
               We want to have a positive social impact wherever we do business.
-            </h5>
-          </p>
-        </Paper>
-      </div>
-
-
-      <div className="row">
-        <img src={helpinghands} style={image} />
-      </div>
-   
-
-
-      <div>
-        <Paper elevation={10} style={paperStyle2}>
-          <p>
-            <h1 style={titleStyle} align="center">
-              <b>LAND ACKNOWLEDGEMENTS</b>
-            </h1>
+            </h6>
+            </p>
+            </div>    
+        <div className="pic-card">
+        <img id="img-collage" src={collage}></img>
+          </div>
+        <div className="text-card">
+        <p>
+            <h3 >
+              <b align="center">LAND ACKNOWLEDGEMENTS</b>
+            </h3>
             <br></br>
-            <h6 style={captionStyle} align="center">
+            <i><h6  align="center">
               We would like to acknowledge the fact that the land on which we
               gather, and operate our business, is part of the Treaty Lands and
               Territory of the Mississaugas of the Credit. For thousands of
@@ -235,26 +118,14 @@ const About = () => {
               reconnect and reclaim African Indigenous ways of being and doing.
               We are grateful for the opportunity and responsibility to embrace
               our heritage, and by doing so, give our respect to the ancestors.
-            </h6>
+            </h6></i>
           </p>
-        </Paper>
-      </div>
+          </div>
+ 
+    </section>
+</div>
 
-
-      <div className="row">
-        <img src={collage} style={image2} />
-      </div>
-
-
-      <footer align="center">
-        <h6>All Rights Reserved, Moonbeam Trading Company 2022</h6>
-      </footer>
-
-
-
-    </div>
-
-
+    
   );
 };
 export default About;

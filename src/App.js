@@ -10,42 +10,29 @@ import ProdsAndPartners from './pages/ProdsAndPartners/ProdsAndPartners';
 import Contact from './pages/Contact/Contact';
 import Home from './pages/Home/Home';
 import Services from './pages/Services/Services';
-import Navbar from './Components/Navbar/Navbar';
+import Navbar from './Components/Navbar.js'
 import Careers from './pages/Careers/Careers'
 import Shop from './pages/Shop/Shop'
 import About from './pages/About/About';
+import Apply from './pages/Careers/Apply';
 
 const App = () => {
   return (
-   <Router>
-    <Navbar/>
-    <main>
-      <Switch>
-        <Route path="/" exact>
-          <Home/>
-        </Route>
-        <Route path="/products-and-partnerships" exact>
-          <ProdsAndPartners/>
-        </Route>
-        <Route path="/services" exact>
-          <Services/>
-        </Route>
-        <Route path="/shop" exact>
-          <Shop/>
-        </Route>
-        <Route path="/contact-us" exact>
-          <Contact/>
-        </Route>
-         <Route path="/careers" exact>
-          <Careers/>
-        </Route>
-        <Route path="/about" exact>
-          <About/>
-        </Route>
-      </Switch>
-     
-    </main>
-   </Router>
+     <>
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path='/' exact component={Home} />
+          <Route path='/services' component={Services} />
+          <Route path='/shop' component={Shop} />
+          <Route path='/careers' component={Careers} />
+          <Route path='/about' component={About} />
+          <Route path='/contact' component={Contact} />
+          <Route path='/careers/apply' component={Apply} />
+        </Switch>
+      </Router>
+    </>
+
   );
 }
 

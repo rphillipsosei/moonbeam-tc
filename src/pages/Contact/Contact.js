@@ -1,136 +1,52 @@
-import React from 'react'
-import { Paper } from '@mui/material';
-import { TextField } from '@mui/material';
-import { Button } from '@mui/material';
-import typing from "../../images/typing.jpg"
-import protractor2 from "../../images/protractor2.jpg"
-import whitenoise from "../../images/whitenoise.jpg"
-import { useForm, ValidationError } from '@formspree/react';
-
+import React from "react";
+import { Paper } from "@mui/material";
+import { TextField } from "@mui/material";
+import { Button } from "@mui/material";
+import typing from "../../images/typing.jpg";
+import protractor2 from "../../images/protractor2.jpg";
+import whitenoise from "../../images/whitenoise.jpg";
+import { useForm, ValidationError } from "@formspree/react";
 
 const Contact = () => {
-
   const [state, handleSubmit] = useForm("xknyqvwy");
   if (state.succeeded) {
-      return <p>Thanks for reaching out!</p>;
+    return <p>Thanks for reaching out!</p>;
   }
-
-  const backgroundStyle = {
-    backgroundImage: `url(${whitenoise})`,
-    backgroundSize: "cover",
-    minHeight: "87vh",
-    minWidth: "100vw",
-    backgroundPosition: "right",
-  };
-
-const topFont = {
-  fontSize: "70px",
-  color: "#000000",
-  paddingTop: "20px"
-}
-
-const paperStyle = {
-  marginBottom: "15px",
-  height: "43vh",
-  width: "43vw",
-  backgroundColor: "rgba(60,60,60,0)",
-  borderRadius: "50px 20px",
-  marginTop: "15px",
-  marginLeft:"150px",
-  marginRight: "40px"
-  
-};
-
-const paperStyle2 = {
-  marginBottom: "15px",
-  height: "43vh",
-  width: "43vw",
-  backgroundColor: "rgba(255,255,255,0.1)",
-  borderRadius: "50px 20px",
-  marginTop: "105px",
-  marginLeft: "555px"
-  
-};
-
-const titleStyle = {
-  fontFamily: "manrope",
-  color: "#000000",
-  marginTop: "25px",
-};
-
-const fieldStyle = {
-  marginTop: "110px",
-  marginLeft: "80px",
-  backgroundColor: "white",
-  width: "640px"
-};
-
-const fieldStyle2 = {
-  marginTop: "10px",
-  marginLeft: "80px",
-  backgroundColor: "white",
-  width: "640px"
-};
-
-const buttonStyle = {
-marginTop: "65px",
-marginLeft: "335px"
-
-}
-
-const buttonStyle2 = {
-  marginTop: "15px",
-  marginLeft: "370px"
-  }
-
-const imageStyle = {
-  width: "88vw",
-  height: "20vh",
-  marginLeft: "133px"
-}
-
-const footerStyle = {
-  paddingTop: "20px"
-}
-
-const textStyle = {
-  marginTop: "65px"
-}
 
   return (
     <form onSubmit={handleSubmit}>
-
-    <div className="column" style={backgroundStyle}>
-      <h1 style={topFont} align="center">CONTACT US</h1>
+      {/* <div className="wrapper-grid">
+    <div class="form-card"></div>  
+      <h1 align="center">CONTACT US</h1>
       <h6 align="center"><i>Receive a response within 48 business hours.</i></h6>
       <div className="row">
 
-          <Paper elevation={10} style={paperStyle2}>
+        
           <p>
           
       
-          <h5 style={textStyle} align="center"><i>
+          <h5 align="center"><i>
           Any suggestions or inquiries? Do not hesitate to get in touch!
         </i></h5>
         </p>
         <div>
-        <TextField
+        <input
               name="name"
               id="outlined-basic"
               label="Name"
               variant="outlined"
               required
-              style={fieldStyle2}
+              
             />
       </div>
       <div>
-        <TextField
+        <input
               name="email"
               id="outlined-basic"
               label="Email"
               variant="outlined"
               required
-              style={fieldStyle2}
+             
             />
           <ValidationError 
           prefix="Email" 
@@ -140,7 +56,7 @@ const textStyle = {
       
       </div>
       <div>
-        <TextField
+        <input
               name="message"
               id="outlined-basic"
               label="Message"
@@ -148,27 +64,72 @@ const textStyle = {
               required
               multiline
               rows={2}
-              style={fieldStyle2}
+              
             />
       
       </div>
-      <Button type="submit" disabled={state.submitting} type="submit" variant="outlined" align="center" style={buttonStyle2}>SEND</Button>
-          </Paper>
+      <Button type="submit" disabled={state.submitting} type="submit" variant="outlined" align="center" >SEND</Button>
+         
         <div className="row"> 
     
         </div>
         
+        
       </div>
-      {/* <img src={typing} style={imageStyle} align="center"/> */}
+       */}
 
-      <footer align="center" style={footerStyle}>
+      {/* </div> */}
 
-  <h6>
-  All Rights Reserved, Moonbeam Trading Company 2022
-  </h6>
-  </footer>
-    </div>
+      <div>
+        <h1 align="center" className="title">
+          CONTACT US
+        </h1>
+        <h6 align="center">
+          <i>Receive a response within 48 business hours.</i>
+        </h6>
+        <br></br>
+        <br></br>
+
+        <section className="wrapper-grid">
+          <div className="form-card">
+            <p>
+              <br></br>
+              <h3>
+                Any suggestions or inquiries? Do not hesitate to get in touch!
+              </h3>
+              <br></br>
+              <form>
+
+              <table>
+<tbody>
+<tr>
+<td> <h5>Name:</h5></td>
+<td>  <input className="input" ></input></td>
+</tr>
+<br></br>
+<tr>
+<td> <h5>Email Address: </h5></td>
+<td><input className="input"></input></td>
+</tr>
+<br></br>
+<tr>
+<td><h5>Your message:</h5></td>
+<td><input className="input" ></input></td>
+</tr>
+</tbody>
+</table>
+           
+                <br></br>
+                <br></br>
+                <button type="submit" align="center">SUBSCRIBE</button>
+              </form>
+              <br></br>
+            </p>
+          </div>
+
+        </section>
+      </div>
     </form>
-        );
-}
+  );
+};
 export default Contact;
