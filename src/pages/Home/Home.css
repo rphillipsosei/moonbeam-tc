@@ -114,3 +114,48 @@ textarea {
   text-shadow: 0px 0px 1px rgba(66, 66, 66, 0.75);
   width: 35rem;
 }
+
+@media screen and (max-width: 786px){
+  .content-section {
+    flex-direction: column;
+  }
+  
+  .title-style {
+    font-size: 30px !important;
+    text-align: center;
+    margin-top: 3em;
+    padding-left: 0 !important;
+  }
+  
+  .title-portion p h4 {
+    padding-left: 0em !important;
+    text-align: center;
+    
+  }
+  
+  .home-img {
+    width: 95% !important;
+    margin-top: 8rem
+  }
+}
+
+.learn-btn {
+  margin-left: 0em;
+}
+
+@media screen and (max-width: 950px){
+ 
+  .title-style {
+    font-size: 45px !important;
+    margin-top: 0.2em;
+  }
+  .title-portion p h4 {
+    margin-top: -0.4em;
+   padding-left: 0.4em !important;
+  }
+
+  .content-section img {
+    margin-top: 0;
+}
+
+}

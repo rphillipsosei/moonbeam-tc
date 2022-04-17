@@ -136,3 +136,102 @@ font-family: "Comfortaa"
 .shop-title-section {
   margin-bottom: 5em
 }
+
+@media screen and (max-width: 680px){
+  .wrapper-grid-shop {
+    display: block !important;
+    padding: 0.5rem !important; 
+  }
+  
+  #img-shopping {
+    width:90% !important;
+    height: auto !important;
+    margin: 1rem
+  }  
+
+  .text-card2 {
+    margin-left: 0em;
+}
+
+h3 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.shop-title-section {
+  margin-bottom: 0em;
+  
+}
+
+.shopify-btn {
+  width: 50%;
+  height: 70;
+  font-size: 0.7em;
+}
+
+.auction-btn {
+  width: 50%;
+  height: 70;
+  font-size: 0.7em;
+}
+
+.mini-card-text-heading {
+  font-size: 1em;
+}
+
+.mini-card-image {
+     margin-top: -5.5em;
+     width:60px;
+}
+
+
+.shop-title-section {
+  margin-bottom: 0em;
+  height: 8em;
+}
+
+#auction-section {
+  margin-top: -2em;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.pic-card {
+  margin-top: -0.7em;
+}
+}
+
+
+@media screen and (max-width: 850px){
+
+  #img-shopping {
+    height: 80%;
+    width: 80%;
+ }
+
+ .text-card2 {
+  margin-left: 11em;
+}
+
+}
+
+@media screen and (max-width: 450px){
+
+  #img-shopping {
+    height: 80%;
+    width: 80%;
+    margin-top: 0.5em;
+ }
+
+ .text-card2 {
+  margin-left: 0em;
+}
+
+
+.shop-title-section {
+  margin-bottom: 0.5em;
+
+}
+}

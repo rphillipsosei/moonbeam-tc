@@ -36,9 +36,10 @@ const Careers = () => {
        
       </div>
       <container className="content-section-careers">
-      
-    <img src={brickwall}></img>
+      <div className="img-section">
+    <img className="careers-img" src={brickwall}></img>
     <div className="intro-text">
+      
       <p>
         <h2>
         AT MOONBEAM TRADING COMPANY,<br></br> WE HIRE FROM A HOLISTIC PERSPECTIVE...
@@ -56,6 +57,7 @@ const Careers = () => {
             health , you are encouraged <br></br>to apply. Tell us your story!
           </h6>
       </p>
+      </div>
       <div className="btn-section">
         <a href="careers/apply">
        <button id="apply-btn">APPLY</button></a>

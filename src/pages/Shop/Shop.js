@@ -61,7 +61,7 @@ const Shop = () => {
             <img className="mini-card-image" src={auctionlogo} />
 
             <div className="mini-card-text">
-              <p className="mini-card-text-heading">
+              <p className="mini-card-text-heading" id="auction-section">
                 Online Auction (COMING SOON)
                 <h6 className="mini-card-text-desc">
                   <i>Equipment, Surplus Inventory, and Estate Auctions.</i>
@@ -82,45 +82,4 @@ const Shop = () => {
 };
 export default Shop;
 {
-  /* <table className="table-styles">
-              <tbody>
-                
-              <h3 >Visit our online store and auction</h3>
-                
-              
-                <tr>
-                  <td className="logo-cell">
-                    <img src={shopifylogo}></img>
-                  </td>
-                  <td>
-                    <h5 className="store-type">Shopify</h5>
-                    <h6 className="description">
-                    Discover a wide variety of products on our online store.
-                    </h6>
-                  </td>
-                  <td>
-                    <button id="btn" >
-                      SHOP NOW
-                    </button>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td className="logo-cell">
-                    <img src={auctionlogo}></img>
-                  </td>
-                  <td>
-                    <h5 className="store-type">Online Auction (COMING SOON)</h5>
-                    <h6 className="description">
-                      Equipment, Surplus Inventory, and Estate Auctions.
-                    </h6>
-                  </td>
-                  <td>
-                    <button id="btn-disabled" disabled>
-                      SHOP NOW
-                    </button>
-                  </td>
-                </tr>
-              </tbody>
-            </table> */
 }
