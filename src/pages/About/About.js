@@ -19,11 +19,11 @@ import growth from "../../images/growth.jpg"
 import aboutbg from  "../../images/about--bg.jpeg"
 import whitenoise from "../../images/whitenoise.jpg"
 import "./About.css"
-
+import FadeIn from "react-fade-in/lib/FadeIn";
 
 const About = () => {
   return (
-<div >
+<div ><FadeIn>
     <h1 align="center" className="title">WHO WE ARE</h1>
     <h6 align="center"><i>Our story. Our values. Our successes.</i></h6>
     <br></br>
@@ -124,6 +124,7 @@ const About = () => {
           </div>
  
     </section>
+    </FadeIn>
 </div>
 
     

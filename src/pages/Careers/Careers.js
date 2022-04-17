@@ -9,6 +9,7 @@ import { Paper } from "@mui/material";
 import { Button } from "theme-ui";
 import { Link } from "react-router-dom";
 import "./Careers.css"
+import FadeIn from "react-fade-in/lib/FadeIn";
 
 const Careers = () => {
   const [state, handleSubmit] = useForm("xknyqzly");
@@ -21,7 +22,8 @@ const Careers = () => {
     return <p>Submitted sucessfully!</p>;
   }
   return (
-    <div>
+    <div><FadeIn>
+     
     <div className="careers-title-section">
         <h1 align="center" className="title">
           CAREERS
@@ -60,6 +62,7 @@ const Careers = () => {
         </div>
     </div>
   </container>
+  </FadeIn>
   </div>
   );
 };

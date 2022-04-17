@@ -6,6 +6,7 @@ import typing from "../../images/typing.jpg";
 import protractor2 from "../../images/protractor2.jpg";
 import whitenoise from "../../images/whitenoise.jpg";
 import { useForm, ValidationError } from "@formspree/react";
+import FadeIn from "react-fade-in/lib/FadeIn";
 
 const paperStyle2 = {
   marginBottom: "15px",
@@ -28,12 +29,14 @@ const fieldStyle2 = {
 };
 
 const Contact = () => {
+
   const [state, handleSubmit] = useForm("xknyqvwy");
   if (state.succeeded) {
     return <p>Thanks for reaching out!</p>;
   }
 
   return (
+    <div><FadeIn>
     <div className="col contact-page">
       <form onSubmit={handleSubmit}>
         <div id="header-section">
@@ -94,6 +97,7 @@ const Contact = () => {
         </div>
       </form>
     </div>
+    </FadeIn></div>
   );
 };
 export default Contact;

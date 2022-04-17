@@ -2,10 +2,12 @@ import React from "react";
 import bigdata from "../../images/bigdata.jpg";
 import "./Home.css";
 import { Button } from "@material-ui/core";
+import FadeIn from 'react-fade-in'
 
 const Home = () => {
   return (
     <div>
+      <FadeIn>
       <div className="white-section">
         <container className="content-section">
           <img src={bigdata}></img>
@@ -80,6 +82,7 @@ const Home = () => {
         </div>
         {/* <h6>All Rights Reserved, Moonbeam Trading Company 2022</h6> */}
       </div>
+      </FadeIn>
     </div>
   );
 };

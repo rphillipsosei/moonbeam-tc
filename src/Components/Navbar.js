@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { SidebarData } from "./SidebarData.js";
 import "./Navbar.css"
 import { IconContext } from "react-icons";
+import FadeIn from "react-fade-in/lib/FadeIn";
 
 export default function Navbar() {
     const [sidebar, setSidebar] = useState(false);
@@ -13,6 +14,7 @@ export default function Navbar() {
   
     return (
       <>
+      <div><FadeIn>
         <IconContext.Provider value={{ color: '#2596be' }}>
           <div className='navbar'>
               <Link to="/">
@@ -49,6 +51,7 @@ export default function Navbar() {
         </ul>
     </nav>
     </IconContext.Provider>
+    </FadeIn></div>
     </>
   );
 }

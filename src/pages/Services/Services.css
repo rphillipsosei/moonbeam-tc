@@ -4,7 +4,7 @@
     display: grid;
     vertical-align: text-top;
     align-items: center;
-    grid-template-rows: 1fr 1.33fr; 
+    grid-template-rows: 1fr 1.45fr; 
 }
 
 /* Section */
@@ -13,6 +13,7 @@
     margin: 0px;
     display: flex;
   background-color: white;
+ 
     /* justify-content: center; */
     /* padding: 0px; */
   }
@@ -114,7 +115,16 @@
 }
   
 .hover-button {
-    
+    margin-right: 6em;
+}
+
+.popup-message {
+    width: 80%;
+    display: grid;
+    justify-content: center;
+    text-align: justify;
+    font-family: "Comfortaa";
+    font-size: 2em;
 }
 /* .conditional-render {
     height: 18vh;

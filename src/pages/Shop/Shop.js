@@ -9,10 +9,12 @@ import shopifylogo from "../../images/shopify-logo.png";
 import auctionlogo from "../../images/auction-logo.png";
 import { Link } from "react-router-dom";
 import "./Shop.css";
+import FadeIn from "react-fade-in/lib/FadeIn";
 
 const Shop = () => {
   return (
-    <div>
+    
+    <div><FadeIn>
       <div className="shop-title-section">
         <h1 align="center" className="title">
           SHOP
@@ -74,6 +76,7 @@ const Shop = () => {
           </div>
         </div>
       </section>
+      </FadeIn>
     </div>
   );
 };

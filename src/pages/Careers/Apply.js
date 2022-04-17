@@ -5,7 +5,7 @@ import { Paper } from "@mui/material";
 import { Button } from "@mui/material";
 import { FormGroup } from "@mui/material";
 import TextField from '@mui/material/TextField'
-
+import FadeIn from "react-fade-in/lib/FadeIn";
 
 const backgroundStyle = {
   backgroundImage: `url(${whitenoise})`,
@@ -27,7 +27,7 @@ const paperStyle = {
 
 const topFont = {
   marginTop: "7px",
-  fontSize: "70px",
+  fontSize: "50px",
   color: "#000000",
 };
 
@@ -48,6 +48,11 @@ const buttonStyle = {
 const shiftQuestions = {
     marginLeft: "90px"
 }
+
+const backButton = {
+  backgroundColor: "#1c6ea4",
+  marginTop: "2em"
+}
 export default function Apply() {
   const [state, handleSubmit] = useForm("xknyqzly");
   window.onbeforeunload = () => {
@@ -60,6 +65,9 @@ export default function Apply() {
     ;
   }
   return (
+
+    <div><FadeIn>
+       <a href="/careers"><button style={backButton}>BACK TO CAREERS</button></a>
     <div style={backgroundStyle}>
       <h1 style={topFont} align="center">
         SUBMIT AN APPLICATION
@@ -73,7 +81,7 @@ export default function Apply() {
     
       </h6>
       <br></br>
- <h6 align="center">SEE OUR CURRENT OPENINGS:<br></br>
+ <h6 align="center"><b>SEE OUR CURRENT OPENINGS:</b><br></br>
         <a
         href="https://uploads.documents.cimpress.io/v1/uploads/1ef18f45-35c6-4a0d-a04f-f9d84fd3b2a3~110/original?tenant=vbu-digital"
         ><br></br>Data Scientist - Job ID MTC2101DS</a></h6><br></br>
@@ -334,6 +342,7 @@ export default function Apply() {
         </form>
       </Paper>
     </div>
+    </FadeIn></div>
   );
 }
 

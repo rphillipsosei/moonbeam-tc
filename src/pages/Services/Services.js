@@ -6,6 +6,7 @@ import programming from "../../images/web-developer.jpg";
 import { useState } from "react";
 import EcommerceCard from "./EcommerceCard.js";
 import Modal from "../../Components/Modal.js";
+import FadeIn from "react-fade-in/lib/FadeIn";
 
 export default function Services() {
   const [showShipping, setShowShipping] = useState(false);
@@ -14,6 +15,7 @@ export default function Services() {
   const [showTech, setShowTech] = useState(false);
 
   return (
+    <div><FadeIn>
     <div className="services-page">
       <div className="services-title">
         <h1 align="center" className="title">
@@ -22,7 +24,7 @@ export default function Services() {
         <h6 align="center">
           <i>
             We are a team of experts in numerous trades of business, ready to
-            consult in your business endeavors
+            reach new frontiers.
           </i>
         </h6>
       </div>
@@ -46,10 +48,8 @@ export default function Services() {
           <div>
             <p className="popup-message" align="center">
               <h4>
-                Our goal is to offer our customers a positive online shopping
-                experience. Our marketing team works with artisans, designers
-                and technologists to create an experience that enables global
-                shopping, borderless transactions, and blockchain purchasing."
+                
+                We have a goal of offering our customers positive online shopping experiences. Our sales and digital marketing team working with our partners in ecommerce and drop shipping, allow us to enhance your shopping experience while growing our international ecommerce expansion. We provide increased value and savings to all of our customers.
               </h4>
             </p>
           </div>
@@ -86,7 +86,7 @@ export default function Services() {
         )}
       </div>
       <div class="section">
-        <button
+        <a
           className="hover-button"
           id="ecommerce-button"
           onClick={() => {
@@ -103,9 +103,9 @@ export default function Services() {
               <div class="image__title">eCommerce</div>
             </div>
           </div>
-        </button>
+        </a>
 
-        <button
+        <a
           className="hover-button"
           id="tech-button"
           onClick={() => {
@@ -122,9 +122,9 @@ export default function Services() {
               <div class="image__title">Technology</div>
             </div>
           </div>
-        </button>
+        </a>
 
-        <button
+        <a
           className="hover-button"
           id="agrifoods-button"
           onClick={() => {
@@ -141,8 +141,8 @@ export default function Services() {
               <div class="image__title">Agri-foods</div>
             </div>
           </div>
-        </button>
-        <button
+        </a>
+        <a
           className="hover-button"
           id="shipping-button"
           onClick={() => {
@@ -159,8 +159,9 @@ export default function Services() {
               <div class="image__title">Imports/Exports</div>
             </div>
           </div>
-        </button>
+        </a>
       </div>
     </div>
+    </FadeIn></div>
   );
 }
