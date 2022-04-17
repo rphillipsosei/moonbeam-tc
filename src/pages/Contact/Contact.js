@@ -47,8 +47,8 @@ const Contact = () => {
             <i>Receive a response within 48 business hours.</i>
           </h6>
         </div>
-        <div className="row" id="form-items">
-          <section class="layout">
+        <div className="column" id="form-items" align="center">
+         <br></br>
             <div class="">
               <h5>Name:</h5>
             </div>
@@ -63,6 +63,7 @@ const Contact = () => {
                 className="input"
               ></input>
             </div>
+            <br></br>
             <div class="">
               <h5>Email:</h5>
             </div>
@@ -77,6 +78,7 @@ const Contact = () => {
                 type="email"
               ></input>
             </div>
+            <br></br>
             <div class="">
               <h5>Message:</h5>
             </div>
@@ -91,11 +93,12 @@ const Contact = () => {
                 rows={3}
               ></textarea>
             </div>
-            <button>SUBMIT</button>
-          </section>
-          <div className="col form-container"></div>
+            <button className="contact-btn">SUBMIT</button>
+          
+          
         </div>
       </form>
+      <div className="placeholder"></div>
     </div>
     </FadeIn></div>
   );

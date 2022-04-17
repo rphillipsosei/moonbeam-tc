@@ -96,10 +96,8 @@ export default function Apply() {
             <br></br>
            
             <h6 align="center">
-            Please answer all required questions. You can provide as little or as much detail<br></br> as you would like for the open-ended questions.
-            <br></br>
-            <br></br>
-            <i>Click <u>here</u> for an accessible PDF version of this form.</i>
+            Please answer all required questions at the minimum (marked with a star). <br></br>You can provide as little or as much detail as you would like for the open-ended questions.
+            
             </h6>
           <div style={shiftQuestions}>
           <div style={topSpacing}>

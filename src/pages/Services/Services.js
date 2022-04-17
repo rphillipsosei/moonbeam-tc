@@ -49,7 +49,7 @@ export default function Services() {
             <p className="popup-message" align="center">
               <h4>
                 
-                We have a goal of offering our customers positive online shopping experiences. Our sales and digital marketing team working with our partners in ecommerce and drop shipping, allow us to enhance your shopping experience while growing our international ecommerce expansion. We provide increased value and savings to all of our customers.
+                We have a goal of offering our customers positive online shopping experiences. Our sales and digital marketing team, working with our partners in ecommerce and drop shipping, allows us to enhance your shopping experience while growing our international ecommerce expansion. We provide increased value and savings to all of our customers.
               </h4>
             </p>
           </div>
