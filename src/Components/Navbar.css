@@ -23,6 +23,7 @@
 }
 
 .nav-menu {
+  z-index:9999;
   background-color: #a9daeb;
   width: 250px;
   height: 100vh;

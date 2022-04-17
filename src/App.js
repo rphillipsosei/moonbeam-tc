@@ -14,7 +14,8 @@ import Navbar from './Components/Navbar.js'
 import Careers from './pages/Careers/Careers'
 import Shop from './pages/Shop/Shop'
 import About from './pages/About/About';
-import Apply from './pages/Careers/Apply';
+import Apply from './pages/Careers/Apply.js';
+import Footer from "./Components/Footer.js"
 
 const App = () => {
   return (
@@ -25,11 +26,12 @@ const App = () => {
           <Route path='/' exact component={Home} />
           <Route path='/services' component={Services} />
           <Route path='/shop' component={Shop} />
+          <Route exact path='/careers/apply' component={Apply} />
           <Route path='/careers' component={Careers} />
           <Route path='/about' component={About} />
           <Route path='/contact' component={Contact} />
-          <Route path='/careers/apply' component={Apply} />
         </Switch>
+        <Footer/>
       </Router>
     </>
 

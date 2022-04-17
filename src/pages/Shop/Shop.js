@@ -7,75 +7,84 @@ import { Paper } from "@mui/material";
 import whitenoise from "../../images/whitenoise.jpg";
 import shopifylogo from "../../images/shopify-logo.png";
 import auctionlogo from "../../images/auction-logo.png";
+import { Link } from "react-router-dom";
 import "./Shop.css";
 
 const Shop = () => {
   return (
-    // <div column>
-    //   <div className="row" id="white-section">
-    //     <div className="title-section">
-    //       <h1>SHOP</h1>
-          
-    //     </div>
-       
-        // <container className="shop-section">
-        //   <div id="shop-section">
-        //     <table className="table-styles">
-        //       <tbody>
-        //         <h3 align="center">Visit our online store and auction</h3>
+    <div>
+      <div className="shop-title-section">
+        <h1 align="center" className="title">
+          SHOP
+        </h1>
+        <h6 align="center">
+          <i>
+            Browse a collection of fair trade, sustainable items from our
+            partners.
+          </i>
+        </h6>
+        <br></br>
+        <br></br>
+      </div>
+      <section className="wrapper-grid-shop">
+        <div className="pic-card">
+          <img id="img-shopping" src={shopping}></img>
+        </div>
 
-        //         <br></br>
-        //         <tr>
-        //           <td className="logo-cell">
-        //             <img src={shopifylogo}></img>
-        //           </td>
-        //           <td>
-        //             <h5 className="store-type">Shopify</h5>
-        //             <h6 className="description">
-        //               Discover a wide variety of products
-        //             </h6>
-        //           </td>
-        //           <button id="btn">SHOP NOW</button>
-        //         </tr>
-        //         <br></br>
-        //         <tr>
-        //           <td className="logo-cell">
-        //             <img src={auctionlogo}></img>
-        //           </td>
-        //           <td>
-        //             <h5 className="store-type">Online Auction (COMING SOON)</h5>
-        //             <h6 className="description">
-        //               Equipment, Surplus Inventory, and Estate Auctions.
-        //             </h6>
-        //           </td>
-        //           <td>
-        //             <button id="btn-disabled" disabled>
-        //               SHOP NOW
-        //             </button>
-        //           </td>
-        //         </tr>
-        //       </tbody>
-        //     </table>
-        //   </div>
-        // </container>
-    //   </div>
-    // </div>
-    <div >
-    <h1 align="center" className="title">WHO WE ARE</h1>
-    <h6 align="center"><i>Our story. Our values. Our successes.</i></h6>
-    <br></br>
-    <br></br>
+        <div className="text-card2">
+          <div className="text-card2-heading">
+            <h3>Visit our online store and auction</h3>
+          </div>
+          <br></br>
+          <div className="mini-card">
+            <img className="mini-card-image" src={shopifylogo} />
 
-    <section className="wrapper-grid">
-        <div className="pic-card"><img id="img-shopping" src={shopping}></img></div>
-        <div className="text-card">
-              <container className="shop-section">
-          <div id="shop-section">
-            <table className="table-styles">
+            <div className="mini-card-text">
+              <p className="mini-card-text-heading">
+                Shopify
+                <h6 className="mini-card-text-desc">
+                  <i>Discover a wide variety of products</i>
+                </h6>
+              </p>
+              <div className="minicard-text-button">
+              <a href="https://moonbeam-trading-company.myshopify.com/">
+                <button className="shopify-btn">SHOP NOW</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <br></br>
+          <br></br>
+          <div className="mini-card">
+            <img className="mini-card-image" src={auctionlogo} />
+
+            <div className="mini-card-text">
+              <p className="mini-card-text-heading">
+                Online Auction (COMING SOON)
+                <h6 className="mini-card-text-desc">
+                  <i>Equipment, Surplus Inventory, and Estate Auctions.</i>
+                </h6>
+              </p>
+              <div className="minicard-text-button">
+                <button className="auction-btn" disabled>
+                  SHOP NOW
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+export default Shop;
+{
+  /* <table className="table-styles">
               <tbody>
-                <h3 align="center">Visit our online store and auction</h3>
-
-                <br></br>
+                
+              <h3 >Visit our online store and auction</h3>
+                
+              
                 <tr>
                   <td className="logo-cell">
                     <img src={shopifylogo}></img>
@@ -83,12 +92,16 @@ const Shop = () => {
                   <td>
                     <h5 className="store-type">Shopify</h5>
                     <h6 className="description">
-                      Discover a wide variety of products
+                    Discover a wide variety of products on our online store.
                     </h6>
                   </td>
-                  <button id="btn">SHOP NOW</button>
+                  <td>
+                    <button id="btn" >
+                      SHOP NOW
+                    </button>
+                  </td>
                 </tr>
-                <br></br>
+
                 <tr>
                   <td className="logo-cell">
                     <img src={auctionlogo}></img>
@@ -106,13 +119,5 @@ const Shop = () => {
                   </td>
                 </tr>
               </tbody>
-            </table>
-          </div>
-        </container>
-          </div>
-          
-  </section>
-  </div>
-  );
-};
-export default Shop;
+            </table> */
+}

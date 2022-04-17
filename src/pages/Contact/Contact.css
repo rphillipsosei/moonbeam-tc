@@ -1,29 +1,77 @@
 .form-card {
-    background-color:aquamarine;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #ffff;
-    font-size: 3rem;
-    color: #fff;
-    /* box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem; */
-    height: 50%;
-    width: 50%;
-    /* border-radius: 4px; */
-    /* transition: all 500ms; */
-    overflow: hidden;
-    border: 1px solid black;
-   
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ffff;
+  font-size: 3rem;
+  color: #fff;
+  /* box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem; */
+  height: 50%;
+  width: 50%;
+  /* border-radius: 4px; */
+  /* transition: all 500ms; */
+  overflow: hidden;
+  border: 1px solid black;
 
-  .wrapper-grid {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, 40rem);
-    grid-template-rows: 2fr 2fr 2fr; 
-    justify-content: center;
-  }
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact-page {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  background-color:aqua;
+  /* grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+  gap: 0px; */
+}
+
+#header-section {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-column-end: 2;
+  background-color:aqua;
+}
+
+
+#form-items {
+ 
+  grid-row-start: 2;
+  grid-column-start: 1;
+
+  grid-row-end: 3;
+  grid-column-end: 2;
+}
+
+.wrapper-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, 40rem);
+  grid-template-rows: 2fr 2fr 2fr;
+  justify-content: center;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-input {
+  padding: 5px;
+  font-size: 16px;
+  border-width: 2px;
+  border-color: #cccccc;
+  background-color: #ffffff;
+  color: #000000;
+  border-style: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px rgba(66, 66, 66, 0.75);
+  text-shadow: 0px 0px 1px rgba(66, 66, 66, 0.75);
+  width: 35rem;
+}

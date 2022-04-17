@@ -48,7 +48,7 @@ const buttonStyle = {
 const shiftQuestions = {
     marginLeft: "90px"
 }
-function Apply() {
+export default function Apply() {
   const [state, handleSubmit] = useForm("xknyqzly");
   window.onbeforeunload = () => {
     for (const form of document.getElementsByTagName("form")) {
@@ -56,7 +56,8 @@ function Apply() {
     }
   };
   if (state.succeeded) {
-    return <p>Submitted sucessfully!</p>;
+    return <p>Submitted sucessfully!<h6>Return to <a href="/">home page.</a></h6></p>
+    ;
   }
   return (
     <div style={backgroundStyle}>
@@ -68,7 +69,15 @@ function Apply() {
         <i>Think you might not qualify for any of the available positions? At Moonbeam, we
         hire from a holistic perspective and see barriers to employment as
         potential strengths!</i>
+
+    
       </h6>
+      <br></br>
+ <h6 align="center">SEE OUR CURRENT OPENINGS:<br></br>
+        <a
+        href="https://uploads.documents.cimpress.io/v1/uploads/1ef18f45-35c6-4a0d-a04f-f9d84fd3b2a3~110/original?tenant=vbu-digital"
+        ><br></br>Data Scientist - Job ID MTC2101DS</a></h6><br></br>
+      
       <Paper style={paperStyle}>
         <form
           onSubmit={handleSubmit}
@@ -77,6 +86,7 @@ function Apply() {
         >
             <br></br>
             <br></br>
+           
             <h6 align="center">
             Please answer all required questions. You can provide as little or as much detail<br></br> as you would like for the open-ended questions.
             <br></br>
@@ -95,7 +105,7 @@ function Apply() {
               name="FirstName"
               label="First Name:"
               style={inputStyle}
-              
+              required
             />
           </div>
           <br></br>
@@ -109,6 +119,7 @@ function Apply() {
               name="LastName"
               label="Last Name:"
               style={inputStyle}
+              required
             />
           </div>
           <br></br>
@@ -122,7 +133,7 @@ function Apply() {
               name="PreferredName"
               label="Preferred name (if different from above):"
               style={inputStyle}
-              required
+              
             />
           </div>
           <br></br>
@@ -267,7 +278,7 @@ function Apply() {
               placeholder=""
               type="text"
               name="PeriodsOfLifeTransitions"
-              label="Have you faced periods of life-transitions such as homelessness,
+              label="Have you faced any difficult life-transitions such as homelessness,
             drug addiction and/or mental health?"
               style={inputStyle}
             />
@@ -297,7 +308,7 @@ function Apply() {
               name="SuitableForThisRole"
               label="Which of your past experiences would complement this role?"
               style={inputStyle}
-              required
+              
             />
           </div>
           <br></br>
@@ -326,4 +337,4 @@ function Apply() {
   );
 }
 
-export default Apply;
+

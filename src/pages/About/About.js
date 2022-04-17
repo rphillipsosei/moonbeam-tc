@@ -35,6 +35,7 @@ const About = () => {
           <p>
            <h6 >
             <br></br>
+            <br></br>
             <h3 >OUR BACKGROUND</h3> <br></br>
               2018 to Q1 2020 brought early success and a foundation for growth; <br></br><br></br>
               Moonbeam Trading Company was founded in 2018 by former tech sector
@@ -93,7 +94,7 @@ const About = () => {
         <div className="text-card">
         <p>
             <h3 >
-              <b align="center">LAND ACKNOWLEDGEMENTS</b>
+              <b align="center"><i>LAND ACKNOWLEDGEMENTS</i></b>
             </h3>
             <br></br>
             <i><h6  align="center">

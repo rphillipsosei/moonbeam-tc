@@ -21,7 +21,20 @@ const Careers = () => {
     return <p>Submitted sucessfully!</p>;
   }
   return (
-    <container className="content-section-careers">
+    <div>
+    <div className="careers-title-section">
+        <h1 align="center" className="title">
+          CAREERS
+        </h1>
+        <h6 align="center">
+          <i>
+          Join our diverse, multi-faceted team.
+          </i>
+        </h6>
+       
+      </div>
+      <container className="content-section-careers">
+      
     <img src={brickwall}></img>
     <div className="intro-text">
       <p>
@@ -42,11 +55,12 @@ const Careers = () => {
           </h6>
       </p>
       <div className="btn-section">
-        
-       <button id="apply-btn">APPLY</button>
+        <a href="careers/apply">
+       <button id="apply-btn">APPLY</button></a>
         </div>
     </div>
   </container>
+  </div>
   );
 };
 export default Careers;

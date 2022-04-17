@@ -1,0 +1,13 @@
+.footer-section {
+  height: 2em;
+  width: 100vw;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-section h6 {
+  color: #ffff;
+  font-family: "Comfortaa";
+}
