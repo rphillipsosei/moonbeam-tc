@@ -68,7 +68,7 @@ export default function Apply() {
 
     <div><FadeIn>
        <a href="/careers"><button style={backButton}>BACK TO CAREERS</button></a>
-    <div style={backgroundStyle}>
+    <div >
       <h1 style={topFont} align="center">
         SUBMIT AN APPLICATION
       </h1>
@@ -340,6 +340,7 @@ export default function Apply() {
         </form>
       </Paper>
     </div>
+    <a href="/careers"><button style={backButton}>BACK TO CAREERS</button></a>
     </FadeIn></div>
   );
 }
