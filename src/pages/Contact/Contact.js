@@ -1,108 +1,162 @@
-import React from "react";
-import { Paper } from "@mui/material";
-import { TextField } from "@mui/material";
-import { Button } from "@mui/material";
-import typing from "../../images/typing.jpg";
-import protractor2 from "../../images/protractor2.jpg";
-import whitenoise from "../../images/whitenoise.jpg";
-import { useForm, ValidationError } from "@formspree/react";
-import FadeIn from "react-fade-in/lib/FadeIn";
+import React, { useState } from 'react';
+import classes from './contact.module.css'
+import { Button, Box, Container, Heading, Text } from 'theme-ui';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck, faSpinner } from "@fortawesome/free-solid-svg-icons";
 
-const paperStyle2 = {
-  marginBottom: "15px",
-  height: "43vh",
-  width: "43vw",
-  backgroundColor: "rgba(255,255,255,0.1)",
-  borderRadius: "147px 31px 147px 50px / 116px 15px 116px 25px",
-  border: "5px outset #1c6ea4",
-  marginTop: "105px",
-  marginLeft: "555px",
-  display: "flex",
-};
-
-const fieldStyle2 = {
-  marginTop: "10px",
-  display: "flex",
-  justifyContent: "center",
-  backgroundColor: "white",
-  width: "640px",
-};
 
 const Contact = () => {
+  const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+  const [message, setMessage] = useState('');
+  const [sent, setSent] = useState(false)
+  const [loading, setLoading] = useState(false)
 
-  const [state, handleSubmit] = useForm("xknyqvwy");
-  if (state.succeeded) {
-    return <p>Thanks for reaching out!</p>;
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true)
+
+    console.log(name, message, email)
+
+    fetch("https://formsubmit.co/ajax/zeinabtmohamed@gmail.com", {
+      method: "POST",
+      headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+          name,
+          email,
+          message
+      })
+  })
+      .then(response => response.json())
+      .then(data => {
+        setEmail('')
+        setMessage('')
+        setName('')
+        setLoading(false)
+        setSent(true)
+        setTimeout(() => {
+          setSent(false)
+        }, 15000)
+        console.log(data)
+      })
+      .catch(error => console.log(error));
+
   }
-
   return (
-    <main><div><FadeIn>
-      
-    <div className="col contact-page">
-      <form onSubmit={handleSubmit}>
-        <div id="header-section">
-          <h1 align="center" className="title">
-            CONTACT US
-          </h1>
-          <h6 align="center">
-            <i>Receive a response within 48 business hours.</i>
-          </h6>
-        </div>
-        <div className="column" id="form-items" align="center">
-         <br></br>
-            <div class="">
-              <h5>Name:</h5>
-            </div>
-            <div class="">
-              <input
-                name="name"
-                align="center"
-                id="outlined-basic"
-                label="Name"
-                variant="outlined"
-                required
-                className="contact_input"
-              ></input>
-            </div>
-            <br></br>
-            <div class="">
-              <h5>Email:</h5>
-            </div>
-            <div class="">
-              <input
-                name="email"
-                id="outlined-basic"
-                label="Email"
-                variant="outlined"
-                required
-                className="contact_input"
-                type="email"
-              ></input>
-            </div>
-            <br></br>
-            <div class="">
-              <h5>Message:</h5>
-            </div>
-            <div class="">
-              <textarea
-                align="center"
-                name="message"
-                id="outlined-basic"
-                label="Message"
-                variant="outlined"
-                required
-                rows={3}
-              ></textarea>
-            </div>
-            <button className="contact-btn">SUBMIT</button>
-          
-          
-        </div>
-      </form>
-      <div className="placeholder"></div>
-    </div>
-    
-    </FadeIn></div></main>
+    <Box as="section" sx={styles.subscribe} className={classes.wrapper} id='contact'>
+      <Container>
+        <Heading as="h3">Contact Us!</Heading>
+        <Text as="p" className={classes.white}>
+          Any questions or inquiries? Contact us to get more information!
+        </Text>
+        <Box as="form" sx={styles.form} className={classes.form} onSubmit={handleSubmit} action={'zeinabtmohamed@gmail.com'}>
+          <Box as="label" htmlFor="subscribeEmail" variant="styles.srOnly">
+            Send Us an Email
+          </Box>
+          <input
+            placeholder="Name"
+            type="text"
+            id="name"
+            sx={styles.input}
+            value={name}
+            onChange={e => setName(e.target.value)}
+          />
+          <input
+            placeholder="Email"
+            type="email"
+            id="email"
+            sx={styles.input}
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+          />  <textarea
+            placeholder="Please enter a message"
+            id="message"
+            sx={styles.input}
+            value={message}
+            onChange={e => setMessage(e.target.value)}
+          />
+          <Button type="submit" sx={styles.button}>
+            {!loading ? `Reach Out!` : <FontAwesomeIcon icon={faSpinner} className={classes.spinner} />}
+          </Button>
+         {sent && <div className={classes.sent}>Sent Successfully!<FontAwesomeIcon icon={faCheck} /></div>}
+        </Box>
+      </Container>
+    </Box>
   );
 };
+
 export default Contact;
+
+const styles = {
+  subscribe: {
+    py: ['80px', null, null, null, '80px', '100px', '140px'],
+    backgroundColor: '#020718',
+    h3: {
+      textAlign: 'center',
+      fontSize: ['23px', null, null, null, null, '30px', '36px'],
+      lineHeight: [1.5, null, null, '1'],
+      color: '#fff',
+      letterSpacing: ['-0.5px'],
+      mb: ['0px', null, null, '15px'],
+      width: ['70%', null, null, 'auto'],
+      mx: ['auto', null, null, '0'],
+    },
+    p: {
+      fontSize: ['16px'],
+      opacity: '.6',
+      letterSpacing: ['-0.5px'],
+      textAlign: 'center',
+      width: ['70%', null, null, 'auto'],
+      mx: ['auto', null, null, '0'],
+      mt: ['10px', null, null, '0'],
+    },
+  },
+  form: {
+    mx: ['auto'],
+    display: ['flex'],
+    flexDirection: ['column'],
+    justifyContent: ['space-between'],
+    alignItems: ['center'],
+    flexWrap: ['wrap'],
+    mt: ['30px', null, null, null, ',60px'],
+    backgroundColor: 'white',
+    borderRadius: '8px'
+  },
+  input: {
+    width: ['100%'],
+    maxWidth: ['80%', '80%', '80%', '80%'],
+    borderRadius: '5px',
+    border: 'none',
+    backgroundColor: 'rgba(255,255,255, .08)',
+    outline: 'none',
+    color: 'rgba(255,255,255, .8)',
+    fontSize: '16px',
+    pl: ['0px', null, null, '30px'],
+    mt: ['8px', null, null, '8px'],
+    height: ['50px', null, null, '60px'],
+    mr: ['0px', null, null, '15px'],
+    textAlign: ['center', null, null, 'left'],
+  },
+  button: {
+    backgroundColor: '#0c79be',
+    borderRadius: '5px',
+    fontWeight: '500',
+    fontSize: ['18px'],
+    maxWidth: '80%',
+    color: '#020718',
+    letterSpacing: '-0.5px',
+    outline: 'none',
+    padding: ['0px 30.75px'],
+    minHeight: ['50px', null, null, '60px'],
+    width: ['100%', null, null, 'auto'],
+    mt: '24px',
+    mx: ['auto', null, null, '0'],
+    '&:hover': {
+      backgroundColor: '#86a28c',
+      opacity: '0.8',
+    },
+  },
+};
