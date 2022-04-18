@@ -36,7 +36,8 @@ const Contact = () => {
   }
 
   return (
-    <div><FadeIn>
+    <main><div><FadeIn>
+      
     <div className="col contact-page">
       <form onSubmit={handleSubmit}>
         <div id="header-section">
@@ -60,7 +61,7 @@ const Contact = () => {
                 label="Name"
                 variant="outlined"
                 required
-                className="input"
+                className="contact_input"
               ></input>
             </div>
             <br></br>
@@ -74,7 +75,7 @@ const Contact = () => {
                 label="Email"
                 variant="outlined"
                 required
-                className="input"
+                className="contact_input"
                 type="email"
               ></input>
             </div>
@@ -100,7 +101,8 @@ const Contact = () => {
       </form>
       <div className="placeholder"></div>
     </div>
-    </FadeIn></div>
+    
+    </FadeIn></div></main>
   );
 };
 export default Contact;

@@ -6,24 +6,25 @@ import { Button } from "@mui/material";
 import { FormGroup } from "@mui/material";
 import TextField from '@mui/material/TextField'
 import FadeIn from "react-fade-in/lib/FadeIn";
+import "./Apply.css"
 
-const backgroundStyle = {
-  backgroundImage: `url(${whitenoise})`,
-  backgroundSize: "cover",
-  minHeight: "230vh",
-  minWidth: "100vw",
-  backgroundPosition: "right",
-};
+// const backgroundStyle = {
+//   backgroundImage: `url(${whitenoise})`,
+//   backgroundSize: "cover",
+//   minHeight: "230vh",
+//   minWidth: "100vw",
+//   backgroundPosition: "right",
+// };
 
-const paperStyle = {
-  padding: "20px",
-  height: "215vh",
-  width: "55vw",
-  backgroundColor: "rgba(245,245,245,0.6)",
-  borderRadius: "80px",
-  marginTop: "50px",
-  marginLeft: "420px",
-};
+// const paperStyle = {
+//   padding: "20px",
+//   height: "215vh",
+//   width: "55vw",
+//   backgroundColor: "rgba(245,245,245,0.6)",
+//   borderRadius: "80px",
+//   marginTop: "50px",
+//   marginLeft: "420px",
+// };
 
 const topFont = {
   marginTop: "7px",
@@ -31,27 +32,28 @@ const topFont = {
   color: "#000000",
 };
 
-const topSpacing = {
-  marginTop: "40px",
-};
+// const topSpacing = {
+//   marginTop: "40px",
+// };
 
-const inputStyle = {
-  width: "800px",
+// const inputStyle = {
+//   width: "800px",
  
-  size: "small"
-};
+//   size: "small"
+// };
 
 const buttonStyle = {
   marginLeft: "450px",
 };
 
-const shiftQuestions = {
-    marginLeft: "90px"
-}
+// const shiftQuestions = {
+//     marginLeft: "90px"
+// }
 
 const backButton = {
   backgroundColor: "#1c6ea4",
-  marginTop: "2em"
+  marginTop: "2em",
+  color: "#ffff"
 }
 export default function Apply() {
   const [state, handleSubmit] = useForm("xknyqzly");
@@ -66,8 +68,11 @@ export default function Apply() {
   }
   return (
 
-    <div><FadeIn>
+    <FadeIn><main>
        <a href="/careers"><button style={backButton}>BACK TO CAREERS</button></a>
+       <br></br>
+       <br></br>
+       <br></br>
     <div >
       <h1 style={topFont} align="center">
         SUBMIT AN APPLICATION
@@ -86,7 +91,7 @@ export default function Apply() {
         href="https://uploads.documents.cimpress.io/v1/uploads/1ef18f45-35c6-4a0d-a04f-f9d84fd3b2a3~110/original?tenant=vbu-digital"
         ><br></br>Data Scientist - Job ID MTC2101DS</a></h6><br></br>
       
-      <Paper style={paperStyle}>
+      
         <form
           onSubmit={handleSubmit}
           action="https://formspree.io/f/xknyqzly"
@@ -99,236 +104,146 @@ export default function Apply() {
             Please answer all required questions at the minimum (marked with a star). <br></br>You can provide as little or as much detail as you would like for the open-ended questions.
             
             </h6>
-          <div style={shiftQuestions}>
-          <div style={topSpacing}>
-            {" "}
-            
-            <br></br>
-            <br></br>
-            <TextField
-              placeholder=""
-              type="text"
-              name="FirstName"
-              label="First Name:"
-              style={inputStyle}
-              required
-            />
-          </div>
-          <br></br>
-          <div>
-            {" "}
-            
-            <br></br>
-            <TextField 
-              placeholder=""
-              type="text"
-              name="LastName"
-              label="Last Name:"
-              style={inputStyle}
-              required
-            />
-          </div>
-          <br></br>
-          <div>
-            {" "}
-            
-            <br></br>
-            <TextField
-              placeholder=""
-              type="text"
-              name="PreferredName"
-              label="Preferred name (if different from above):"
-              style={inputStyle}
-              
-            />
-          </div>
-          <br></br>
-          <div>
-            {" "}
-           
-            <br></br>
-            <TextField
-              placeholder=""
-              type="text"
-              name="Pronouns"
-              label="Pronouns:"
-              style={inputStyle}
-            />
-          </div>
-          <br></br>
+        <form name="my-form" action="#" method="get">
+<div class="form-box">
+<label for="First Name">First Name:</label>
+<input  
+type="text"
+name="FirstName"
+label="First Name:"
+required />
+</div>
+<div class="form-box">
+<label for="Last Name">Last Name:</label>
+<input 
+ type="text"
+name="LastName"
+required
+/>
+</div>
 
-          <div>
-            {" "}
-            
-            <br></br>
-            <TextField
-              placeholder=""
-              type="text"
-              name="Email"
-              label="Email:"
-              style={inputStyle}
-              required
-            />
-          </div>
-          <br></br>
-          <div>
-            {" "}
-            
-            <br></br>
-            <TextField
-              placeholder=""
-              type="text"
-              name="PhoneNumber"
-              label="Phone number:"
-              style={inputStyle}
-             
-            />
-          </div>
-          <br></br>
-          <div>
-            {" "}
-            
-            <br></br>
-            <TextField
-              placeholder=""
-              type="text"
-              name="Address"
-              label="Address:"
-              style={inputStyle}
-            />
-          </div>
-          <br></br>
-          <div>
-            {" "}
-            
-            <br></br>
-            <TextField
-              placeholder=""
-              type="text"
-              name="PostalCode"
-              label="Postal code:"
-              style={inputStyle}
-            />
-          </div>
-          <br></br>
-          <div>
-            {" "}
-            
-            <br></br>
-            <TextField
-              placeholder=""
-              type="text"
-              name="HighestLevelOfEducation"
-              label="What is your highest level of education completed?"
-              style={inputStyle}
-            />
-          </div>
-          <br></br>
-          <div>
-            {" "}
-            
-            <br></br>
-            <TextField
-              placeholder=""
-              type="text"
-              name="FieldOfStudy"
-              label="Field of study:"
-              style={inputStyle}
-            />
-          </div>
-          <br></br>
-          <div>
-            {" "}
-           
-            <br></br>
-            <TextField
-              placeholder=""
-              type="text"
-              name="BarriersFacedCompletingEducation"
-              label="Have you faced any barriers to your education?"
-              style={inputStyle}
-            />
-          </div>
-          <br></br>
-          <div>
-            {" "}
-          
-            <br></br>
-            <TextField
-              placeholder=""
-              type="text"
-              name="BarriersFacedSeekingEmployment"
-              label="What are some barriers you have faced in seeking employment?"
-              style={inputStyle}
-            />
-          </div>
-          <br></br>
-          <div>
-            {" "}
-            
-            <br></br>
-            <TextField
-              placeholder=""
-              type="text"
-              name="IdentifyAsMemberOfVisibleMinority"
-              label="Do you identify as a member of a visible minority?"
-              style={inputStyle}
-            />
-          </div>
-          <br></br>
-          <div>
-            {" "}
-          
-            <br></br>
-            <TextField
-              placeholder=""
-              type="text"
-              name="PeriodsOfLifeTransitions"
-              label="Have you faced any difficult life-transitions such as homelessness,
-            drug addiction and/or mental health?"
-              style={inputStyle}
-            />
-          </div>
-          <br></br>
-          <div>
-            {" "}
-            
-            <br></br>
-            <TextField
-              placeholder=""
-              type="text"
-              name="PositionsApplyingFor"
-              label="Which position(s) are you applying for?"
-              style={inputStyle}
-              required
-            />
-          </div>
-          <br></br>
-          <div>
-            {" "}
-            
-            <br></br>
-            <TextField
-              placeholder=""
-              type="text"
-              name="SuitableForThisRole"
-              label="Which of your past experiences would complement this role?"
-              style={inputStyle}
-              
-            />
-          </div>
-          <br></br>
-          <label>
-            {" "}
-            Are you legally eligible to work in Canada?
-            <br></br>
-            <select name="work">
-              <option value="Yes">Yes</option>
-              <option value="No">No</option>
-            </select>
-          </label>
-          <br></br>
-          </div>
+<div class="form-box">
+<label for="Preferred Name">Preferred Name:</label>
+<input 
+type="text"
+name="PreferredName"
+/>
+</div>
+
+<div class="form-box">
+<label for="pronouns">Pronouns:</label>
+<input 
+ type="text"
+ name="Pronouns"
+/>
+</div>
+
+
+<div class="form-box">
+<label for="Email">Email:</label>
+<input 
+ type="email"
+ name="Email"
+required/>
+</div>
+
+
+<div class="form-box">
+<label for="Phone Number">Phone Number:</label>
+<input 
+type="tel" 
+pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="Phone number" 
+/>
+</div>
+
+<div class="form-box">
+<label for="pass">Address</label>
+<input 
+ type="text"
+ name="Address" />
+</div>
+
+<div class="form-box">
+<label for="pass">Postal Code:</label>
+<input 
+  type="text"
+  name="PostalCode"
+/>
+</div>
+
+<div class="form-box">
+<label for="pass">What is your highest level of education completed?</label>
+<input 
+type="text"
+name="HighestLevelOfEducation"
+/>
+</div>
+
+<div class="form-box">
+<label for="pass">Field of study:</label>
+<input 
+type="text"
+ame="FieldOfStudy"
+/>
+</div>
+
+<div class="form-box">
+<label for="pass">What are some barriers you faced to your education?</label>
+<input 
+type="text"
+name="BarriersFacedCompletingEducation"
+/>
+</div>
+<div class="form-box">
+<label for="pass">What are some barriers you have faced in seeking employment?</label>
+<input 
+type="text"
+name="BarriersFacedSeekingEmployment"
+/>
+</div>
+<div class="form-box">
+<label for="pass">Do you identify as a member of a visible minority group?</label>
+<input 
+type="text"
+name="IdentifyAsMemberOfVisibleMinority"
+required/>
+</div>
+<div class="form-box">
+<label for="pass">Have you faced any difficult life-transitions such as homelessness,
+drug addiction and/or mental health?</label>
+<input 
+type="text"
+name="PeriodsOfLifeTransitions"
+/>
+</div>
+<div class="form-box">
+<label for="pass">Which position(s) are you applying for?</label>
+<input 
+type="text"
+name="PositionsApplyingFor"
+/>
+</div>
+
+<div class="form-box">
+<label for="pass">Which of your past experiences would complement this role?</label>
+<input 
+type="text"
+name="SuitableForThisRole"/>
+</div>
+
+<div class="form-box">
+<label for="domain">Are you legally eligible to work in Canada?</label>
+<select  name="work">
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+    
+</select>
+</div>
+<div class="form-box">
+
+</div>
+</form>
+
           <Button
             style={buttonStyle}
             type="submit"
@@ -338,10 +253,13 @@ export default function Apply() {
             Submit
           </Button>
         </form>
-      </Paper>
+    
     </div>
-    <a href="/careers"><button style={backButton}>BACK TO CAREERS</button></a>
-    </FadeIn></div>
+   
+    </main></FadeIn>
+
+
+        
   );
 }
 

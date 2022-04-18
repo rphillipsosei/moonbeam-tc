@@ -41,9 +41,11 @@
 .form-container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  width: 100%
 }
 
-.contact-input {
+/* #outlined-basic {
   padding: 5px;
   font-size: 16px;
   border-width: 2px;
@@ -55,9 +57,21 @@
   box-shadow: 0px 0px 6px rgba(66, 66, 66, 0.75);
   text-shadow: 0px 0px 1px rgba(66, 66, 66, 0.75);
   width: 35rem;
-}
+} */
 
 
 .contact-btn {
   margin-bottom: 6em;
+}
+
+@media screen and (max-width: 500px) {
+.contact_input {
+  width: 100%
+}
+
+
+
+textarea {
+  width: 40%
+}
 }

@@ -5,6 +5,7 @@ import {
   Redirect,
   Switch
 } from 'react-router-dom';
+import "./App.css"
 
 import ProdsAndPartners from './pages/ProdsAndPartners/ProdsAndPartners';
 import Contact from './pages/Contact/Contact';
@@ -31,7 +32,7 @@ const App = () => {
           <Route path='/about' component={About} />
           <Route path='/contact' component={Contact} />
         </Switch>
-        {/* <Footer/> */}
+        <Footer/>
       </Router>
     </>
 

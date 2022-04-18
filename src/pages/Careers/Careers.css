@@ -23,12 +23,14 @@
   font-family: "Comfortaa";
   font-size: 2em;
   padding-left: 1em;
+  
 }
 
 .intro-text p h6 {
   font-family: "Manrope";
   font-size: 1em;
   padding-left: 2em;
+  text-align: left;
 }
 
 
@@ -66,10 +68,48 @@
 .careers-img {
   margin-left: 10em
 }
-
-
-.careers-title-section {
-  
+.about-description {
+  font-family: "Comfortaa";
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
 
+
+.wrap-text-careers {
+  padding: 0.7rem;
+}
+ .careers_container {
+   max-width: 1024px;
+   width: 100%;
+   margin: 1rem auto;
+ }
+ .career-img {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  border-radius: 147px 31px 147px 50px / 116px 15px 116px 25px;
+  border: 5px outset #1c6ea4;
+}
+
+.careers_text {
+text-align: center;
+margin-top: 2rem;
+}
+
+@media screen and (max-width:500px) {
+
+  .career-img {
+   width: 100%;
+ }
+
+  /* content-section-careers img {
+    height: 11em;
+    width: 22em;
+    margin-left: 0em;
+    margin-top: 4em;
+  } */
+
+  
+}
 

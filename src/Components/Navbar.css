@@ -1,15 +1,15 @@
 .navbar {
   background: #ffff;
-  height: 100px;
+ justify-content: space-between;
   display: flex;
-  align-content: flex-end;
+
   align-items: center;
-  padding-top: 4em;
+
 }
 
 .nav-logo {
     display: flex;
-    justify-content: flex-start;
+ 
     width: 6em;
     height: 6em;
     margin-top: 5px

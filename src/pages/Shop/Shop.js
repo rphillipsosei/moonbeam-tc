@@ -13,9 +13,10 @@ import FadeIn from "react-fade-in/lib/FadeIn";
 
 const Shop = () => {
   return (
-    
-    <div><FadeIn>
-      <div className="shop-title-section">
+ 
+    <FadeIn><main>
+    <div className="shop_container">
+      <div>
         <h1 align="center" className="title">
           SHOP
         </h1>
@@ -29,55 +30,44 @@ const Shop = () => {
         <br></br>
       </div>
       <section className="wrapper-grid-shop">
-        <div className="pic-card">
+        <div className="shop_pic_card">
           <img id="img-shopping" src={shopping}></img>
         </div>
-
-        <div className="text-card2">
-          <div className="text-card2-heading">
+        {/* 2 DIVS FLEX OR COLUMN*/}
+        <div className="wrapper-shop-text">
+          <div className="wrapper_shop_text_inner">
             <h3>Visit our online store and auction</h3>
-          </div>
-          <br></br>
-          <div className="mini-card">
-            <img className="mini-card-image" src={shopifylogo} />
-
-            <div className="mini-card-text">
-              <p className="mini-card-text-heading">
-                Shopify
-                <h6 className="mini-card-text-desc">
+            <div className="mini_card">
+              {/* IMAGE - TEXT */}
+              <img src={shopifylogo}></img>
+              <div className="mini_card_inner_text">
+                {/* TEXT
+              SUBTEXT
+              BUTTON */}
+                <h3>Shopify</h3>
+                <h6>
                   <i>Discover a wide variety of products</i>
                 </h6>
-              </p>
-              <div className="minicard-text-button">
-              <a href="https://moonbeam-trading-company.myshopify.com/">
                 <button className="shopify-btn">SHOP NOW</button>
-                </a>
               </div>
             </div>
-          </div>
-          <br></br>
-          <br></br>
-          <div className="mini-card">
-            <img className="mini-card-image" src={auctionlogo} />
-
-            <div className="mini-card-text">
-              <p className="mini-card-text-heading" id="auction-section">
-                Online Auction (COMING SOON)
-                <h6 className="mini-card-text-desc">
-                  <i>Equipment, Surplus Inventory, and Estate Auctions.</i>
-                </h6>
-              </p>
-              <div className="minicard-text-button">
-                <button className="auction-btn" disabled>
-                  SHOP NOW
-                </button>
+            <div className="mini_card">
+              {/* IMAGE - TEXT */}
+              <img src={auctionlogo}></img>
+              <div className="mini_card_inner_text">
+              <h3>Online auction (COMING SOON)</h3>
+              <h6>
+                <i>Equipment, Surplus Inventory, and Estate Auctions.</i>
+              </h6>
+              <button disabled className="auction-btn">SHOP NOW</button>
               </div>
+              
             </div>
           </div>
         </div>
       </section>
-      </FadeIn>
     </div>
+    </main></FadeIn>
   );
 };
 export default Shop;
