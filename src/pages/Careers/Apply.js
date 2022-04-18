@@ -92,6 +92,14 @@ export default function Apply() {
         ><br></br>Data Scientist - Job ID MTC2101DS</a></h6><br></br>
       
       
+      <br></br>
+ <h6 align="center"><b>Click here to view a PDF version of the application</b><br></br>
+        <a
+        href="https://docdro.id/psBZ148"
+        ><br></br>PDF</a></h6><br></br>
+
+
+
         <form
           onSubmit={handleSubmit}
           action="https://formspree.io/f/xknyqzly"
