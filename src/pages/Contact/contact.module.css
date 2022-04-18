@@ -1,12 +1,12 @@
 .wrapper {
-  font-family: sans-serif;
+  font-family: "Comfortaa";
 }
 
 .form {
-  width: 60%;
-  max-width: 500px;
-  font-family: sans-serif;
-  padding: 24px 0 32px 0;
+  max-width: 555px;
+  width: 85%;
+  font-family: "Comfortaa";
+  padding: 56px 0 32px 0;
   opacity: 0.8;
   transition: opacity 500ms ease;
 }
@@ -25,18 +25,18 @@
   border: 1px solid black;
   border-radius: 4px;
   margin: 4px 0;
-  padding: 8px;
+  padding: 12px;
   outline: none;
   color: black;
   transition: all 400ms ease-in-out;
-  width: 95%;
+  width: 80%;
 }
 
 .form > textarea {
-  width: 95%;
+  width: 80%;
   margin-top: 16px;
-  min-height: 40px;
-  height: 30%;
+  min-height: 80px;
+  height: 80%;
   outline: none;
   resize: none;
   padding: 8px 12px;
@@ -60,12 +60,12 @@
   transition: all 300ms ease;
   cursor: pointer;
   box-shadow: -1px 2px 8px 2px rgba(0, 0, 0, 0.2);
-  width: 60%;
 }
 
 .form > button:hover {
   transform: translateY(-2px);
   box-shadow: -1px 2px 11px 2px rgba(0, 0, 0, 0.3);
+  /* opacity: 1; */
 }
 
 .form > button:active {
@@ -89,11 +89,6 @@
   padding: 2px;
 }
 
-.form > p {
-  color: black;
-  opacity: 1 !important;
-  margin-bottom: 8px;
-}
 .spinner {
   animation: loading 600ms infinite linear;
   transition: all 300ms ease;
@@ -111,5 +106,7 @@
 }
 
 .white {
-  color: white;
+  color: black;
+  font-family: "Manrope";
+
 }
