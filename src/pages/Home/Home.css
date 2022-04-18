@@ -1,4 +1,7 @@
-
+main {
+  display: flex;
+  justify-content: center;
+}
 
 .home {
   width: 100%;
@@ -6,12 +9,12 @@
 }
 .white-section {
 
+justify-content: center;
   height: 80vh;
 }
 .content-section {
   width: 90vw;
   height: 80vh;
-  display: flex;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,14 +29,14 @@
 
 .title-portion p h1 {
   font-family: "Comfortaa";
-  font-size: 5em;
+  font-size: 3em;
   padding-left: 1em;
 }
 
 .title-portion p h4 {
   font-family: "Manrope";
   font-size: 1.5em;
-  padding-left: 3.5em;
+  padding-left: 2em;
 }
 
 .black-section {
@@ -104,18 +107,27 @@ display:flex;
   align-items: "center"
 }
 
+@media screen and (max-width: 710px){
 
+  main {
+    flex-direction: center;
+  }
+  .title-style{
+   font-size: 40px; 
+  }
+  
+}
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1245px){
   .content-section {
     flex-direction: column;
   }
   
   .title-style {
-    font-size: 30px !important;
+    font-size: 60px !important;
     text-align: center;
-    margin-top: 3em;
-    padding-left: 0 !important;
+    margin-top: 1em;
+    /* padding-left: 0 !important; */
   }
   
   .title-portion p h4 {
@@ -125,8 +137,9 @@ display:flex;
   }
   
   .home-img {
-    width: 95% !important;
-    margin-top: 8rem
+    width: 80% !important;
+    margin-top: 8rem;
+    
   }
 }
 
