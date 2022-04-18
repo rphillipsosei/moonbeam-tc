@@ -35,8 +35,19 @@ select, option, input, label, button{
 .form-box textarea{
     flex-basis: 100%;
 }
-.form-box button{
-    
+textarea::placeholder {
+    font-size: 16px; 
+    font-family: "Comfortaa";
+}
+
+input::placeholder {
+    font-size: 16px;
+    font-family: "Comfortaa";
+}
+
+.legal {
+    font-size: 16px;
+    font-family: "Comfortaa";  
 }
 
 @media all and (min-width: 500px){
@@ -46,14 +57,7 @@ select, option, input, label, button{
     .form-box label{
         display: block;
     }
-    .form-box input,
-    .form-box select,
-    .form-box textarea{
-        
-    }
-    .form-box button{
 
-    }
 }
 
 @media all and (min-width: 600px){

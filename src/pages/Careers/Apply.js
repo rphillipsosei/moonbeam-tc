@@ -16,6 +16,11 @@ const buttonStyle = {
   marginLeft: "450px",
 };
 
+const comfortaa = {
+  fontFamily: "Comfortaa",
+  fontSide: "16px"
+}
+
 export default function Apply() {
   const [state, handleSubmit] = useForm("xknyqzly");
   window.onbeforeunload = () => {
@@ -92,37 +97,40 @@ export default function Apply() {
             </h6>
             <form name="my-form" action="#" method="get">
               <div class="form-box">
-                <label for="First Name">First Name:</label>
+                <label for="First Name"></label>
                 <input
                   type="text"
                   name="FirstName"
                   label="First Name:"
                   required
+                  placeholder="First Name"
                 />
               </div>
               <div class="form-box">
-                <label for="Last Name">Last Name:</label>
-                <input type="text" name="LastName" required />
+                <label for="Last Name"></label>
+                <input type="text" name="LastName" placeholder="Last Name" required />
               </div>
 
               <div class="form-box">
-                <label for="Preferred Name">Preferred Name:</label>
-                <input type="text" name="PreferredName" />
+                <label for="Preferred Name"></label>
+                <input type="text" name="PreferredName" placeholder="Preferred Name"/>
               </div>
 
               <div class="form-box">
-                <label for="pronouns">Pronouns:</label>
-                <input type="text" name="Pronouns" />
+                <label for="pronouns">:</label>
+                <input type="text" name="Pronouns" placeholder="Pronouns"/>
               </div>
 
               <div class="form-box">
-                <label for="Email">Email:</label>
-                <input type="email" name="Email" required />
+                <label for="Email"></label>
+                <input type="email" name="Email" required placeholder="Email"/>
               </div>
 
               <div class="form-box">
-                <label for="Phone Number">Phone Number:</label>
+             
+                <label for="Phone Number"></label>
                 <input
+                 placeholder="Phone Number"
                   type="tel"
                   pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                   name="Phone number"
@@ -130,76 +138,82 @@ export default function Apply() {
               </div>
 
               <div class="form-box">
-                <label for="pass">Address</label>
-                <input type="text" name="Address" />
+                <label for="pass"></label>
+                <input type="text" name="Address"  placeholder="Address" />
               </div>
 
               <div class="form-box">
-                <label for="pass">Postal Code:</label>
-                <input type="text" name="PostalCode" />
-              </div>
-
-              <div class="form-box">
-                <label for="pass">
-                  What is your highest level of education completed?
-                </label>
-                <input type="text" name="HighestLevelOfEducation" />
-              </div>
-
-              <div class="form-box">
-                <label for="pass">Field of study:</label>
-                <input type="text" ame="FieldOfStudy" />
+                <label for="pass"></label>
+                <input type="text" name="PostalCode"  placeholder="Postal Code" />
               </div>
 
               <div class="form-box">
                 <label for="pass">
-                  What are some barriers you faced to your education?
+                  
                 </label>
-                <input type="text" name="BarriersFacedCompletingEducation" />
+                <input type="text" name="HighestLevelOfEducation"  placeholder="Highest level of education completed" />
+              </div>
+
+              <div class="form-box">
+                <label for="pass"></label>
+                <input type="text" ame="FieldOfStudy"  placeholder="Field of study"/>
+              </div>
+
+              <div class="form-box">
+                <label for="pass">
+                  
+                </label>
+                <input type="text" name="BarriersFacedCompletingEducation"  placeholder="What are some barriers you faced to your education?"/>
               </div>
               <div class="form-box">
                 <label for="pass">
-                  What are some barriers you have faced in seeking employment?
+                  
                 </label>
-                <input type="text" name="BarriersFacedSeekingEmployment" />
-              </div>
-              <div class="form-box">
-                <label for="pass">
-                  Do you identify as a member of a visible minority group?
-                </label>
+
                 <input
                   type="text"
                   name="IdentifyAsMemberOfVisibleMinority"
                   required
+                  placeholder=" Do you identify as a member of a visible minority group?"
                 />
               </div>
               <div class="form-box">
                 <label for="pass">
-                  Have you faced any difficult life-transitions such as
-                  homelessness, drug addiction and/or mental health?
+                  
                 </label>
-                <input type="text" name="PeriodsOfLifeTransitions" />
+                <textarea rows={4} id="apply-textarea" type="text" name="BarriersFacedSeekingEmployment"  placeholder="What are some barriers you have faced in seeking employment?"/>
               </div>
               <div class="form-box">
                 <label for="pass">
-                  Which position(s) are you applying for?
+                 
                 </label>
-                <input type="text" name="PositionsApplyingFor" />
+                
+                <textarea rows={4} id="apply-textarea" type="text" name="PeriodsOfLifeTransitions"  placeholder="Have you faced any difficult life-transitions such as
+                  homelessness, drug addiction and/or mental health?" />
+              </div>
+              
+              <div class="form-box">
+                <label for="pass">
+                  
+                </label>
+                <textarea rows={4}  id="apply-textarea" type="text" name="SuitableForThisRole"  placeholder="Which of your past experiences would complement this role?"/>
               </div>
 
               <div class="form-box">
                 <label for="pass">
-                  Which of your past experiences would complement this role?
+                  
                 </label>
-                <input type="text" name="SuitableForThisRole" />
+                <textarea rows={4} id="apply-textarea" type="text" name="PositionsApplyingFor"  placeholder="Which position(s) are you applying for?"/>
               </div>
 
+              
               <div class="form-box">
                 <label for="domain">
-                  Are you legally eligible to work in Canada?
+                  <h6 className="legal">Are you legally eligible to work in Canada?</h6>
                 </label>
                 <select name="work">
-                  <option value="Yes">Yes</option>
+                <option value="Blank"></option>
+                  <option value="Yes" style={comfortaa}>Yes</option>
                   <option value="No">No</option>
                 </select>
               </div>
