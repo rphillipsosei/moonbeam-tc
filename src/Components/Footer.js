@@ -58,7 +58,7 @@ const Navbar = () => {
             onChange={e => setEmail(e.target.value)}
           /> 
           <Button type="submit" sx={styles.button}>
-            {!loading ? `Connect` : <FontAwesomeIcon icon={faSpinner} className={classes.spinner} />}
+            {!loading ? `SUBSCRIBE` : <FontAwesomeIcon icon={faSpinner} className={classes.spinner} />}
           </Button>
          {sent && <div className={classes.sent}>Sent Successfully!<FontAwesomeIcon icon={faCheck} /></div>}
         </Box>
@@ -87,8 +87,9 @@ const styles = {
       mx: ['auto', null, null, '0'],
     },
     p: {
-      fontSize: ['16px'],
+      fontSize: ['25px'],
       opacity: '.6',
+      color: "#ffff",
       letterSpacing: ['-0.5px'],
       textAlign: 'center',
       width: ['70%', null, null, 'auto'],
@@ -104,7 +105,7 @@ const styles = {
     alignItems: ['center'],
     flexWrap: ['wrap'],
     mt: ['30px', null, null, null, ',60px'],
-    backgroundColor: 'white',
+    backgroundColor: '#000000',
     borderRadius: '8px'
   },
   input: {
@@ -123,12 +124,12 @@ const styles = {
     textAlign: ['center', null, null, 'left'],
   },
   button: {
-    backgroundColor: '#86a28c',
-    borderRadius: '5px',
+    backgroundColor: '#000000',
+    border: '#ffff',
     fontWeight: '500',
     fontSize: ['18px'],
     maxWidth: '80%',
-    color: '#020718',
+    color: '#ffff',
     letterSpacing: '-0.5px',
     outline: 'none',
     padding: ['0px 30.75px'],
