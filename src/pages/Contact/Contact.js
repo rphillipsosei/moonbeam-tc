@@ -48,7 +48,7 @@ const Contact = () => {
   return (
     <Box as="section" sx={styles.subscribe} className={classes.wrapper} id='contact'>
       <Container>
-        <Heading as="h3">Contact Us!</Heading>
+        <Heading as="h3">CONTACT US</Heading>
         <Text as="p" className={classes.white}>
           Any questions or inquiries? Contact us to get more information!
         </Text>
@@ -79,9 +79,9 @@ const Contact = () => {
             onChange={e => setMessage(e.target.value)}
           />
           <Button type="submit" sx={styles.button}>
-            {!loading ? `Reach Out!` : <FontAwesomeIcon icon={faSpinner} className={classes.spinner} />}
+            {!loading ? `Submit` : <FontAwesomeIcon icon={faSpinner} className={classes.spinner} />}
           </Button>
-         {sent && <div className={classes.sent}>Sent Successfully!<FontAwesomeIcon icon={faCheck} /></div>}
+         {sent && <div className={classes.sent}>Thanks for reaching out!<FontAwesomeIcon icon={faCheck} /></div>}
         </Box>
       </Container>
     </Box>
@@ -93,39 +93,42 @@ export default Contact;
 const styles = {
   subscribe: {
     py: ['80px', null, null, null, '80px', '100px', '140px'],
-    backgroundColor: '#020718',
+    backgroundColor: '#fff',
     h3: {
+      fontFamily: "Comfortaa",
       textAlign: 'center',
-      fontSize: ['23px', null, null, null, null, '30px', '36px'],
+      fontSize: ['4em', null, null, null, null, '30px', '36px'],
       lineHeight: [1.5, null, null, '1'],
-      color: '#fff',
+      color: '#000',
       letterSpacing: ['-0.5px'],
       mb: ['0px', null, null, '15px'],
       width: ['70%', null, null, 'auto'],
       mx: ['auto', null, null, '0'],
     },
     p: {
-      fontSize: ['16px'],
-      opacity: '.6',
+      fontFamily: "Manrope",
+      fontStyle: "Italic",
+      fontSize: ['1em'],
       letterSpacing: ['-0.5px'],
       textAlign: 'center',
       width: ['70%', null, null, 'auto'],
       mx: ['auto', null, null, '0'],
-      mt: ['10px', null, null, '0'],
+      mt: ['15px', null, null, '0'],
     },
   },
   form: {
+    fontFamily: "Comfortaa",
     mx: ['auto'],
     display: ['flex'],
     flexDirection: ['column'],
     justifyContent: ['space-between'],
     alignItems: ['center'],
     flexWrap: ['wrap'],
-    mt: ['30px', null, null, null, ',60px'],
     backgroundColor: 'white',
     borderRadius: '8px'
   },
   input: {
+    fontFamily: "Comfortaa",
     width: ['100%'],
     maxWidth: ['80%', '80%', '80%', '80%'],
     borderRadius: '5px',
@@ -141,12 +144,13 @@ const styles = {
     textAlign: ['center', null, null, 'left'],
   },
   button: {
-    backgroundColor: '#0c79be',
+    fontFamily: "Comfortaa",
+    backgroundColor: '#000',
     borderRadius: '5px',
     fontWeight: '500',
     fontSize: ['18px'],
     maxWidth: '80%',
-    color: '#020718',
+    color: '#fff',
     letterSpacing: '-0.5px',
     outline: 'none',
     padding: ['0px 30.75px'],
@@ -155,7 +159,7 @@ const styles = {
     mt: '24px',
     mx: ['auto', null, null, '0'],
     '&:hover': {
-      backgroundColor: '#86a28c',
+      backgroundColor: '#000',
       opacity: '0.8',
     },
   },

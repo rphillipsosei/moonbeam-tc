@@ -1,11 +1,11 @@
 .wrapper {
-  font-family: sans-serif;
+  font-family: "Comfortaa";
 }
 
 .form {
   max-width: 555px;
   width: 85%;
-  font-family: sans-serif;
+  font-family: "Comfortaa";
   padding: 56px 0 32px 0;
   opacity: 0.8;
   transition: opacity 500ms ease;
@@ -106,5 +106,7 @@
 }
 
 .white {
-  color: white;
+  color: black;
+  font-family: "Manrope";
+
 }
