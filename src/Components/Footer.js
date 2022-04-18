@@ -7,8 +7,6 @@ import { faCheck, faSpinner } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const [email, setEmail] = useState('');
-  const [name, setName] = useState('');
-  const [message, setMessage] = useState('');
   const [sent, setSent] = useState(false)
   const [loading, setLoading] = useState(false)
 
@@ -16,7 +14,7 @@ const Navbar = () => {
     e.preventDefault();
     setLoading(true)
 
-    console.log(name, message, email)
+    console.log(email)
 
     fetch("https://formsubmit.co/ajax/zeinabtmohamed@gmail.com", {
       method: "POST",
@@ -25,16 +23,12 @@ const Navbar = () => {
           'Accept': 'application/json'
       },
       body: JSON.stringify({
-          name,
           email,
-          message
       })
   })
       .then(response => response.json())
       .then(data => {
         setEmail('')
-        setMessage('')
-        setName('')
         setLoading(false)
         setSent(true)
         setTimeout(() => {
@@ -55,27 +49,13 @@ const Navbar = () => {
               Stay connected with everything Moonbeam
             </Text>
           <input
-            placeholder="Name"
-            type="text"
-            id="name"
-            sx={styles.input}
-            value={name}
-            onChange={e => setName(e.target.value)}
-          />
-          <input
             placeholder="Email"
             type="email"
             id="email"
             sx={styles.input}
             value={email}
             onChange={e => setEmail(e.target.value)}
-          />  <textarea
-            placeholder="Please enter a message"
-            id="message"
-            sx={styles.input}
-            value={message}
-            onChange={e => setMessage(e.target.value)}
-          />
+          /> 
           <Button type="submit" sx={styles.button}>
             {!loading ? `Connect` : <FontAwesomeIcon icon={faSpinner} className={classes.spinner} />}
           </Button>
