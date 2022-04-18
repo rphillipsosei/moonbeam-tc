@@ -7,7 +7,7 @@ import { FormGroup } from "@mui/material";
 import TextField from '@mui/material/TextField'
 import FadeIn from "react-fade-in/lib/FadeIn";
 import "./Apply.css"
-
+import * as AiIcons from "react-icons/ai";
 // const backgroundStyle = {
 //   backgroundImage: `url(${whitenoise})`,
 //   backgroundSize: "cover",
@@ -96,7 +96,7 @@ export default function Apply() {
  <h6 align="center"><b>Click here to view a PDF version of the application</b><br></br>
         <a
         href="https://docdro.id/psBZ148"
-        ><br></br>PDF</a></h6><br></br>
+        ><br></br><AiIcons.AiOutlineFilePdf/></a></h6><br></br>
 
 
 
