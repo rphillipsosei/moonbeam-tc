@@ -97,7 +97,7 @@ const styles = {
     h3: {
       fontFamily: "Comfortaa",
       textAlign: 'center',
-      fontSize: ['4em', null, null, null, null, '30px', '36px'],
+      fontSize: ['3em', null, null, null, null, '30px', '36px'],
       lineHeight: [1.5, null, null, '1'],
       color: '#000',
       letterSpacing: ['-0.5px'],
