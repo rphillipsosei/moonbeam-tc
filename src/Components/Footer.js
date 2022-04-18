@@ -3,11 +3,8 @@ import Button from "@material-ui/core/Button";
 
 const buttonStyle = {
 color: "#ffff",
-borderRadius: "10px",
-display: "flex",
-textAlign: "center",
 marginLeft: "0.5em",
-
+borderColor: "ffff"
 
 }
 

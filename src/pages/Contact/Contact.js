@@ -1,11 +1,6 @@
 import React from "react";
-import { Paper } from "@mui/material";
-import { TextField } from "@mui/material";
 import { Button } from "@mui/material";
-import typing from "../../images/typing.jpg";
-import protractor2 from "../../images/protractor2.jpg";
-import whitenoise from "../../images/whitenoise.jpg";
-import { useForm, ValidationError } from "@formspree/react";
+import { useForm } from "@formspree/react";
 import FadeIn from "react-fade-in/lib/FadeIn";
 
 const paperStyle2 = {
@@ -29,80 +24,59 @@ const fieldStyle2 = {
 };
 
 const Contact = () => {
-
   const [state, handleSubmit] = useForm("xknyqvwy");
   if (state.succeeded) {
     return <p>Thanks for reaching out!</p>;
   }
 
   return (
-    <main><div><FadeIn>
-      
-    <div className="col contact-page">
-      <form onSubmit={handleSubmit}>
-        <div id="header-section">
-          <h1 align="center" className="title">
-            CONTACT US
-          </h1>
-          <h6 align="center">
-            <i>Receive a response within 48 business hours.</i>
-          </h6>
-        </div>
-        <div className="column" id="form-items" align="center">
-         <br></br>
-            <div class="">
-              <h5>Name:</h5>
-            </div>
-            <div class="">
-              <input
-                name="name"
-                align="center"
-                id="outlined-basic"
-                label="Name"
-                variant="outlined"
-                required
-                className="contact_input"
-              ></input>
-            </div>
-            <br></br>
-            <div class="">
-              <h5>Email:</h5>
-            </div>
-            <div class="">
-              <input
-                name="email"
-                id="outlined-basic"
-                label="Email"
-                variant="outlined"
-                required
-                className="contact_input"
-                type="email"
-              ></input>
-            </div>
-            <br></br>
-            <div class="">
-              <h5>Message:</h5>
-            </div>
-            <div class="">
-              <textarea
-                align="center"
-                name="message"
-                id="outlined-basic"
-                label="Message"
-                variant="outlined"
-                required
-                rows={3}
-              ></textarea>
-            </div>
-            <button className="contact-btn">SUBMIT</button>
-          
-          
-        </div>
-      </form>
-      <div className="placeholder"></div>
-    </div>
-    
-    </FadeIn></div></main>
+    <main>
+      <div>
+        <FadeIn>
+          <div className="col contact-page">
+            <form onSubmit={handleSubmit}>
+              <div id="header-section">
+                <h1 align="center" className="title">
+                  CONTACT US
+                </h1>
+                <h6 align="center">
+                  <i>Receive a response within 48 business hours.</i>
+                </h6>
+              </div>
+              <div className="column" id="form-items" align="center">
+                <br></br>
+                <div class="">
+                  <form name="my-form" action="#" method="get">
+                    <div class="form-box">
+                      <label for="Name">Name:</label>
+                      <input type="text" name="Name" label="Name:" required />
+                    </div>
+
+                    <div class="form-box">
+                      <label for="Email">Email:</label>
+                      <input type="email" name="Email" required />
+                    </div>
+
+                    <div class="form-box">
+                      <label for="Message Name">Message:</label>
+                      <input type="text" name="Message" />
+                    </div>
+                  </form>
+                </div>
+                <Button
+                  type="submit"
+                  variant="outlined"
+                  disabled={state.submitting}
+                >
+                  Submit
+                </Button>
+              </div>
+            </form>
+            <div className="placeholder"></div>
+          </div>
+        </FadeIn>
+      </div>
+    </main>
   );
 };
 export default Contact;

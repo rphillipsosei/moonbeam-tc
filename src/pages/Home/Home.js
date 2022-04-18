@@ -1,7 +1,6 @@
 import React from "react";
 import bigdata from "../../images/bigdata.jpg";
 import "./Home.css";
-import { Button } from "@material-ui/core";
 import FadeIn from "react-fade-in";
 
 const Home = () => {
@@ -23,17 +22,15 @@ const Home = () => {
                     community value.
                   </i>
                 </h4>
-                <a href="/services" className="learn_link">
-                  <button className="learn_btn">LEARN MORE</button>
-                </a>
+
                 <br></br>
               </p>
             </div>
           </container>
         </div>
-
       </main>
     </FadeIn>
   );
 };
+
 export default Home;
