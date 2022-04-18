@@ -18,15 +18,15 @@ export const SidebarData = [
         className: "nav-text"
     },
     {
-        title: "Careers",
-        path: "/careers",
-        icon: <BsIcons.BsFillFilePersonFill />,
-        className: "nav-text"
-    },
-    {
         title: "About",
         path: "/about",
         icon: <FaIcons.FaQuestionCircle />,
+        className: "nav-text"
+    },
+    {
+        title: "Careers",
+        path: "/careers",
+        icon: <BsIcons.BsFillFilePersonFill />,
         className: "nav-text"
     },
     {

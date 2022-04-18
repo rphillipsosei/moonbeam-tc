@@ -21,12 +21,16 @@ export default function Services() {
    history.push("/services#text_content")
  } 
 
+ const scrollUp = () => {
+   history.push("/services#title")
+ }
+
   return (
     <FadeIn>
       <main>
         <div className="services-page">
           <div>
-            <h1 align="center" className="title">
+            <h1 align="center" id="title" className="title">
               WHAT WE DO
             </h1>
             <h6 align="center">
@@ -178,6 +182,7 @@ export default function Services() {
                   </p>
                 </div>
               )}
+        <a align="center" id="back-to-top" href="/services#title" onClick={() => {scrollUp()}}><button>BACK TO TOP</button></a>
             </div>
           </div>
         </div>

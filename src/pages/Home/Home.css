@@ -108,8 +108,9 @@ button {
   display: flex;
   align-items: center;
 }
-.learn-btn {
- margin-left: 15em;
+.learn_btn {
+ margin-left: 4.2em;
+ margin-top: 1em;
   color: #ffff
 }
 

@@ -129,6 +129,9 @@
   font-family: "Comfortaa";
   font-size: 2em;
 }
+#back-to-top {
+  color:white
+}
 
 .services-page {
   padding: 0.8rem;

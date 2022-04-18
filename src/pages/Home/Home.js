@@ -24,7 +24,7 @@ const Home = () => {
                   </i>
                 </h4>
                 <a href="/services" className="learn_link">
-                  <button className="learn-btn">LEARN MORE</button>
+                  <button className="learn_btn">LEARN MORE</button>
                 </a>
                 <br></br>
               </p>

@@ -26,7 +26,7 @@ const About = () => {
     <div>
       <FadeIn>
         <main>
-        <h1 align="center" className="title">
+        <h1 align="center" className="title" id="title">
           WHO WE ARE
         </h1>
         <h6 align="center">
@@ -161,6 +161,7 @@ const About = () => {
               </i>
             </p>
           </div>
+          
         </section>
         </main>
       </FadeIn>
