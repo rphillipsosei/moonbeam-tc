@@ -1,219 +1,4 @@
-/* .wrapper-grid-shop {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, 55rem);
-  grid-template-rows: 1fr 0.45fr; 
-  justify-content: center;
-}
 
-.home {
-    width: 100vw;
-    height: 100vh;
-
-  }
-  
-  .white-section {
-display: flex;
-justify-content: center;
-width: 100vw;
-height: 100vh
-  }
-
-  .shop-section {
-    width: 100vw;
-    height: 90vh;
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .shop-section img {
-    height: 3.5em;
-    width: 3.5em;
-    margin-left: 10em
-  }
-  
-  #img-shopping {
-    height: 8em;
-    width: 15em;
-    border-radius: 147px 31px 147px 50px / 116px 15px 116px 25px;
-    border: 5px outset #1c6ea4;
-  }
-
-td.table-title {
-    display: flex;
-    justify-content: center;
-}
-td.logo-cell {
-    max-width: 10px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-tbody {
-font-family: "Comfortaa";
-display: flex;
-text-align: center;
-justify-content: center;
-}
-
-#btn {
-    margin-left: 6px;
-   background-color: green; 
-   font-family: "Comfortaa";
-}
-
-#btn-disabled {
-    background-color: grey;
-    font-family: "Comfortaa";
-}
-
-#title-section  {
-    width: 100vw;
-     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.text-card2{
-  margin-left: 5em;
-
-}
-
-.text-card-heading{
- 
-}
-
-.mini-card{
-  display:flex;
-  align-items: center;
- 
-}
-
-.mini-card-image{
-  width:100px;
-
-
-}
-
-.mini-card-image{
-  
-}
-.mini-card-text{
-  margin-left:30px;
-  font-weight: 500;
-}
-.mini-card-text-heading{
-font-size: 1.5em;
-font-family: "Comfortaa"
-
-}
-.mini-card-text-button{
-
-}
-
-.text-card2-heading {
-  font-family: "Comfortaa";
-  font-weight: 900;
-  font-size: 4.5em;
-}
-
-.text-card2-heading h6 {
-  font-family: "Comfortaa";
-  font-size: 1em;
-}
-
-
-
-.auction-btn {
-  background-color: grey;
-}
-
-.shop-title-section {
-  margin-bottom: 5em
-}
-
-@media screen and (max-width: 680px){
-  .wrapper-grid-shop {
-    display: block !important;
-    padding: 0.5rem !important; 
-  }
-  
-  #img-shopping {
-    width:90% !important;
-    height: auto !important;
-    margin: 1rem
-  }  
-
-  .text-card2 {
-    margin-left: 0em;
-}
-
-h3 {
-  font-size: 1.2rem;
-  text-align: center;
-}
-
-.shop-title-section {
-  margin-bottom: 0em;
-  
-}
-
-.shopify-btn {
-  width: 50%;
-  height: 70;
-  font-size: 0.7em;
-}
-
-.auction-btn {
-  width: 50%;
-  height: 70;
-  font-size: 0.7em;
-}
-
-.mini-card-text-heading {
-  font-size: 1em;
-}
-
-.mini-card-image {
-     margin-top: -5.5em;
-     width:60px;
-}
-
-
-.shop-title-section {
-  margin-bottom: 0em;
-  height: 8em;
-}
-
-#auction-section {
-  margin-top: -2em;
-}
-
-.title {
-  font-size: 3rem;
-}
-
-.pic-card {
-  margin-top: -0.7em;
-}
-
-
-
-@media screen and (max-width: 850px){
-
-  #img-shopping {
-    height: 80%;
-    width: 80%;
- }
-
- .text-card2 {
-  margin-left: 11em;
-}
-
-} */
 
 .mini_card_inner_text {
 margin-left: 2rem;
@@ -222,11 +7,13 @@ margin-left: 2rem;
 .auction-btn {
   background-color: grey;
   margin-top: 1rem;
+  color: #ffff
 }
 
 .shopify-btn {
   background-color: #7bb45b;
   margin-top: 1rem;
+  color: #ffff
 }
 
 .shop_container {
@@ -235,14 +22,14 @@ margin-left: 2rem;
 
 .wrapper-grid-shop {
   display: flex;
-  /* margin-top: 2rem; */
+
   align-items: center;
 }
 .shop_pic_card {
   width: 100%;
 }
 .shop_pic_card > img {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   border-radius: 147px 31px 147px 50px / 116px 15px 116px 25px;
   border: 5px outset #1c6ea4;
@@ -258,7 +45,8 @@ margin-left: 2rem;
   width: 100%;
 }
 .mini_card > img {
-  width: 17%;
+  width: 20%;
+  margin-top: -5em
 }
 .wrapper_shop_text_inner {
     width: 80%;
@@ -277,10 +65,7 @@ margin-left: 2rem;
 
   .shop_pic_card > img {
     width: 100% !important;
-
   }
-
-  
 }
 
 @media screen and (max-width:825px) {

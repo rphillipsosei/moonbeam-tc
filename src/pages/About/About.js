@@ -1,23 +1,7 @@
 import React from "react";
-// import farmers from "../../images/farmers.jpg";
-import reflection from "../../images/reflection.jpg";
-import bridge from "../../images/bridge.jpg";
-// import indigenous from "../../indigenous.png";
-// import family from "../../black-family.jpg";
-import hex from "../../images/hex.jpg";
-import { Stack } from "@mui/material";
-import Paper from "@mui/material/Paper";
-import { Button } from "@mui/material";
-import darkstripes from "../../images/dark-stripes.png";
-import aboutus from "../../images/about-us.jpg";
 import collage from "../../images/collage3.jpg";
-import background from "../../images/about-background.png";
-import protractor from "../../images/protractor.jpg";
-import mission from "../../images/mission.jpg";
 import helpinghands from "../../images/helping-hands.jpg";
 import growth from "../../images/growth.jpg";
-import aboutbg from "../../images/about--bg.jpeg";
-import whitenoise from "../../images/whitenoise.jpg";
 import "./About.css";
 import FadeIn from "react-fade-in/lib/FadeIn";
 
@@ -26,7 +10,7 @@ const About = () => {
     <div>
       <FadeIn>
         <main>
-        <h1 align="center" className="title">
+        <h1 align="center" className="title" id="title">
           WHO WE ARE
         </h1>
         <h6 align="center">
@@ -40,9 +24,9 @@ const About = () => {
             <img className="about-img" id="img-growth" src={growth}></img>
           </div>
           <div className="text-card">
-            <div className="about-description" id="growth-desc">
+            <div className="about-description" >
             
-                <h6>
+                <h6 id="growth-desc">
                   <br></br>
                   <br></br>
                   <h3 >OUR BACKGROUND</h3> <br></br>
@@ -89,7 +73,7 @@ const About = () => {
               src={helpinghands}
             ></img>
           </div>
-          <div className="text-card">
+          <div className="text-card" >
             {" "}
             <div className="about-description" id="mission-desc">
               <p>
@@ -161,6 +145,7 @@ const About = () => {
               </i>
             </p>
           </div>
+          
         </section>
         </main>
       </FadeIn>

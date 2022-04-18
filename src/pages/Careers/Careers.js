@@ -1,13 +1,7 @@
 import React from "react";
 import brickwall from "../../images/brickwall.jpg";
-import walksoflife from "../../images/walksoflife.jpg";
-import diversity from "../../images/diversity.jpg";
-import aboutbg from "../../images/about--bg.jpeg";
-import whitenoise from "../../images/whitenoise.jpg";
-import { useForm, ValidationError } from "@formspree/react";
-import { Paper } from "@mui/material";
+import { useForm} from "@formspree/react";
 import { Button } from "theme-ui";
-import { Link } from "react-router-dom";
 import "./Careers.css";
 import FadeIn from "react-fade-in/lib/FadeIn";
 
@@ -56,7 +50,12 @@ const Careers = () => {
                 encouraged <br></br>to apply. Tell us your story!
               </h6>
               <a href="careers/apply">
-                <button id="apply-btn">APPLY</button>
+                <Button 
+                   type="submit"
+                   variant="outlined"
+                   
+                id="apply-btn">APPLY
+                </Button>
               </a>
             </div>
           </container>
@@ -66,3 +65,5 @@ const Careers = () => {
   );
 };
 export default Careers;
+
+

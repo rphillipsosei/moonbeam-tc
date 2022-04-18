@@ -4,10 +4,9 @@ import warehouse from "../../images/warehouse.jpg";
 import shipping from "../../images/shipping.jpg";
 import programming from "../../images/web-developer.jpg";
 import { useState } from "react";
-import EcommerceCard from "./EcommerceCard.js";
-import Modal from "../../Components/Modal.js";
 import FadeIn from "react-fade-in/lib/FadeIn";
 import {useHistory} from "react-router-dom"
+import { Button } from "@mui/material";
 
 export default function Services() {
   const [showShipping, setShowShipping] = useState(false);
@@ -21,12 +20,16 @@ export default function Services() {
    history.push("/services#text_content")
  } 
 
+ const scrollUp = () => {
+   history.push("/services#title")
+ }
+
   return (
     <FadeIn>
       <main>
         <div className="services-page">
           <div>
-            <h1 align="center" className="title">
+            <h1 align="center" id="title" className="title">
               WHAT WE DO
             </h1>
             <h6 align="center">
@@ -178,6 +181,11 @@ export default function Services() {
                   </p>
                 </div>
               )}
+        <a align="center" id="back-to-top" href="/services#title" onClick={() => {scrollUp()}}><Button
+        type="submit"
+        variant="outlined"
+       
+        >BACK TO TOP</Button></a>
             </div>
           </div>
         </div>
@@ -185,3 +193,4 @@ export default function Services() {
     </FadeIn>
   );
 }
+

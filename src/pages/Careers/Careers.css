@@ -7,7 +7,6 @@
   width: 90vw;
   height: 74vh;
   display: flex;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -102,13 +101,6 @@ margin-top: 2rem;
   .career-img {
    width: 100%;
  }
-
-  /* content-section-careers img {
-    height: 11em;
-    width: 22em;
-    margin-left: 0em;
-    margin-top: 4em;
-  } */
 
   
 }

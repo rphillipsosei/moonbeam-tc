@@ -17,9 +17,6 @@ main{
 }
 
 
-/*********************
-        Form
-*********************/
 select, option, input, label, button{
     padding: 0.2rem 1rem;
     font-size: 1.2rem;
@@ -42,9 +39,6 @@ select, option, input, label, button{
     
 }
 
-/*******************************
-        Media Queries
-*******************************/
 @media all and (min-width: 500px){
     .form-box{
         
