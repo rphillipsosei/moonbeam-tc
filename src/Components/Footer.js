@@ -3,6 +3,7 @@ import classes from './stay-connected.module.css'
 import { Button, Input, Box, Container, Heading, Text } from 'theme-ui';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faSpinner } from "@fortawesome/free-solid-svg-icons";
+import "./Footer.css";
 
 
 const Navbar = () => {
@@ -62,6 +63,9 @@ const Navbar = () => {
          {sent && <div className={classes.sent}>Sent Successfully!<FontAwesomeIcon icon={faCheck} /></div>}
         </Box>
       </Container>
+      <h6 align="center" className="rights-reserved">
+          All Rights Reserved, Moonbeam Trading Company 2022
+        </h6>
     </Box>
   );
 };
@@ -71,8 +75,7 @@ export default Navbar;
 const styles = {
   subscribe: {
     py: ['48px', null, null, null, '64px', '80px', '124px'],
-    backgroundColor: '#0c79be',
-    opacity: 0.8,
+    backgroundColor: "#000000",
     h3: {
       textAlign: 'center',
       fontSize: ['23px', null, null, null, null, '30px', '36px'],
