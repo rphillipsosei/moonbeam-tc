@@ -80,7 +80,7 @@ export default function Apply() {
           <h6 align="center">
             <b>Click here to view a PDF version of the application</b>
             <br></br>
-            <a href="https://docdro.id/psBZ148">
+            <a href="https://docdro.id/MwY5KLs">
               <br></br>
               <AiIcons.AiOutlineFilePdf style={pdfIcon}/>
             </a>
@@ -168,7 +168,7 @@ export default function Apply() {
                 <label for="pass">
                   
                 </label>
-                <input type="text" name="BarriersFacedCompletingEducation"  placeholder="What are some barriers you faced to your education?"/>
+                <input type="text" name="BarriersFacedCompletingEducation"  placeholder="What are some obstacles you have faced in your education?"/>
               </div>
               <div class="form-box">
                 <label for="pass">
@@ -186,7 +186,7 @@ export default function Apply() {
                 <label for="pass">
                   
                 </label>
-                <textarea rows={4} id="apply-textarea" type="text" name="BarriersFacedSeekingEmployment"  placeholder="     What are some barriers you have faced in seeking employment?"/>
+                <textarea rows={4} id="apply-textarea" type="text" name="BarriersFacedSeekingEmployment"  placeholder="     What are some obstacles you have faced in finding employment?"/>
               </div>
               <div class="form-box">
                 <label for="pass">
@@ -202,6 +202,13 @@ export default function Apply() {
                   
                 </label>
                 <textarea rows={4}  id="apply-textarea" type="text" name="SuitableForThisRole"  placeholder="     Which of your past experiences would complement this role?"/>
+              </div>
+
+              <div class="form-box">
+                <label for="pass">
+                  
+                </label>
+                <textarea rows={4}  id="apply-textarea" type="text" name="AdditionalInfo"  placeholder="     Is there any additional information you would like our hiring team to know?"/>
               </div>
 
               <div class="form-box">
