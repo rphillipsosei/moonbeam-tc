@@ -44,11 +44,7 @@ export default function Apply() {
   return (
     <FadeIn>
       <main className="main-apply">
-        {/* <a href="/careers">
-          <Button type="submit" variant="outlined" disabled={state.submitting}>
-            BACK TO CAREERS
-          </Button>
-        </a> */}
+     
         <br></br>
         <br></br>
         <br></br>

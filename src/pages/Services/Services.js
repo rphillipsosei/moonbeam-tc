@@ -55,7 +55,7 @@ export default function Services() {
                 <div class="col grid">
                   <img src={warehouse} id="img-services"></img>
                   <div class="image-overlay">
-                    {/* <div class="image__title">eCommerce</div> */}
+             
                   </div>
                 </div>
               </a></FadeIn>
@@ -74,7 +74,7 @@ export default function Services() {
                 <div class="col grid">
                   <img src={programming} id="img-services"></img>
                   <div class="image-overlay">
-                    {/* <div class="image__title">Technology</div> */}
+               
                   </div>
                 </div>
               </a>
@@ -93,7 +93,7 @@ export default function Services() {
                 <div class="col grid">
                   <img src={tractor} id="img-services"></img>
                   <div class="image-overlay">
-                    {/* <div class="image__title">Agri-foods</div> */}
+                
                   </div>
                 </div>
               </a>
@@ -111,7 +111,7 @@ export default function Services() {
                 <div class="col grid">
                   <img src={shipping} id="img-services"></img>
                   <div class="image-overlay">
-                    {/* <div class="image__title">Imports/Exports</div> */}
+            
                   </div>
                 </div>
               </a>

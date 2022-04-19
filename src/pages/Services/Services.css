@@ -35,7 +35,7 @@
   align-items: center;
 }
 
-/* Column */
+
 .col {
   background: white;
   display: block;
@@ -46,10 +46,7 @@
   margin-left: 0 !important;
 }
 
-/* .services-title {
-  margin-bottom: 5em;
-} */
-/* Row */
+
 .row:before,
 .row:after {
   content: "";
@@ -59,10 +56,10 @@
   clear: both;
 }
 .row {
-  zoom: 1; /* For IE 6/7 */
+  zoom: 1; 
 }
 
-/* Grid */
+
 .grid {
   width: 20rem;
   display: flex;

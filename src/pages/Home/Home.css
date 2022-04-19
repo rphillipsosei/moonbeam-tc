@@ -24,7 +24,7 @@ justify-content: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-right: 15em; */
+
 }
 
 .content-section img {
@@ -61,10 +61,7 @@ color: #000000
   color: white;
   font-family: "Comfortaa";
 }
-/* 
-.learn_link {
-  justify-content: fle;
-} */
+
 
 .input {
   padding: 5px;
@@ -150,7 +147,7 @@ display:flex;
   .title-portion p h4 {
     margin-top: -0.4em;
    padding-left: 0.4em !important;
-   /* margin-left: -1em */
+
   }
 
   .content-section img {
@@ -171,7 +168,7 @@ display:flex;
   
   .content-section img {
    margin-bottom: 3em;
-   /* height: 0% */
+
   }
 
   .title-style {
