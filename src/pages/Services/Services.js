@@ -41,7 +41,7 @@ export default function Services() {
           </div>
           <div className="wrapper-grid-services">
             <div class="card-image-container">
-              <a href="#text_content"
+              <FadeIn><a href="#text_content"
                 className="hover-button"
                 id="ecommerce-button"
                 onClick={() => {
@@ -58,7 +58,7 @@ export default function Services() {
                     {/* <div class="image__title">eCommerce</div> */}
                   </div>
                 </div>
-              </a>
+              </a></FadeIn>
 
               <a href="#text_content"
                 className="hover-button"

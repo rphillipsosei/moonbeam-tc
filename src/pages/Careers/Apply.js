@@ -12,8 +12,8 @@ const topFont = {
   color: "#000000",
 };
 const pdfIcon = {
-height:"10%",
-width: "10%"
+height:"5%",
+width: "5%"
 }
 const buttonStyle = {
   marginLeft: "450px",
@@ -71,7 +71,7 @@ export default function Apply() {
           <h6 align="center" className="career-caption">
             
             <i>
-              Think you might not qualify for any of the available positions above? Please apply to the position(s) of your choice using the form below or fill out the following pdf and email it to hiring@moonbeamtrading.ca. At
+              Think you might not qualify for any of the available positions above? Don't hesitate to apply to the position(s) of your choice using the form below or fill out the following PDF and email it to hiring@moonbeamtrading.ca. At
               Moonbeam, we hire from a holistic perspective and see barriers to
               employment as potential strengths!
             </i>

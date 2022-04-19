@@ -48,7 +48,7 @@ const Contact = () => {
   return (
     <Box as="section" sx={styles.subscribe} className={classes.wrapper} id='contact'>
       <Container>
-        <Heading as="h3">CONTACT US</Heading>
+        <Heading as="h3" id="contact-title">CONTACT US</Heading>
         <Text as="p" className={classes.white}>
           Any questions or inquiries? Contact us to get more information!
         </Text>

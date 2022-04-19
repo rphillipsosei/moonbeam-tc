@@ -1,3 +1,14 @@
+.auction-btn {
+  background-color: grey;
+  margin-top: 1rem;
+  color: #ffff
+}
+
+.shopify-btn {
+  background-color: #7bb45b;
+  margin-top: 1rem;
+  color: #ffff
+}
 
 .shop-title {
 font-family: "Comfortaa";

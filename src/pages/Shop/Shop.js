@@ -41,7 +41,9 @@ const Shop = () => {
                 <h6 className="shop-text">
                   <i>Discover a wide variety of products</i>
                 </h6>
-                <Button type="submit" sx={stylesShopify.button}>SHOP NOW</Button>
+                <a href="https://moonbeam-trading-company.myshopify.com/">
+                <button className="shopify-btn">SHOP NOW</button>
+                </a>
               </div>
             </div>
             <div className="mini_card">
@@ -52,7 +54,7 @@ const Shop = () => {
               <h6 className="shop-text">
                 <i>Equipment, Surplus Inventory, and Estate Auctions.</i>
               </h6>
-              <Button disabled type="submit" sx={stylesAuction.button}>SHOP NOW</Button>
+              <button disabled className="auction-btn">SHOP NOW</button>
               </div>
               
             </div>
@@ -66,50 +68,6 @@ const Shop = () => {
 
 
 
-const stylesAuction = {
-  button: {
-    fontFamily: "Comfortaa",
-    backgroundColor: '#000',
-    borderRadius: '5px',
-    fontWeight: '500',
-    fontSize: ['18px'],
-    maxWidth: '80%',
-    color: '#fff',
-    letterSpacing: '-0.5px',
-    outline: 'none',
-    padding: ['0px 30.75px'],
-    minHeight: ['50px', null, null, '60px'],
-    width: ['100%', null, null, 'auto'],
-    mt: '24px',
-    mx: ['auto', null, null, '0'],
-    '&:hover': {
-      backgroundColor: '#000',
-      opacity: '0.8',
-    },
-  } 
-}
 
-const stylesShopify = {
-  button: {
-    fontFamily: "Comfortaa",
-    backgroundColor: '#7bb45b',
-    borderRadius: '5px',
-    fontWeight: '500',
-    fontSize: ['18px'],
-    maxWidth: '80%',
-    color: '#fff',
-    letterSpacing: '-0.5px',
-    outline: 'none',
-    padding: ['0px 30.75px'],
-    minHeight: ['50px', null, null, '60px'],
-    width: ['100%', null, null, 'auto'],
-    mt: '24px',
-    mx: ['auto', null, null, '0'],
-    '&:hover': {
-      backgroundColor: '#000',
-      opacity: '0.8',
-    },
-  } 
-}
 export default Shop;
 
