@@ -11,7 +11,10 @@ const topFont = {
   fontSize: "50px",
   color: "#000000",
 };
-
+const pdfIcon = {
+height:"10%",
+width: "10%"
+}
 const buttonStyle = {
   marginLeft: "450px",
 };
@@ -40,7 +43,7 @@ export default function Apply() {
   }
   return (
     <FadeIn>
-      <main>
+      <main className="main-apply">
         {/* <a href="/careers">
           <Button type="submit" variant="outlined" disabled={state.submitting}>
             BACK TO CAREERS
@@ -53,8 +56,8 @@ export default function Apply() {
           <h1 style={topFont} align="center">
             SUBMIT AN APPLICATION
           </h1>
-          <h6 align="center">
-            {" "}
+          <h6 align="center" className="career-caption">
+            
             <i>
               Think you might not qualify for any of the available positions? At
               Moonbeam, we hire from a holistic perspective and see barriers to
@@ -77,7 +80,7 @@ export default function Apply() {
             <br></br>
             <a href="https://docdro.id/psBZ148">
               <br></br>
-              <AiIcons.AiOutlineFilePdf />
+              <AiIcons.AiOutlineFilePdf style={pdfIcon}/>
             </a>
           </h6>
           <br></br>
@@ -90,12 +93,13 @@ export default function Apply() {
             <br></br>
             <br></br>
 
-            <h6 align="center">
+            <h6 align="center" className="apply-instructions">
               Please answer all required questions at the minimum (marked with a
               star). <br></br>You can provide as little or as much detail as you
               would like for the open-ended questions.
             </h6>
-            <form name="my-form" action="#" method="get">
+            <div className="apply-form">
+            <form name="my-form" action="#" method="get" >
               <div class="form-box">
                 <label for="First Name"></label>
                 <input
@@ -117,7 +121,7 @@ export default function Apply() {
               </div>
 
               <div class="form-box">
-                <label for="pronouns">:</label>
+                <label for="pronouns"></label>
                 <input type="text" name="Pronouns" placeholder="Pronouns"/>
               </div>
 
@@ -206,20 +210,19 @@ export default function Apply() {
                 <textarea rows={4} id="apply-textarea" type="text" name="PositionsApplyingFor"  placeholder="     Which position(s) are you applying for?"/>
               </div>
 
-              
+              <h6 className="legal-to-work">Are you legally eligible to work in Canada?</h6>
               <div class="form-box">
                 <label for="domain">
-                  {/* <h6 className="legal"></h6> */}
                 </label>
-                <select name="work">
-                <option value="legal">Are you legally eligible to work in Canada?</option>
+                <select name="work" >
+                <option id="legal" value="legal" disable></option>
                   <option value="Yes" style={comfortaa}>Yes</option>
                   <option value="No">No</option>
                 </select>
               </div>
               <div class="form-box"></div>
             </form>
-
+            </div>
             <Button
               style={buttonStyle}
               type="submit"
