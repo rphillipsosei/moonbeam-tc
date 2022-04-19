@@ -41,11 +41,11 @@ export default function Apply() {
   return (
     <FadeIn>
       <main>
-        <a href="/careers">
+        {/* <a href="/careers">
           <Button type="submit" variant="outlined" disabled={state.submitting}>
             BACK TO CAREERS
           </Button>
-        </a>
+        </a> */}
         <br></br>
         <br></br>
         <br></br>
@@ -82,7 +82,7 @@ export default function Apply() {
           </h6>
           <br></br>
 
-          <form
+          <div
             onSubmit={handleSubmit}
             action="https://formspree.io/f/xknyqzly"
             method="post"
@@ -181,14 +181,14 @@ export default function Apply() {
                 <label for="pass">
                   
                 </label>
-                <textarea rows={4} id="apply-textarea" type="text" name="BarriersFacedSeekingEmployment"  placeholder="What are some barriers you have faced in seeking employment?"/>
+                <textarea rows={4} id="apply-textarea" type="text" name="BarriersFacedSeekingEmployment"  placeholder="     What are some barriers you have faced in seeking employment?"/>
               </div>
               <div class="form-box">
                 <label for="pass">
                  
                 </label>
                 
-                <textarea rows={4} id="apply-textarea" type="text" name="PeriodsOfLifeTransitions"  placeholder="Have you faced any difficult life-transitions such as
+                <textarea rows={4} id="apply-textarea" type="text" name="PeriodsOfLifeTransitions"  placeholder="     Have you faced any difficult life-transitions such as
                   homelessness, drug addiction and/or mental health?" />
               </div>
               
@@ -196,23 +196,23 @@ export default function Apply() {
                 <label for="pass">
                   
                 </label>
-                <textarea rows={4}  id="apply-textarea" type="text" name="SuitableForThisRole"  placeholder="Which of your past experiences would complement this role?"/>
+                <textarea rows={4}  id="apply-textarea" type="text" name="SuitableForThisRole"  placeholder="     Which of your past experiences would complement this role?"/>
               </div>
 
               <div class="form-box">
                 <label for="pass">
                   
                 </label>
-                <textarea rows={4} id="apply-textarea" type="text" name="PositionsApplyingFor"  placeholder="Which position(s) are you applying for?"/>
+                <textarea rows={4} id="apply-textarea" type="text" name="PositionsApplyingFor"  placeholder="     Which position(s) are you applying for?"/>
               </div>
 
               
               <div class="form-box">
                 <label for="domain">
-                  <h6 className="legal">Are you legally eligible to work in Canada?</h6>
+                  {/* <h6 className="legal"></h6> */}
                 </label>
                 <select name="work">
-                <option value="Blank"></option>
+                <option value="legal">Are you legally eligible to work in Canada?</option>
                   <option value="Yes" style={comfortaa}>Yes</option>
                   <option value="No">No</option>
                 </select>
@@ -228,7 +228,7 @@ export default function Apply() {
             >
               Submit
             </Button>
-          </form>
+          </div>
         </div>
       </main>
     </FadeIn>

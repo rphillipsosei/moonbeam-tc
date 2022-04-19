@@ -1,3 +1,7 @@
+form {
+margin-left: -8.5em;
+}
+
 html{
     box-sizing: border-box;
     font-size: 20px;
@@ -38,11 +42,13 @@ select, option, input, label, button{
 textarea::placeholder {
     font-size: 16px; 
     font-family: "Comfortaa";
+    padding: "0.5em"
 }
 
 input::placeholder {
     font-size: 16px;
     font-family: "Comfortaa";
+    color: #000000
 }
 
 .legal {
