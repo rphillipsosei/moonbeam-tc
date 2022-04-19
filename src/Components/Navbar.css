@@ -6,7 +6,9 @@
   align-items: center;
 
 }
-
+.x-icon {
+  margin-left: 0.5em
+}
 .nav-logo {
     display: flex;
  

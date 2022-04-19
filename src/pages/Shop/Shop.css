@@ -1,20 +1,25 @@
 
+.shop-title {
+font-family: "Comfortaa";
+font-size: 3em;
+color: black
+}
+
+.shop-text {
+color: black;
+font-family: "Comfortaa"
+}
+
+.shop-caption {
+  font-family: "Comfortaa";
+  font-size: 1em;
+  color: black
+  }
 
 .mini_card_inner_text {
 margin-left: 2rem;
 }
 
-.auction-btn {
-  background-color: grey;
-  margin-top: 1rem;
-  color: #ffff
-}
-
-.shopify-btn {
-  background-color: #7bb45b;
-  margin-top: 1rem;
-  color: #ffff
-}
 
 .shop_container {
   padding: 0.8rem;
@@ -70,9 +75,19 @@ margin-left: 2rem;
 
 @media screen and (max-width:825px) {
 
-  .shop_pic_card > img {
-    width: 100% !important;
 
+  .wrapper-grid-shop {
+    flex-direction: column;
+  }
+
+  .shop_pic_card > img {
+    width: 80% !important;
+    flex-direction: center;
+margin-bottom: 2em
+  }
+
+  .mini_card > img {
+ margin-top: 1em
   }
 
   

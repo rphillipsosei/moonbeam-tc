@@ -54,7 +54,7 @@ const Contact = () => {
         </Text>
         <Box as="form" sx={styles.form} className={classes.form} onSubmit={handleSubmit} action={'zeinabtmohamed@gmail.com'}>
           <Box as="label" htmlFor="subscribeEmail" variant="styles.srOnly">
-            Send Us an Email
+            <h2 style={sendEmail}>Send Us an Email</h2>
           </Box>
           <input
             placeholder="Name"
@@ -162,5 +162,10 @@ const styles = {
       backgroundColor: '#000',
       opacity: '0.8',
     },
-  },
+  }
 };
+
+const sendEmail = {
+  fontFamily: "Comfortaa",
+  color: "#000000"
+}

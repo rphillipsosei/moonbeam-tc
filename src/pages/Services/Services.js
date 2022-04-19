@@ -28,11 +28,11 @@ export default function Services() {
     <FadeIn>
       <main>
         <div className="services-page">
-          <div>
-            <h1 align="center" id="title" className="title">
+          <div className="services-title-section">
+            <h1 align="center" id="title" className="services-title">
               WHAT WE DO
             </h1>
-            <h6 align="center">
+            <h6 align="center" className="services-caption">
               <i>
                 We are a team of experts in numerous trades of business, ready
                 to reach new frontiers.
@@ -55,7 +55,7 @@ export default function Services() {
                 <div class="col grid">
                   <img src={warehouse} id="img-services"></img>
                   <div class="image-overlay">
-                    <div class="image__title">eCommerce</div>
+                    {/* <div class="image__title">eCommerce</div> */}
                   </div>
                 </div>
               </a>
@@ -74,7 +74,7 @@ export default function Services() {
                 <div class="col grid">
                   <img src={programming} id="img-services"></img>
                   <div class="image-overlay">
-                    <div class="image__title">Technology</div>
+                    {/* <div class="image__title">Technology</div> */}
                   </div>
                 </div>
               </a>
@@ -93,7 +93,7 @@ export default function Services() {
                 <div class="col grid">
                   <img src={tractor} id="img-services"></img>
                   <div class="image-overlay">
-                    <div class="image__title">Agri-foods</div>
+                    {/* <div class="image__title">Agri-foods</div> */}
                   </div>
                 </div>
               </a>
@@ -111,7 +111,7 @@ export default function Services() {
                 <div class="col grid">
                   <img src={shipping} id="img-services"></img>
                   <div class="image-overlay">
-                    <div class="image__title">Imports/Exports</div>
+                    {/* <div class="image__title">Imports/Exports</div> */}
                   </div>
                 </div>
               </a>
@@ -119,9 +119,13 @@ export default function Services() {
 
             <div className="popup-message-container" align="center">
               {showShipping && (
-                <div className="dividing-line">
+                <div>
+                 
                   <p className="popup-message" align="center">
                     <h4 className="text_content" id="text_content">
+                    <br></br>
+                      <h2>IMPORTS AND EXPORTS </h2>
+                      <br></br>
                       We are increasing our presence in the thriving import and
                       export business. Through distributorships and creating new
                       import/export relationships, knowledge exchange or the
@@ -131,6 +135,9 @@ export default function Services() {
                       sources products from around the world to meet the demands
                       of our Canadian customers.
                     </h4>
+                    <br></br>
+                    <a align="center" id="back-to-top" href="/services#title" onClick={() => {scrollUp()}}>
+                      <Button type="submit" sx={styles.button}>BACK TO TOP</Button></a>
                   </p>
                 </div>
               )}
@@ -138,6 +145,9 @@ export default function Services() {
                 <div>
                   <p className="popup-message" align="center" >
                     <h4 className="text_content" id="text_content">
+                       <br></br>
+                    <h2>E-COMMERCE </h2>
+                      <br></br>
                       We have a goal of offering our customers positive online
                       shopping experiences. Our sales and digital marketing team
                       working alongside our partners in ecommerce and drop
@@ -146,13 +156,19 @@ export default function Services() {
                       provide increased value and savings to all of our
                       customers.
                     </h4>
+                    <br></br>
+                    <a align="center" id="back-to-top" href="/services#title" onClick={() => {scrollUp()}}>
+                      <Button type="submit" sx={styles.button}>BACK TO TOP</Button></a>
                   </p>
                 </div>
               )}
               {showAgrifood && (
                 <div>
                   <p className="popup-message" align="center">
-                    <h4 className="text_content" id="text_content">
+                  <h4 className="text_content" id="text_content">
+                  <br></br>
+                    <h2>AGRI-FOODS </h2>
+                      <br></br>
                       We work hard to grow chemical-free and hyper-local food
                       all year round. Rapid climate change and localized food
                       insecurity are just a few of the challenges we face today,
@@ -162,6 +178,10 @@ export default function Services() {
                       well as assist urban and rural farmers to realize greater
                       annual yields and improved profits.
                     </h4>
+                    <br></br>
+                    <a align="center" id="back-to-top" href="/services#title" onClick={() => {scrollUp()}}><Button type="submit" sx={styles.button}>BACK TO TOP</Button>
+        
+        </a>
                   </p>
                 </div>
               )}
@@ -169,6 +189,9 @@ export default function Services() {
                 <div>
                   <p className="popup-message" align="center">
                     <h4 className="text_content" id="text_content">
+                      <br></br>
+                    <h2>TECHNOLOGY</h2>
+                      <br></br>
                       We have a passion for using technology to address current
                       social problems while working collaboratively to alleviate
                       societal issues. These challenges are complex and require
@@ -178,14 +201,13 @@ export default function Services() {
                       Service (SaaS), predictive analytics, machine
                       learning/ artificial intelligence.
                     </h4>
+                    <br></br>
+                    <a align="center" id="back-to-top" href="/services#title" onClick={() => {scrollUp()}}>
+                      <Button type="submit" style={styles.button}>BACK TO TOP</Button></a>
                   </p>
                 </div>
               )}
-        <a align="center" id="back-to-top" href="/services#title" onClick={() => {scrollUp()}}><Button
-        type="submit"
-        variant="outlined"
-       
-        >BACK TO TOP</Button></a>
+        
             </div>
           </div>
         </div>
@@ -194,3 +216,25 @@ export default function Services() {
   );
 }
 
+const styles = {
+  button: {
+    fontFamily: "Comfortaa",
+    backgroundColor: '#000',
+    borderRadius: '5px',
+    fontWeight: '500',
+    fontSize: ['18px'],
+    maxWidth: '80%',
+    color: '#fff',
+    letterSpacing: '-0.5px',
+    outline: 'none',
+    padding: ['0px 30.75px'],
+    minHeight: ['50px', null, null, '60px'],
+    width: ['100%', null, null, 'auto'],
+    mt: '24px',
+    mx: ['auto', null, null, '0'],
+    '&:hover': {
+      backgroundColor: '#000',
+      opacity: '0.8',
+    },
+  }
+}

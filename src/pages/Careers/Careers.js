@@ -20,24 +20,25 @@ const Careers = () => {
       <main>
         <div className="wrap-text-careers">
           <div className="careers-title-section">
-            <h1 align="center" className="title">
+            <h1 align="center" className="careers-title">
               CAREERS
             </h1>
             <h6 align="center">
-              <i>Join our diverse, multi-faceted team.</i>
+              <i className="careers-caption">Join our diverse, multi-faceted team.</i>
             </h6>
           </div>
+          <br></br>
           <container className="careers_container">
             <div className="img-area">
               <img className="career-img" src={brickwall}></img>
             </div>
             <div className="careers_text">
-              <h2>
+              <h2 className="shop-text">
                 AT MOONBEAM TRADING COMPANY,<br></br> WE HIRE FROM A HOLISTIC
                 PERSPECTIVE...
               </h2>
               <br></br>
-              <h6>
+              <h6 className="shop-text">
                 We recognize all of the different life transitions that people
                 may encounter in life. <br></br>
                 We value everyone's opinion, and believe the key to success is
@@ -50,11 +51,9 @@ const Careers = () => {
                 encouraged <br></br>to apply. Tell us your story!
               </h6>
               <a href="careers/apply">
-                <Button 
-                   type="submit"
-                   variant="outlined"
-                   
-                id="apply-btn">APPLY
+                <br></br>
+                <Button type="submit" sx={styles.button}>
+APPLY
                 </Button>
               </a>
             </div>
@@ -67,3 +66,25 @@ const Careers = () => {
 export default Careers;
 
 
+const styles = {
+  button: {
+    fontFamily: "Comfortaa",
+    backgroundColor: '#000',
+    borderRadius: '5px',
+    fontWeight: '500',
+    fontSize: ['18px'],
+    maxWidth: '80%',
+    color: '#fff',
+    letterSpacing: '-0.5px',
+    outline: 'none',
+    padding: ['0px 30.75px'],
+    minHeight: ['50px', null, null, '60px'],
+    width: ['100%', null, null, 'auto'],
+    mt: '24px',
+    mx: ['auto', null, null, '0'],
+    '&:hover': {
+      backgroundColor: '#000',
+      opacity: '0.8',
+    },
+  }
+}

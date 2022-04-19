@@ -6,7 +6,7 @@ import FadeIn from "react-fade-in";
 const Home = () => {
   return (
     <FadeIn>
-      <main>
+      <main className="main-home">
         <div className="white-section">
           <container className="content-section">
             <img className="home-img" src={bigdata}></img>
@@ -16,14 +16,13 @@ const Home = () => {
                   Welcome to <br></br>Moonbeam Trading<br></br> Company
                 </h1>
                 <br></br>
-                <h4>
+                <h4 className="home-caption">
                   <i>
                     Services that create business, customer,<br></br> and
                     community value.
                   </i>
                 </h4>
 
-                <br></br>
               </p>
             </div>
           </container>
