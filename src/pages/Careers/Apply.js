@@ -56,15 +56,9 @@ export default function Apply() {
           <h1 style={topFont} align="center">
             SUBMIT AN APPLICATION
           </h1>
-          <h6 align="center" className="career-caption">
-            
-            <i>
-              Think you might not qualify for any of the available positions? At
-              Moonbeam, we hire from a holistic perspective and see barriers to
-              employment as potential strengths!
-            </i>
-          </h6>
+
           <br></br>
+
           <h6 align="center">
             <b>SEE OUR CURRENT OPENINGS:</b>
             <br></br>
@@ -74,6 +68,14 @@ export default function Apply() {
           </h6>
           <br></br>
 
+          <h6 align="center" className="career-caption">
+            
+            <i>
+              Think you might not qualify for any of the available positions above? Please apply to the position(s) of your choice using the form below or fill out the following pdf and email it to hiring@moonbeamtrading.ca. At
+              Moonbeam, we hire from a holistic perspective and see barriers to
+              employment as potential strengths!
+            </i>
+          </h6>
           <br></br>
           <h6 align="center">
             <b>Click here to view a PDF version of the application</b>
@@ -90,7 +92,6 @@ export default function Apply() {
             action="https://formspree.io/f/xknyqzly"
             method="post"
           >
-            <br></br>
             <br></br>
 
             <h6 align="center" className="apply-instructions">
