@@ -18,7 +18,7 @@ const Contact = () => {
 
     console.log(name, message, email)
 
-    fetch("https://formsubmit.co/ajax/zeinabtmohamed@gmail.com", {
+    fetch("https://formsubmit.co/ajax/moonbeamtradingco@gmail.com", {
       method: "POST",
       headers: { 
           'Content-Type': 'application/json',

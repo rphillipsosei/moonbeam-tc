@@ -17,7 +17,7 @@ const Navbar = () => {
 
     console.log(email)
 
-    fetch("https://formsubmit.co/ajax/zeinabtmohamed@gmail.com", {
+    fetch("https://formsubmit.co/ajax/mark.mcdonald@moonbeamtrading.ca", {
       method: "POST",
       headers: { 
           'Content-Type': 'application/json',
