@@ -56,15 +56,9 @@ export default function Apply() {
           <h1 style={topFont} align="center">
             SUBMIT AN APPLICATION
           </h1>
-          <h6 align="center" className="career-caption">
-            
-            <i>
-              Think you might not qualify for any of the available positions? At
-              Moonbeam, we hire from a holistic perspective and see barriers to
-              employment as potential strengths!
-            </i>
-          </h6>
+
           <br></br>
+
           <h6 align="center">
             <b>SEE OUR CURRENT OPENINGS:</b>
             <br></br>
@@ -74,11 +68,19 @@ export default function Apply() {
           </h6>
           <br></br>
 
+          <h6 align="center" className="career-caption">
+            
+            <i>
+              Think you might not qualify for any of the available positions above? Please apply to the position(s) of your choice using the form below or fill out the following pdf and email it to hiring@moonbeamtrading.ca. At
+              Moonbeam, we hire from a holistic perspective and see barriers to
+              employment as potential strengths!
+            </i>
+          </h6>
           <br></br>
           <h6 align="center">
             <b>Click here to view a PDF version of the application</b>
             <br></br>
-            <a href="https://docdro.id/psBZ148">
+            <a href="https://docdro.id/MwY5KLs">
               <br></br>
               <AiIcons.AiOutlineFilePdf style={pdfIcon}/>
             </a>
@@ -90,7 +92,6 @@ export default function Apply() {
             action="https://formspree.io/f/xknyqzly"
             method="post"
           >
-            <br></br>
             <br></br>
 
             <h6 align="center" className="apply-instructions">
@@ -167,7 +168,7 @@ export default function Apply() {
                 <label for="pass">
                   
                 </label>
-                <input type="text" name="BarriersFacedCompletingEducation"  placeholder="What are some barriers you faced to your education?"/>
+                <input type="text" name="BarriersFacedCompletingEducation"  placeholder="What are some obstacles you have faced in your education?"/>
               </div>
               <div class="form-box">
                 <label for="pass">
@@ -185,7 +186,7 @@ export default function Apply() {
                 <label for="pass">
                   
                 </label>
-                <textarea rows={4} id="apply-textarea" type="text" name="BarriersFacedSeekingEmployment"  placeholder="     What are some barriers you have faced in seeking employment?"/>
+                <textarea rows={4} id="apply-textarea" type="text" name="BarriersFacedSeekingEmployment"  placeholder="     What are some obstacles you have faced in finding employment?"/>
               </div>
               <div class="form-box">
                 <label for="pass">
@@ -201,6 +202,13 @@ export default function Apply() {
                   
                 </label>
                 <textarea rows={4}  id="apply-textarea" type="text" name="SuitableForThisRole"  placeholder="     Which of your past experiences would complement this role?"/>
+              </div>
+
+              <div class="form-box">
+                <label for="pass">
+                  
+                </label>
+                <textarea rows={4}  id="apply-textarea" type="text" name="AdditionalInfo"  placeholder="     Is there any additional information you would like our hiring team to know?"/>
               </div>
 
               <div class="form-box">
