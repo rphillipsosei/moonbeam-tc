@@ -1,18 +1,15 @@
-
 #contact-title {
-display: block
-
+  display: block;
 }
 
 .contact-page {
   height: 100vh;
   width: 100%;
   display: grid;
-  background-color:aqua;
+  background-color: aqua;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
 #header-section {
@@ -20,9 +17,8 @@ display: block
   grid-column-start: 1;
   grid-row-end: 2;
   grid-column-end: 2;
-  background-color:aqua;
+  background-color: aqua;
 }
-
 
 #form-items {
   display: flex;
@@ -47,19 +43,15 @@ display: block
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 100%
+  width: 100%;
 }
-
 
 .contact-btn {
   margin-bottom: 6em;
 }
 
 @media screen and (max-width: 500px) {
-.contact_input {
-  width: 100%
-}
-
-
-
+  .contact_input {
+    width: 100%;
+  }
 }

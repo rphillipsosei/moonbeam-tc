@@ -1,6 +1,6 @@
 import React from "react";
 import brickwall from "../../images/brickwall.jpg";
-import { useForm} from "@formspree/react";
+import { useForm } from "@formspree/react";
 import { Button } from "theme-ui";
 import "./Careers.css";
 import FadeIn from "react-fade-in/lib/FadeIn";
@@ -24,7 +24,9 @@ const Careers = () => {
               CAREERS
             </h1>
             <h6 align="center">
-              <i className="careers-caption">Join our diverse, multi-faceted team.</i>
+              <i className="careers-caption">
+                Join our diverse, multi-faceted team.
+              </i>
             </h6>
           </div>
           <br></br>
@@ -53,7 +55,7 @@ const Careers = () => {
               <a href="careers/apply">
                 <br></br>
                 <Button type="submit" sx={styles.button}>
-APPLY
+                  APPLY
                 </Button>
               </a>
             </div>
@@ -65,26 +67,25 @@ APPLY
 };
 export default Careers;
 
-
 const styles = {
   button: {
     fontFamily: "Comfortaa",
-    backgroundColor: '#000',
-    borderRadius: '5px',
-    fontWeight: '500',
-    fontSize: ['18px'],
-    maxWidth: '80%',
-    color: '#fff',
-    letterSpacing: '-0.5px',
-    outline: 'none',
-    padding: ['0px 30.75px'],
-    minHeight: ['50px', null, null, '60px'],
-    width: ['100%', null, null, 'auto'],
-    mt: '24px',
-    mx: ['auto', null, null, '0'],
-    '&:hover': {
-      backgroundColor: '#000',
-      opacity: '0.8',
+    backgroundColor: "#000",
+    borderRadius: "5px",
+    fontWeight: "500",
+    fontSize: ["18px"],
+    maxWidth: "80%",
+    color: "#fff",
+    letterSpacing: "-0.5px",
+    outline: "none",
+    padding: ["0px 30.75px"],
+    minHeight: ["50px", null, null, "60px"],
+    width: ["100%", null, null, "auto"],
+    mt: "24px",
+    mx: ["auto", null, null, "0"],
+    "&:hover": {
+      backgroundColor: "#000",
+      opacity: "0.8",
     },
-  }
-}
+  },
+};

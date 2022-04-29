@@ -1,27 +1,25 @@
 .white-space {
   height: 40%;
-  width: 100%
+  width: 100%;
 }
 
 .text_content {
   color: black;
-  font-size: 18px
+  font-size: 18px;
 }
 .services-title {
   font-family: "Comfortaa";
   font-size: 3em;
   color: black;
-  margin-left: 4rem !important
-
+  margin-left: 4rem !important;
 }
 .services-title-section {
- 
 }
 .services-caption {
   font-family: "Comfortaa";
   font-size: 1em;
   color: black;
-    margin-bottom: 3em
+  margin-bottom: 3em;
 }
 
 .services-page {
@@ -35,7 +33,6 @@
   align-items: center;
 }
 
-
 .col {
   background: white;
   display: block;
@@ -46,7 +43,6 @@
   margin-left: 0 !important;
 }
 
-
 .row:before,
 .row:after {
   content: "";
@@ -56,9 +52,8 @@
   clear: both;
 }
 .row {
-  zoom: 1; 
+  zoom: 1;
 }
-
 
 .grid {
   width: 20rem;
@@ -79,7 +74,6 @@
   width: 100%;
 }
 
-
 .image-title {
   font-size: 2em;
   font-weight: bold;
@@ -96,7 +90,7 @@
   text-align: justify;
   font-family: "Comfortaa";
   font-size: 2em;
-  
+
   margin-top: 10em;
   margin-bottom: 10em;
 }
@@ -119,11 +113,10 @@
 @media screen and (max-width: 825px) {
   .image-overlay {
     display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+    align-items: center;
+    flex-wrap: wrap;
   }
-  
-  
+
   .popup_message_container {
     margin: 0.5rem;
   }
@@ -172,9 +165,9 @@
 
 @media screen and (max-width: 500px) {
   .services-title {
-    margin-left: 2rem !important
+    margin-left: 2rem !important;
   }
-  
+
   .card-image-container {
     flex-direction: column;
   }

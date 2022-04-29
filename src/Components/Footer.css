@@ -8,24 +8,22 @@
   flex-direction: column;
   justify-content: center;
   margin-top: 3rem;
-  height: 8em
+  height: 8em;
 }
 
 .rights-reserved {
-  margin-top: 1em
-
+  margin-top: 1em;
 }
 .footer-section h6 {
   color: #ffff;
   font-family: "Comfortaa";
-  font-size: .75em
+  font-size: 0.75em;
 }
 
 .up-to-date {
   font-size: 1em;
-  color: #ffff
+  color: #ffff;
 }
-
 
 .subscribe-input {
   padding: 5px;

@@ -1,21 +1,19 @@
 .navbar {
   background: #ffff;
- justify-content: space-between;
+  justify-content: space-between;
   display: flex;
 
   align-items: center;
-
 }
 .x-icon {
-  margin-left: 0.5em
+  margin-left: 0.5em;
 }
 .nav-logo {
-    display: flex;
- 
-    width: 6em;
-    height: 6em;
-    margin-top: 5px
-   
+  display: flex;
+
+  width: 6em;
+  height: 6em;
+  margin-top: 5px;
 }
 .menu-bars {
   margin-right: 2rem;
@@ -25,7 +23,7 @@
 }
 
 .nav-menu {
-  z-index:9999;
+  z-index: 9999;
   background-color: #a9daeb;
   width: 250px;
   height: 100vh;
@@ -71,7 +69,6 @@
 
 .nav-menu-items {
   width: 100%;
- 
 }
 
 .navbar-toggle {

@@ -18,11 +18,10 @@ const Home = () => {
                 <br></br>
                 <h4 className="home-caption">
                   <i>
-                    Services that create business, customer,<br></br> and
+                    Services that create business, customer, and
                     community value.
                   </i>
                 </h4>
-
               </p>
             </div>
           </container>

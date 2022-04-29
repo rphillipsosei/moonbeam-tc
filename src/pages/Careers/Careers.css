@@ -4,14 +4,14 @@
 }
 .careers-title {
   color: black;
-font-family: "Comfortaa";
-font-size: 3em;
+  font-family: "Comfortaa";
+  font-size: 3em;
 }
 
 .careers-caption {
   color: black;
-font-family: "Comfortaa";
-font-size: 1.2em;
+  font-family: "Comfortaa";
+  font-size: 1.2em;
 }
 
 .content-section-careers {
@@ -24,7 +24,7 @@ font-size: 1.2em;
 
 .shop-text {
   color: black;
-font-family: "Comfortaa"
+  font-family: "Comfortaa";
 }
 
 .content-section-careers img {
@@ -38,7 +38,6 @@ font-family: "Comfortaa"
   font-family: "Comfortaa";
   font-size: 2em;
   padding-left: 1em;
-  
 }
 
 .intro-text p h6 {
@@ -48,15 +47,14 @@ font-family: "Comfortaa"
   text-align: left;
 }
 
-
 .btn-section {
-    width: 100%;
-    display: flex;
-    justify-content: center
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .careers-img {
-  margin-left: 10em
+  margin-left: 10em;
 }
 .about-description {
   font-family: "Comfortaa";
@@ -65,16 +63,15 @@ font-family: "Comfortaa"
   align-items: center;
 }
 
-
 .wrap-text-careers {
   padding: 0.7rem;
 }
- .careers_container {
-   max-width: 1024px;
-   width: 100%;
-   margin: 1rem auto;
- }
- .career-img {
+.careers_container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 1rem auto;
+}
+.career-img {
   width: 50%;
   margin: 0 auto;
   display: block;
@@ -83,16 +80,12 @@ font-family: "Comfortaa"
 }
 
 .careers_text {
-text-align: center;
-margin-top: 2rem;
+  text-align: center;
+  margin-top: 2rem;
 }
 
-@media screen and (max-width:500px) {
-
+@media screen and (max-width: 500px) {
   .career-img {
-   width: 100%;
- }
-
-  
+    width: 100%;
+  }
 }
-

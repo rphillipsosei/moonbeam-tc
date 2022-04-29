@@ -1,36 +1,35 @@
 .auction-btn {
   background-color: grey;
   margin-top: 1rem;
-  color: #ffff
+  color: #ffff;
 }
 
 .shopify-btn {
   background-color: #7bb45b;
   margin-top: 1rem;
-  color: #ffff
+  color: #ffff;
 }
 
 .shop-title {
-font-family: "Comfortaa";
-font-size: 3em;
-color: black
+  font-family: "Comfortaa";
+  font-size: 3em;
+  color: black;
 }
 
 .shop-text {
-color: black;
-font-family: "Comfortaa"
+  color: black;
+  font-family: "Comfortaa";
 }
 
 .shop-caption {
   font-family: "Comfortaa";
   font-size: 1em;
-  color: black
-  }
-
-.mini_card_inner_text {
-margin-left: 2rem;
+  color: black;
 }
 
+.mini_card_inner_text {
+  margin-left: 2rem;
+}
 
 .shop_container {
   padding: 0.8rem;
@@ -62,10 +61,10 @@ margin-left: 2rem;
 }
 .mini_card > img {
   width: 20%;
-  margin-top: -5em
+  margin-top: -5em;
 }
 .wrapper_shop_text_inner {
-    width: 80%;
+  width: 80%;
   margin: 0 auto;
 }
 @media screen and (max-width: 500px) {
@@ -74,9 +73,8 @@ margin-left: 2rem;
   }
 
   .wrapper_shop_text_inner {
-  margin-top: 2rem !important;
+    margin-top: 2rem !important;
     width: 100% !important;
-    
   }
 
   .shop_pic_card > img {
@@ -84,9 +82,7 @@ margin-left: 2rem;
   }
 }
 
-@media screen and (max-width:825px) {
-
-
+@media screen and (max-width: 825px) {
   .wrapper-grid-shop {
     flex-direction: column;
   }
@@ -94,12 +90,10 @@ margin-left: 2rem;
   .shop_pic_card > img {
     width: 80% !important;
     flex-direction: center;
-margin-bottom: 2em
+    margin-bottom: 2em;
   }
 
   .mini_card > img {
- margin-top: 1em
+    margin-top: 1em;
   }
-
-  
 }
