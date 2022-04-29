@@ -46,7 +46,7 @@
 .shop_pic_card > img {
   width: 90%;
   margin: 0 auto;
-  border-radius: 147px 31px 147px 50px / 116px 15px 116px 25px;
+  border-radius: 100px 31px 100px 50px / 75px 15px 70px 25px;
   border: 5px outset #1c6ea4;
   display: block;
 }
@@ -73,7 +73,7 @@
   }
 
   .wrapper_shop_text_inner {
-    margin-top: 2rem !important;
+    margin-top: 1rem !important;
     width: 100% !important;
   }
 
@@ -90,10 +90,22 @@
   .shop_pic_card > img {
     width: 80% !important;
     flex-direction: center;
-    margin-bottom: 2em;
+    margin-top: -2rem;
   }
 
   .mini_card > img {
     margin-top: 1em;
   }
+
+  .mini_card {
+    margin-top: 0.95em;
+  }
+
+  .shopify-btn {
+  font-size: 18px;
+  }
+
+  .auction-btn {
+    font-size: 18px;
+    }
 }
