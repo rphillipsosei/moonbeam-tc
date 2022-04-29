@@ -27,8 +27,7 @@
   color: black;
   align-self: center;
 }
-.font-formatting {
-}
+
 .wrapper-grid-about {
   display: grid;
   gap: 1rem;
@@ -72,7 +71,11 @@
 }
 .text-card p {
   color: black;
+  text-align: justify;
+padding: 0.7rem;
 }
+
+
 
 @media screen and (max-width: 1140px) {
   .text-card {
@@ -84,6 +87,7 @@
   #img-growth {
     width: 100%;
     height: auto;
+    margin-top: -1rem;
   }
 
   #img-helping-hands {
@@ -124,9 +128,7 @@
     display: flex;
   }
 
-  .about-title {
-    margin-left: 3rem;
-  }
+ 
 
   #img-collage {
     width: 70%;
@@ -135,6 +137,15 @@
   }
 
   #img-helping-hands {
-    width: 70%;
+  
+    width: 95% !important;
+  }
+
+  #img-collage {
+    width: 95%;
+  }
+
+  #text-card{
+    padding: 1rem !important;
   }
 }
