@@ -34,13 +34,14 @@ const Careers = () => {
             <div className="img-area">
               <img className="career-img" src={brickwall}></img>
             </div>
-            <div className="careers_text">
-              <h2 className="shop-text">
+          
+              <h2 className="careers-header-text">
                 AT MOONBEAM TRADING COMPANY,<br></br> WE HIRE FROM A HOLISTIC
                 PERSPECTIVE...
+                <br></br><br></br>
               </h2>
               <br></br>
-              <h6 className="shop-text">
+              <h6 className="careers-text">
                 We recognize all of the different life transitions that people
                 may encounter in life. <br></br>
                 We value everyone's opinion, and believe the key to success is
@@ -54,11 +55,11 @@ const Careers = () => {
               </h6>
               <a href="careers/apply">
                 <br></br>
-                <Button type="submit" sx={styles.button}>
+                <Button className="careers-button"type="submit" sx={styles.button}>
                   APPLY
                 </Button>
               </a>
-            </div>
+            
           </container>
         </div>
       </main>

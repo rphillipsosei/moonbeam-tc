@@ -2,16 +2,26 @@
   width: 100%;
   height: 100%;
 }
+
+.careers-button {
+align-self: center;
+}
 .careers-title {
   color: black;
   font-family: "Comfortaa";
   font-size: 3em;
 }
 
+.careers-text {
+  text-align: center;
+  color: black
+}
+
 .careers-caption {
   color: black;
   font-family: "Comfortaa";
   font-size: 1.2em;
+  text-align: justify;
 }
 
 .content-section-careers {
@@ -22,9 +32,11 @@
   align-items: center;
 }
 
-.shop-text {
+.careers-header-text {
+  margin-top: 1rem;
+  text-align: center;
   color: black;
-  font-family: "Comfortaa";
+  
 }
 
 .content-section-careers img {
@@ -64,18 +76,21 @@
 }
 
 .wrap-text-careers {
-  padding: 0.7rem;
+  padding: 0rem;
 }
 .careers_container {
   max-width: 1024px;
   width: 100%;
   margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 .career-img {
   width: 50%;
   margin: 0 auto;
   display: block;
-  border-radius: 147px 31px 147px 50px / 116px 15px 116px 25px;
+  border-radius: 50px 31px 50px 50px / 100px 15px 116px 25px;
   border: 5px outset #1c6ea4;
 }
 
