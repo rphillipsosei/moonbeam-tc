@@ -109,7 +109,7 @@
   font-family: "Comfortaa";
   font-size: 2em;
 
-  margin-top: 10em;
+  /* margin-top: 10em; */
   margin-bottom: 10em;
 }
 #back-to-top {
@@ -230,7 +230,7 @@
   .popup-message-container {
     height: 100vh;
     display: flex;
-    padding-top: 20rem;
+   
     /* justify-content: center; */
     /* margin-top: 12rem; */
     padding-right: 2rem;
