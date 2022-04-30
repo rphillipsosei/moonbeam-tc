@@ -2,13 +2,17 @@
   font-size: 16px;
   font-family: "Comfortaa";
   color: #000000;
-  margin-left: 12em;
+  /* margin-left: 12em; */
   color: #7e7e7e;
 }
 
-form {
-  margin-left: -8.5em;
+/* optgroup {
+  font-size: 12px;
+} */
+.career-caption {
+  text-align: center;
 }
+
 
 .form-box {
   font-family: "Comfortaa";
@@ -34,6 +38,7 @@ main {
   margin: 1rem auto;
   width: 90%;
   max-width: 1000px;
+  color: black;
 }
 
 select,
@@ -52,6 +57,11 @@ button {
 }
 .form-box label {
   display: none;
+}
+
+textarea {
+  padding: 0.5rem ;
+  
 }
 .form-box input,
 .form-box select,
@@ -80,6 +90,29 @@ input::placeholder {
 }
 
 @media all and (max-width: 430px) {
+  textarea::placeholder {
+    font-size: 12px;
+   
+  }
+  input::placeholder {
+    font-size: 12px;
+
+  }
+  
+  .legal {
+    font-size: 12px;
+
+  }
+  .legal-to-work {
+    font-size: 8px;
+    margin-left: 0;
+  }
+  
+  .apply-section {
+    /* display: flex; */
+    font-size: 12px;
+  }
+
   main {
     padding: 1rem auto;
     width: 70%;
@@ -88,15 +121,25 @@ input::placeholder {
     max-width: 1000px;
   }
 
+  .apply-form {
+    margin-left: 0;
+  }
+
+  .accessibility {
+    width: 60%;
+  }
+
   .career-caption {
     width: 60%;
-    margin-left: 8em;
+    /* margin-left: 8em; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 6rem !important;
   }
 
   .apply-instructions {
     width: 65%;
-    margin-left: 7em;
-    margin-top: -4em;
   }
   .apply-form {
     width: 30%;
@@ -112,31 +155,32 @@ input::placeholder {
   main {
     padding: 1rem auto;
     width: 80%;
-    display: flex;
-    justify-content: center;
-    max-width: 1000px;
   }
 
   .career-caption {
     width: 60%;
-    margin-left: 8em;
+    /* margin-left: em; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem !important;
   }
 
   .apply-instructions {
     width: 65%;
-    margin-left: 7em;
-    margin-top: -4em;
   }
   .apply-form {
     width: 45%;
-    margin-left: 12em;
   }
 
   .legal-to-work {
-    font-size: 16px;
+    font-size: 12px;
 
     margin-left: 0;
   }
+
+
 }
 
 @media all and (min-width: 600px) {

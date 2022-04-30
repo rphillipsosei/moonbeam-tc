@@ -37,11 +37,14 @@ export default function Services() {
                 We are a team of experts in numerous trades of business, ready
                 to reach new frontiers.
               </i>
+              <br></br>
+              <br></br>
+              <u>Select a line of business:</u>
             </h6>
           </div>
           <div className="wrapper-grid-services">
             <div class="card-image-container">
-              <FadeIn>
+              <div className="row1">
                 <a
                   href="#text_content"
                   className="hover-button"
@@ -55,98 +58,109 @@ export default function Services() {
                   }}
                 >
                   <div class="col grid">
-                    <img src={warehouse} id="img-services"></img>
-                    <div class="image-overlay"></div>
+                    <img
+                      src={warehouse}
+                      id="img-services"
+                      alt="Ecommerce"
+                    ></img>
                   </div>
                 </a>
-              </FadeIn>
 
-              <a
-                href="#text_content"
-                className="hover-button"
-                id="tech-button"
-                onClick={() => {
-                  setShowTech(!showTech);
-                  scrollDown();
-                  setShowEcommerce(false);
-                  setShowAgrifood(false);
-                  setShowShipping(false);
-                }}
-              >
-                <div class="col grid">
-                  <img src={programming} id="img-services"></img>
-                  <div class="image-overlay"></div>
-                </div>
-              </a>
+                <a
+                  href="#text_content"
+                  className="hover-button"
+                  id="tech-button"
+                  onClick={() => {
+                    setShowTech(!showTech);
+                    scrollDown();
+                    setShowEcommerce(false);
+                    setShowAgrifood(false);
+                    setShowShipping(false);
+                  }}
+                >
+                  <div class="col grid">
+                    <img
+                      src={programming}
+                      id="img-services"
+                      alt="Technology"
+                    ></img>
+                  </div>
+                </a>
+              </div>
 
-              <a
-                href="#text_content"
-                className="hover-button"
-                id="agrifoods-button"
-                onClick={() => {
-                  setShowAgrifood(!showAgrifood);
-                  scrollDown();
-                  setShowEcommerce(false);
-                  setShowShipping(false);
-                  setShowTech(false);
-                }}
-              >
-                <div class="col grid">
-                  <img src={tractor} id="img-services"></img>
-                  <div class="image-overlay"></div>
-                </div>
-              </a>
-              <a
-                href="#text_content"
-                className="hover-button"
-                id="shipping-button"
-                onClick={() => {
-                  setShowShipping(!showShipping);
-                  setShowEcommerce(false);
-                  setShowAgrifood(false);
-                  setShowTech(false);
-                  scrollDown();
-                }}
-              >
-                <div class="col grid">
-                  <img src={shipping} id="img-services"></img>
-                  <div class="image-overlay"></div>
-                </div>
-              </a>
+              <div>
+                <a
+                  href="#text_content"
+                  className="hover-button"
+                  id="agrifoods-button"
+                  onClick={() => {
+                    setShowAgrifood(!showAgrifood);
+                    scrollDown();
+                    setShowEcommerce(false);
+                    setShowShipping(false);
+                    setShowTech(false);
+                  }}
+                >
+                  <div class="col grid">
+                    <img src={tractor} id="img-services" alt="Agrifoods"></img>
+                  </div>
+                </a>
+                <a
+                  href="#text_content"
+                  className="hover-button"
+                  id="shipping-button"
+                  onClick={() => {
+                    setShowShipping(!showShipping);
+                    setShowEcommerce(false);
+                    setShowAgrifood(false);
+                    setShowTech(false);
+                    scrollDown();
+                  }}
+                >
+                  <div class="col grid">
+                    <img
+                      src={shipping}
+                      id="img-services"
+                      alt="Imports & Exports"
+                    ></img>
+                  </div>
+                </a>
+              </div>
             </div>
-
-            <div className="popup-message-container" align="center">
+            <div
+              className="popup-message-container"
+              align="center"
+              id="text_content"
+            >
               {showShipping && (
-                <div>
-                  <p className="popup-message" align="center">
-                    <h4 className="text_content" id="text_content">
-                      <br></br>
-                      <h2>IMPORTS AND EXPORTS </h2>
-                      <br></br>
-                      We are increasing our presence in the thriving import and
-                      export business. Through distributorships and creating new
-                      import/export relationships, knowledge exchange or the
-                      introduction of new freight technologies, we are expanding
-                      our services to focus on creating mutually beneficial
-                      commercial success. Our purchasing team continuously
-                      sources products from around the world to meet the demands
-                      of our Canadian customers.
-                    </h4>
+                <p className="popup-message" align="center">
+                  <h4 className="text_content">
                     <br></br>
-                    <a
-                      align="center"
-                      id="back-to-top"
-                      href="/services#title"
-                      onClick={() => {
-                        scrollUp();
-                      }}
-                    >
-                      <Button type="submit" sx={styles.button}>
-                        BACK TO TOP
-                      </Button>
-                    </a>
-                  </p>
-                </div>
+                    <h2>IMPORTS/EXPORTS </h2>
+                    <br></br>
+                    We are increasing our presence in the thriving import and
+                    export business. Through distributorships and creating new
+                    import/export relationships, knowledge exchange or the
+                    introduction of new freight technologies, we are expanding
+                    our services to focus on creating mutually beneficial
+                    commercial success. Our purchasing team continuously sources
+                    products from around the world to meet the demands of our
+                    Canadian customers.
+                  </h4>
+                  <br></br>
+                  <a
+                    align="center"
+                    id="back-to-top"
+                    href="/services#title"
+                    onClick={() => {
+                      scrollUp();
+                    }}
+                  >
+                    <Button type="submit" sx={styles.button}>
+                      BACK TO TOP
+                    </Button>
+                  </a>
+                </p>
               )}
               {showEcommerce && (
                 <div>
@@ -228,6 +242,7 @@ export default function Services() {
                       artificial intelligence.
                     </h4>
                     <br></br>
+
                     <a
                       align="center"
                       id="back-to-top"
@@ -236,6 +251,7 @@ export default function Services() {
                         scrollUp();
                       }}
                     >
+                      <br></br>
                       <Button type="submit" style={styles.button}>
                         BACK TO TOP
                       </Button>
