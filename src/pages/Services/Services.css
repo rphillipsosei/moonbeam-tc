@@ -230,8 +230,9 @@
   .popup-message-container {
     height: 100vh;
     display: flex;
+    padding-top: 20rem;
     /* justify-content: center; */
-    margin-top: 12rem;
+    /* margin-top: 12rem; */
     padding-right: 2rem;
     align-items: center;
   }
