@@ -46,7 +46,7 @@ const Shop = () => {
                     </a>
                   </div>
                 </div>
-                <div className="mini_card">
+                <div className="mini_card" id="auction">
                   <img src={auctionlogo}></img>
                   <div className="mini_card_inner_text">
                     <h3 className="shop-text">Online auction (COMING SOON)</h3>

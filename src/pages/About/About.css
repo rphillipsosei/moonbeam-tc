@@ -71,7 +71,7 @@
 }
 .text-card p {
   color: black;
-  text-align: justify;
+  text-align: center;
 padding: 0.7rem;
 }
 
@@ -122,6 +122,10 @@ padding: 0.7rem;
 }
 
 @media screen and (max-width: 620px) {
+  .about-title {
+    font-size: 37px;
+  }
+
   .main-home {
     width: 40% !important ;
     flex-direction: column;
