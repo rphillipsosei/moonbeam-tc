@@ -14,7 +14,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div>
+      <div id="navbar">
         <FadeIn>
           <IconContext.Provider value={{ color: "#2596be" }}>
             <div className="navbar">

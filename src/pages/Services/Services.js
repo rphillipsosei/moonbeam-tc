@@ -7,7 +7,7 @@ import { useState } from "react";
 import FadeIn from "react-fade-in/lib/FadeIn";
 import { useHistory } from "react-router-dom";
 import { Button } from "@mui/material";
-
+import Navbar from '../../Components/Navbar.js'
 export default function Services() {
   const [showShipping, setShowShipping] = useState(false);
   const [showEcommerce, setShowEcommerce] = useState(false);
@@ -21,7 +21,7 @@ export default function Services() {
   };
 
   const scrollUp = () => {
-    history.push("/services#title");
+    history.push("/services#services-title-section");
   };
 
   return (
@@ -231,6 +231,7 @@ export default function Services() {
                     <h4 className="text_content" id="text_content">
                       <br></br>
                       <h2>TECHNOLOGY</h2>
+                      <br></br>
                       <br></br>
                       We have a passion for using technology to address current
                       social problems while working collaboratively to alleviate
