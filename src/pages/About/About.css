@@ -122,6 +122,9 @@ padding: 0.7rem;
 }
 
 @media screen and (max-width: 620px) {
+  
+
+  
   .about-title {
     font-size: 37px;
   }
@@ -132,7 +135,7 @@ padding: 0.7rem;
     display: flex;
   }
 
-
+ 
   #img-collage {
     width: 70%;
     height: 100%;
@@ -151,6 +154,6 @@ padding: 0.7rem;
   .text-card p{
     padding: 1rem !important;
     text-align: justify;
-    font-size: 12px;
+    /* font-size: 12px; */
   }
 }

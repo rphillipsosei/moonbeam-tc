@@ -109,7 +109,7 @@ const About = () => {
                 <b><u>LAND ACKNOWLEDGEMENTS</u></b>
               </h1>
               <br></br>
-              <p><i>
+              <p ><i>
                   We would like to acknowledge the fact that the land on which
                   we gather, and operate our business, is part of the Treaty
                   Lands and Territory of the Mississaugas of the Credit. For
@@ -146,3 +146,4 @@ const About = () => {
   );
 };
 export default About;
+
