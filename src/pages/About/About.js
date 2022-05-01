@@ -47,15 +47,18 @@ const About = () => {
                 <h3 align="center"><u>EARLY SUCCESS</u></h3>
                 <br></br>
                 2018 to Q1 2020 brought early success and a foundation for
-                growth;
+                growth; 
                 <br></br>
                 <br></br>
-                <i>
-                  - Google / Sidewalk Labs project<br></br>- Letter of intent to
+                - Google / Sidewalk Labs project<br></br>- Letter of intent to
                   acquire $10M company <br></br>- New import suppliers - South
                   America<br></br>- Staffing expansion plan<br></br>- New
                   location warehouse expansion <br></br>- eCommerce partnership
                   <br></br>- technology partnership<br></br>
+                <br></br>
+                <br></br>
+                <i>
+                 
                 </i>
               </p>
               <br></br>
@@ -70,6 +73,7 @@ const About = () => {
             </div>
 
             <div className="text-card">
+              
               <h1 className="about-headers" align="center">
                 <b><u>OUR VALUES</u></b>
               </h1>
@@ -100,14 +104,12 @@ const About = () => {
               <br></br>
             </div>
             <div className="text-card" id="acknowledgement-desc">
-              <h3 className="about-headers">
-                <b align="center">
-                  <i><u>LAND ACKNOWLEDGEMENTS</u></i>
-                </b>
-              </h3>
+               
+                 <h1 className="about-headers">
+                <b><u>LAND ACKNOWLEDGEMENTS</u></b>
+              </h1>
               <br></br>
-              <p>
-                <i>
+              <p><i>
                   We would like to acknowledge the fact that the land on which
                   we gather, and operate our business, is part of the Treaty
                   Lands and Territory of the Mississaugas of the Credit. For
@@ -120,9 +122,9 @@ const About = () => {
                   the Credit. We are grateful to have the opportunity to work on
                   this land, and by doing so, give our respect to its first
                   inhabitants
-                  <br></br>
-                  <br></br>
-                  We would like to acknowledge the African Diaspora, its elders,
+                <br></br>
+                <br></br>
+                We would like to acknowledge the African Diaspora, its elders,
                   their descendants and the lands upon which they live. For
                   thousands of years African Indigenous peoples inhabited and
                   cared for the land with a spiritual and cultural connection to
@@ -131,8 +133,11 @@ const About = () => {
                   doing. We are grateful for the opportunity and responsibility
                   to embrace our heritage, and by doing so, give our respect to
                   the ancestors.
-                </i>
-              </p>
+                <br></br>
+                <br></br>
+                </i></p>
+               
+           
             </div>
           </section>
         </FadeIn>
