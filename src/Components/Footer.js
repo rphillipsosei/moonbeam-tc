@@ -141,6 +141,7 @@ const styles = {
     textAlign: ["center", null, null, "left"],
   },
   button: {
+    marginLeft: "-1rem",
     backgroundColor: "#000000",
     border: "#ffff",
     fontWeight: "500",
