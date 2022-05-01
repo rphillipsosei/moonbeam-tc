@@ -134,12 +134,14 @@ export default function Services() {
               id="text_content"
             >
               {showShipping && (
-                <p className="popup-message" align="center">
-                  {/* <h4 className="text_content"> */}
-                    <br></br>
-                    <u>IMPORTS/EXPORTS</u>
-                    
-                    We are increasing our presence in the thriving import and
+                
+
+                      <p className="popup-message" align="center">
+                   
+                      <br></br>
+                      <u>IMPORTS/EXPORTS</u>
+                     
+                      We are increasing our presence in the thriving import and
                     export business. Through distributorships and creating new
                     import/export relationships, knowledge exchange or the
                     introduction of new freight technologies, we are expanding
@@ -147,15 +149,20 @@ export default function Services() {
                     commercial success. Our purchasing team continuously sources
                     products from around the world to meet the demands of our
                     Canadian customers.
-                  {/* </h4> */}
-                  <br></br>
-                  <a
-                    align="center"
-                    id="back-to-top"
-                    href="/services#title"
-                    onClick={() => {
-                      scrollUp();
-                    }}
+                    
+                    <br></br>
+                    <a
+                      align="center"
+                      id="back-to-top"
+                      href="/services#title"
+                      onClick={() => {
+                        scrollUp();
+                      }}
+
+
+
+
+                    
                   >
                     <Button type="submit" sx={styles.button}>
                       BACK TO TOP
