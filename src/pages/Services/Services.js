@@ -135,9 +135,9 @@ export default function Services() {
             >
               {showShipping && (
                 <p className="popup-message" align="center">
-                  <h4 className="text_content">
+                  {/* <h4 className="text_content"> */}
                     <br></br>
-                    <h2>IMPORTS/EXPORTS </h2>
+                    IMPORTS/EXPORTS 
                     <br></br>
                     We are increasing our presence in the thriving import and
                     export business. Through distributorships and creating new
@@ -147,7 +147,7 @@ export default function Services() {
                     commercial success. Our purchasing team continuously sources
                     products from around the world to meet the demands of our
                     Canadian customers.
-                  </h4>
+                  {/* </h4> */}
                   <br></br>
                   <a
                     align="center"
@@ -166,7 +166,7 @@ export default function Services() {
               {showEcommerce && (
                 <div>
                   <p className="popup-message" align="center">
-                    <h4 className="text_content" id="text_content">
+                   
                       <br></br>
                       <h2>E-COMMERCE </h2>
                       <br></br>
@@ -177,7 +177,7 @@ export default function Services() {
                       while growing our international ecommerce expansion. We
                       provide increased value and savings to all of our
                       customers.
-                    </h4>
+                    
                     <br></br>
                     <a
                       align="center"
@@ -197,7 +197,7 @@ export default function Services() {
               {showAgrifood && (
                 <div>
                   <p className="popup-message" align="center">
-                    <h4 className="text_content" id="text_content">
+                 
                       <br></br>
                       <h2>AGRI-FOODS </h2>
                       <br></br>
@@ -209,7 +209,7 @@ export default function Services() {
                       agri-business specialists grow our branded product, as
                       well as assist urban and rural farmers to realize greater
                       annual yields and improved profits.
-                    </h4>
+                 
                     <br></br>
                     <a
                       align="center"
@@ -229,7 +229,7 @@ export default function Services() {
               {showTech && (
                 <div>
                   <p className="popup-message" align="center">
-                    <h4 className="text_content" id="text_content">
+             
                       <br></br>
                       <h2>TECHNOLOGY</h2>
                       <br></br>
@@ -242,7 +242,7 @@ export default function Services() {
                       sectors, such as: software engineering, Software As A
                       Service (SaaS), predictive analytics, machine learning/
                       artificial intelligence.
-                    </h4>
+                  
                     <br></br>
 
                     <a

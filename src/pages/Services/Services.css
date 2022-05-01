@@ -3,9 +3,8 @@
   width: 100%;
 }
 
-.text_content {
-  color: black;
-  font-size: 18px;
+.popup_message {
+
 }
 .services-title {
   font-family: "Comfortaa";
@@ -81,7 +80,7 @@
 }
 
 .popup-message-container {
-  height: 100vh;
+  /* height: 100vh; */
   /* margin-top: 5rem; */
   display: flex;
   align-items: center;
@@ -103,6 +102,8 @@
 }
 
 .popup-message {
+  color: black;
+  font-size: 18px;
   width: 80%;
   display: grid;
   justify-content: center;
@@ -135,9 +136,8 @@
   }
 
   .text_content {
-    font-size: 12px;
+    
   }
-
   .title {
     font-size: 3rem !important;
   }
@@ -146,8 +146,9 @@
     flex-direction: column;
     justify-content: center;
   }
-
+  
   .popup-message {
+    font-size: 12px;
     margin-top: 2rem;
   }
 
@@ -207,10 +208,10 @@
 
   .popup-message {
     margin-top: 2rem;
+    font-size: 12px;
   }
 
   .text_content {
-    font-size: 12px;
   }
   .popup_container {
     display: flex;
@@ -234,9 +235,9 @@
   }
 
   .popup-message-container {
-    height: 50vh;
+    /* height: 50vh; */
     display: flex;
     padding-right: 2rem;
-    margin-top: 30rem;
+    /* margin-top: 30rem; */
   }
 }
