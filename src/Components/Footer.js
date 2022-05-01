@@ -106,10 +106,13 @@ const styles = {
       mx: ["auto", null, null, "0"],
     },
     p: {
+      marginLeft: "-1rem",
+      color: "#fff",
       fontSize: ["25px"],
       opacity: ".6",
       color: "#ffff",
       letterSpacing: ["-0.5px"],
+      alignSelf: "center",
       textAlign: "center",
       width: ["70%", null, null, "auto"],
       mx: ["auto", null, null, "0"],

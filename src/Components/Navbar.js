@@ -33,7 +33,7 @@ export default function Navbar() {
               <ul className="nav-menu-items" onClick={showSidebar}>
                 <li className="navbar-toggle">
                   <Link to="#" className="menu-bars">
-                    <AiIcons.AiOutlineClose className="x-icon" />
+                    <AiIcons.AiOutlineClose style={icon} className="x-icon" />
                   </Link>
                 </li>
                 {SidebarData.map((item, index) => {
@@ -53,4 +53,8 @@ export default function Navbar() {
       </div>
     </>
   );
+}
+
+const icon = {
+marginLeft: "1.5rem"
 }
