@@ -28,6 +28,7 @@ export default function Services() {
     <FadeIn>
       <main>
         <div className="services-page">
+          
           <div className="services-title-section">
             <h1 align="center" id="title" className="services-title">
               WHAT WE DO

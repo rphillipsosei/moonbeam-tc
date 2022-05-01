@@ -23,7 +23,8 @@
 
 .services-page {
   padding: 0.8rem;
-  flex-direction: column;
+  display: flex;
+
   
 }
 
@@ -176,10 +177,15 @@
 }
 
 @media screen and (max-width: 500px) {
+
+  .upper-page {
+    margin-bottom: 10rem;
+  }
   .wrapper-grid-services {
     width: 97%;
     margin-left: 1.4rem;
     margin-top: -2rem;
+    bottom: 0px;
   }
 
   .services-title {
@@ -228,12 +234,9 @@
   }
 
   .popup-message-container {
-    height: 100vh;
+    height: 50vh;
     display: flex;
-   
-    /* justify-content: center; */
-    /* margin-top: 12rem; */
     padding-right: 2rem;
-    align-items: center;
+    margin-top: 30rem;
   }
 }
