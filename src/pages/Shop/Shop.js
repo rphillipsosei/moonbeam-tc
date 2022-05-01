@@ -35,7 +35,7 @@ const Shop = () => {
                   Visit our online store and auction
                 </h3>
                 <div className="mini_card">
-                  <img src={shopifylogo}></img>
+                  <img id="shopify-logo" src={shopifylogo}></img>
                   <div className="mini_card_inner_text">
                     <h3 className="shop-text">Shopify</h3>
                     <h6 className="shop-text">
@@ -47,8 +47,8 @@ const Shop = () => {
                   </div>
                 </div>
                 <div className="mini_card" id="auction">
-                  <img src={auctionlogo}></img>
-                  <div className="mini_card_inner_text">
+                  <img id="auction-logo" src={auctionlogo}></img>
+                  <div className="mini_card_inner_text" >
                     <h3 className="shop-text">Online auction (COMING SOON)</h3>
                     <h6 className="shop-text">
                       <i>Equipment, Surplus Inventory, and Estate Auctions.</i>
