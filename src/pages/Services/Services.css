@@ -181,6 +181,7 @@ margin-left: 0.1rem;
 
 @media screen and (max-width: 500px) {
 
+  
   .upper-page {
     margin-bottom: 10rem;
   }
@@ -202,6 +203,7 @@ margin-left: 0.1rem;
 
   .card-image-container {
     flex-direction: column;
+    margin-bottom: 7rem
   }
 
   .title {
