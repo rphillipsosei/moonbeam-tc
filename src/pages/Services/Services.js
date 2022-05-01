@@ -137,8 +137,8 @@ export default function Services() {
                 <p className="popup-message" align="center">
                   {/* <h4 className="text_content"> */}
                     <br></br>
-                    IMPORTS/EXPORTS 
-                    <br></br>
+                    <u>IMPORTS/EXPORTS</u>
+                    
                     We are increasing our presence in the thriving import and
                     export business. Through distributorships and creating new
                     import/export relationships, knowledge exchange or the
@@ -168,8 +168,8 @@ export default function Services() {
                   <p className="popup-message" align="center">
                    
                       <br></br>
-                      <h2>E-COMMERCE </h2>
-                      <br></br>
+                      <u>E-COMMERCE</u>
+                     
                       We have a goal of offering our customers positive online
                       shopping experiences. Our sales and digital marketing team
                       working alongside our partners in ecommerce and drop
@@ -199,8 +199,8 @@ export default function Services() {
                   <p className="popup-message" align="center">
                  
                       <br></br>
-                      <h2>AGRI-FOODS </h2>
-                      <br></br>
+                      <u>AGRI-FOODS</u>
+                    
                       We work hard to grow chemical-free and hyper-local food
                       all year round. Rapid climate change and localized food
                       insecurity are just a few of the challenges we face today,
@@ -231,9 +231,8 @@ export default function Services() {
                   <p className="popup-message" align="center">
              
                       <br></br>
-                      <h2>TECHNOLOGY</h2>
-                      <br></br>
-                      <br></br>
+                     <u>TECHNOLOGY</u>
+                     
                       We have a passion for using technology to address current
                       social problems while working collaboratively to alleviate
                       societal issues. These challenges are complex and require
@@ -275,7 +274,7 @@ const styles = {
     backgroundColor: "#000",
     borderRadius: "5px",
     fontWeight: "500",
-    fontSize: ["18px"],
+    fontSize: ["14px"],
     maxWidth: "80%",
     color: "#fff",
     letterSpacing: "-0.5px",
