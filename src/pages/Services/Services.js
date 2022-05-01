@@ -40,7 +40,7 @@ export default function Services() {
               </i>
               <br></br>
               <br></br>
-              <u>Select a line of business:</u>
+              <u>Select a line of business to learn more:</u>
             </h6>
           </div>
           <div className="wrapper-grid-services">
