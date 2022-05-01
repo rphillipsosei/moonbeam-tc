@@ -94,22 +94,20 @@ const About = () => {
                 <br></br>
                 We want to have a positive social impact wherever we do
                 business.
-              </p>
+              
               <br></br>
               <br></br>
               <br></br>
               <div className="pic-card">
-                <img id="img-collage" className="about-img" src={collage}></img>
+                <img align="center" id="img-collage" className="about-img" src={collage}></img>
               </div>
               <br></br>
-            </div>
-            <div className="text-card" id="acknowledgement-desc">
-               
-                 <h1 className="about-headers">
+
+              <h1  align="center" className="about-headers">
                 <b><u>LAND ACKNOWLEDGEMENTS</u></b>
               </h1>
               <br></br>
-              <p ><i>
+             
                   We would like to acknowledge the fact that the land on which
                   we gather, and operate our business, is part of the Treaty
                   Lands and Territory of the Mississaugas of the Credit. For
@@ -135,10 +133,9 @@ const About = () => {
                   the ancestors.
                 <br></br>
                 <br></br>
-                </i></p>
-               
-           
+               </p>
             </div>
+        
           </section>
         </FadeIn>
       </div>
