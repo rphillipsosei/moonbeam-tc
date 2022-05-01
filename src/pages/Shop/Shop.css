@@ -68,6 +68,11 @@
   margin: 0 auto;
 }
 @media screen and (max-width: 500px) {
+  .mini_card > img {
+    width: 20% !important;
+ 
+  }
+
   .shop-title {
     font-family: "Comfortaa";
     font-size: 3em;
