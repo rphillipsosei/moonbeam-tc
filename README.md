@@ -1,6 +1,6 @@
 This project was designed and implemented by Rhoda Phillips-Osei and Zeinab Mohammed (github: zeetm)
 
-Technology Stack: React, HTML, CSS, Material UI, Theme UI
+Technology Stack: React, CSS, Material UI, Theme UI
 
 To load the project, you will have to run the following in your computer terminal:
 
