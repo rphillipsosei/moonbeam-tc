@@ -23,7 +23,7 @@
     "react-fade-in": "^2.0.1",
     "react-icons": "^4.3.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.2",
+    "react-scripts": "^5.0.1",
     "react-spring": "^9.0.0-rc.3",
     "theme-ui": "^0.14.2",
     "web-vitals": "^1.1.0"

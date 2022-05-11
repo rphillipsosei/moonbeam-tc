@@ -4,6 +4,7 @@ import { Button, Input, Box, Container, Heading, Text } from "theme-ui";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faSpinner } from "@fortawesome/free-solid-svg-icons";
 import "./Footer.css";
+import { AiOutlineMail } from "react-icons/ai"
 
 const Navbar = () => {
   const [email, setEmail] = useState("");
@@ -54,9 +55,10 @@ const Navbar = () => {
           action={"zeinabtmohamed@gmail.com"}
         >
           <Box as="label" htmlFor="subscribeEmail" variant="styles.srOnly">
-            Stay Connected
-          </Box>
+         
+          
           <Text as="p">Stay connected with everything Moonbeam</Text>
+          </Box>
           <input
             placeholder="Email"
             type="email"
@@ -104,10 +106,13 @@ const styles = {
       mx: ["auto", null, null, "0"],
     },
     p: {
+      marginLeft: "-1rem",
+      color: "#fff",
       fontSize: ["25px"],
       opacity: ".6",
       color: "#ffff",
       letterSpacing: ["-0.5px"],
+      alignSelf: "center",
       textAlign: "center",
       width: ["70%", null, null, "auto"],
       mx: ["auto", null, null, "0"],
@@ -141,7 +146,9 @@ const styles = {
     textAlign: ["center", null, null, "left"],
   },
   button: {
-    marginLeft: "-1rem",
+    display: "flex",
+alignItems: "center",
+justifyContent: "center", 
     backgroundColor: "#000000",
     border: "#ffff",
     fontWeight: "500",
