@@ -67,6 +67,36 @@
   width: 80%;
   margin: 0 auto;
 }
+
+
+@media screen and (max-width: 825px) {
+  .wrapper-grid-shop {
+    flex-direction: column;
+  }
+
+  .shop_pic_card > img {
+    width: 80% !important;
+    flex-direction: center;
+    margin-top: -2rem;
+  }
+
+  .mini_card > img {
+    margin-top: 2em;
+  }
+
+  .mini_card {
+    margin-top: 0.95em;
+  }
+
+  .shopify-btn {
+  font-size: 18px;
+  }
+
+  .auction-btn {
+    font-size: 18px;
+    }
+}
+
 @media screen and (max-width: 500px) {
   .mini_card > img {
     width: 20% !important;
@@ -75,19 +105,17 @@
 
   .shop-title {
     font-family: "Comfortaa";
-    font-size: 3em;
+    font-size: 32.8px;
     color: black;
-    margin-top: -2.5rem;
   }
+  
 #shopify-logo {
   margin-top: -2.3rem;
   
 }
-  #auction {
-    /* margin-left: 1.2rem; */
-  }
+
 #auction-logo {
-  margin-top: -5rem;
+  margin-top: -4rem;
 }
   .wrapper-grid-shop {
     flex-direction: column;
@@ -96,10 +124,13 @@
   .wrapper_shop_text_inner {
     margin-top: 1rem !important;
     width: 100% !important;
+   
   }
 
   .shop_pic_card > img {
-    width: 100% !important;
+    width: 85% !important;
+    margin-top: -12px;
+
   }
 
   .shopify-btn {
@@ -117,34 +148,5 @@
  
       .mini_card > img {
         width: 40%;
-        /* margin-top: 5em; */
       }
-}
-
-@media screen and (max-width: 825px) {
-  .wrapper-grid-shop {
-    flex-direction: column;
-  }
-
-  .shop_pic_card > img {
-    width: 80% !important;
-    flex-direction: center;
-    margin-top: -2rem;
-  }
-
-  .mini_card > img {
-    margin-top: 1em;
-  }
-
-  .mini_card {
-    margin-top: 0.95em;
-  }
-
-  .shopify-btn {
-  font-size: 18px;
-  }
-
-  .auction-btn {
-    font-size: 18px;
-    }
 }

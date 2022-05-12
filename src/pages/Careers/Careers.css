@@ -21,7 +21,7 @@ cursor: pointer
 .careers-caption {
   color: black;
   font-family: "Comfortaa";
-  font-size: 1.2em;
+  font-size: 1em;
   text-align: justify;
 }
 
@@ -67,6 +67,7 @@ cursor: pointer
 }
 
 .careers-img {
+
   margin-left: 10em;
 }
 .about-description {
@@ -103,5 +104,17 @@ cursor: pointer
 @media screen and (max-width: 500px) {
   .career-img {
     width: 100%;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+  }
+
+  .careers-title {
+    font-size: 33px;
+    margin-top: 0.8rem;
+  }
+
+  .careers-text {
+    font-size: 12px;
+    text-align: left;
   }
 }

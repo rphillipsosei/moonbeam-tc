@@ -1,37 +1,40 @@
 import * as FaIcons from "react-icons/fa";
-import * as MdIcons from "react-icons/md";
 import * as SiIcons from "react-icons/si";
 import * as BsIcons from "react-icons/bs";
 
+const icon = {
+  fontSize: "20px"
+}
 export const SidebarData = [
   {
     title: "Services",
     path: "/services",
-    icon: <MdIcons.MdMiscellaneousServices />,
+    icon: <FaIcons.FaShapes style={icon} />,
     className: "nav-text",
   },
   {
     title: "Shop",
     path: "/shop",
-    icon: <FaIcons.FaShoppingCart />,
+    icon: <FaIcons.FaShoppingCart style={icon} />,
     className: "nav-text",
   },
   {
     title: "About",
     path: "/about",
-    icon: <FaIcons.FaQuestionCircle />,
+    icon: <FaIcons.FaQuestionCircle style={icon} />,
     className: "nav-text",
   },
   {
     title: "Careers",
     path: "/careers",
-    icon: <BsIcons.BsFillFilePersonFill />,
+    icon: <BsIcons.BsFillFilePersonFill style={icon} />,
     className: "nav-text",
   },
   {
     title: "Contact",
     path: "/contact",
-    icon: <SiIcons.SiMinutemailer />,
+    icon: <SiIcons.SiMinutemailer style={icon} />,
     className: "nav-text",
   },
 ];
+

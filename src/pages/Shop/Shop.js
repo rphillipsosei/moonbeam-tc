@@ -31,7 +31,7 @@ const Shop = () => {
 
             <div className="wrapper-shop-text">
               <div className="wrapper_shop_text_inner">
-                <h3 className="shop-text">
+                <h3 align="center">
                   Visit our online store and auction
                 </h3>
                 <div className="mini_card">

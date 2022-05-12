@@ -1,5 +1,6 @@
 #contact-title {
   display: block;
+  font-size: 33px;
 }
 
 .contact-page {
@@ -54,4 +55,5 @@
   .contact_input {
     width: 100%;
   }
+  
 }

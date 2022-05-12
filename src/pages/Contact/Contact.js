@@ -43,6 +43,13 @@ const Contact = () => {
       })
       .catch((error) => console.log(error));
   };
+
+
+  const contact = {
+    fontSize: "33px",
+    marginTop: "-2.15rem"
+
+  }
   return (
     <Box
       as="section"
@@ -51,7 +58,7 @@ const Contact = () => {
       id="contact"
     >
       <Container>
-        <Heading as="h3" id="contact-title">
+        <Heading as="h3" id="contact-title" style={contact}>
           CONTACT US
         </Heading>
         <Text as="p" className={classes.white}>

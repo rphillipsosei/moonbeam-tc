@@ -7,6 +7,8 @@ import "./Navbar.css";
 import { IconContext } from "react-icons";
 import FadeIn from "react-fade-in/lib/FadeIn";
 
+
+
 export default function Navbar() {
   const [sidebar, setSidebar] = useState(false);
 
@@ -39,7 +41,7 @@ export default function Navbar() {
                 {SidebarData.map((item, index) => {
                   return (
                     <li key={index} className={item.className}>
-                      <Link to={item.path}>
+                      <Link to={item.path} >
                         {item.icon}
                         <span>{item.title}</span>
                       </Link>
