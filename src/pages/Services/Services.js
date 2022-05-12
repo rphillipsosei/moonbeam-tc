@@ -21,11 +21,15 @@ export default function Services() {
   };
 
   const scrollUp = () => {
-    history.push("/services#services-title-section");
+    history.push("#top");
   };
 
+  const scrollto = {
+    height: "1px"
+  }
   return (
     <FadeIn>
+      <div style={scrollto} id="scrollto"></div>
       <main>
         <div className="services-page">
           
@@ -154,7 +158,7 @@ export default function Services() {
                     <a
                       align="center"
                       id="back-to-top"
-                      href="/services#title"
+                      href="#top"
                       onClick={() => {
                         scrollUp();
                       }}
@@ -189,7 +193,7 @@ export default function Services() {
                     <a
                       align="center"
                       id="back-to-top"
-                      href="/services#title"
+                      href="#top"
                       onClick={() => {
                         scrollUp();
                       }}
@@ -221,7 +225,7 @@ export default function Services() {
                     <a
                       align="center"
                       id="back-to-top"
-                      href="/navbar#navbar"
+                      href="/#top"
                       onClick={() => {
                         scrollUp();
                       }}
@@ -254,7 +258,7 @@ export default function Services() {
                     <a
                       align="center"
                       id="back-to-top"
-                      href="/navbar#navbar"
+                      href="#top"
                       onClick={() => {
                         scrollUp();
                       }}
