@@ -116,6 +116,7 @@ margin-left: 0.1rem;
 }
 #back-to-top {
   color: white;
+  text-decoration: none;
 }
 
 .services-page {

@@ -221,7 +221,7 @@ export default function Services() {
                     <a
                       align="center"
                       id="back-to-top"
-                      href="/services#title"
+                      href="/navbar#navbar"
                       onClick={() => {
                         scrollUp();
                       }}
@@ -254,7 +254,7 @@ export default function Services() {
                     <a
                       align="center"
                       id="back-to-top"
-                      href="/services#title"
+                      href="/navbar#navbar"
                       onClick={() => {
                         scrollUp();
                       }}
