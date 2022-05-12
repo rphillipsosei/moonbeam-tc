@@ -3,9 +3,7 @@
   width: 100%;
 }
 
-.popup_message {
 
-}
 .services-title {
   font-family: "Comfortaa";
   font-size: 3em;
@@ -203,7 +201,8 @@ margin-left: 0.1rem;
 
   .card-image-container {
     flex-direction: column;
-    margin-bottom: 7rem
+    margin-bottom: 12rem;
+    
   }
 
   .title {
@@ -212,7 +211,8 @@ margin-left: 0.1rem;
 
   .popup-message {
     margin-top: 2rem;
-    font-size: 12px;
+    font-size: 10px;
+    text-align: center;
   }
 
   .text_content {
@@ -239,10 +239,9 @@ margin-left: 0.1rem;
   }
 
   .popup-message-container {
-    /* height: 50vh; */
     display: flex;
     padding-right: 2rem;
-    width: 120%
-    /* margin-top: 30rem; */
+    width: 120%;
+    margin-top: 5rem;
   }
 }

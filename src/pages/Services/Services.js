@@ -136,10 +136,10 @@ export default function Services() {
               {showShipping && (
                 
 
-                      <p className="popup-message" align="center">
+                      <p className="popup-message" >
                    
                       <br></br>
-                      <u>IMPORTS/EXPORTS</u>
+                      <u align="center">IMPORTS/EXPORTS</u>
                      
                       We are increasing our presence in the thriving import and
                     export business. Through distributorships and creating new
@@ -172,10 +172,10 @@ export default function Services() {
               )}
               {showEcommerce && (
                 <div>
-                  <p className="popup-message" align="center">
+                  <p className="popup-message" >
                    
                       <br></br>
-                      <u>E-COMMERCE</u>
+                      <u align="center">E-COMMERCE</u>
                      
                       We have a goal of offering our customers positive online
                       shopping experiences. Our sales and digital marketing team
@@ -203,10 +203,10 @@ export default function Services() {
               )}
               {showAgrifood && (
                 <div>
-                  <p className="popup-message" align="center">
+                  <p className="popup-message" >
                  
                       <br></br>
-                      <u>AGRI-FOODS</u>
+                      <u align="center">AGRI-FOODS</u>
                     
                       We work hard to grow chemical-free and hyper-local food
                       all year round. Rapid climate change and localized food
@@ -235,10 +235,10 @@ export default function Services() {
               )}
               {showTech && (
                 <div>
-                  <p className="popup-message" align="center">
+                  <p className="popup-message" >
              
                       <br></br>
-                     <u>TECHNOLOGY</u>
+                     <u align="center">TECHNOLOGY</u>
                      
                       We have a passion for using technology to address current
                       social problems while working collaboratively to alleviate
@@ -283,6 +283,7 @@ const styles = {
     fontWeight: "500",
     fontSize: ["14px"],
     maxWidth: "80%",
+    textDecoration: "none",
     color: "#fff",
     letterSpacing: "-0.5px",
     outline: "none",
