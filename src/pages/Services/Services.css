@@ -214,10 +214,11 @@ margin-left: 0.1rem;
     margin-top: 2rem;
     font-size: 10px;
     text-align: center;
-
-
   }
 
+  #service-main {
+    height: 150vh;
+  }
 
   .popup_container {
     display: flex;

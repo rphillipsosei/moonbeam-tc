@@ -29,8 +29,8 @@ export default function Services() {
   }
   return (
     <FadeIn>
-      <div style={scrollto} id="scrollto"></div>
-      <main>
+    
+      <main id="service-main">
         <div className="services-page">
           
           <div className="services-title-section">
