@@ -225,7 +225,7 @@ export default function Services() {
                     <a
                       align="center"
                       id="back-to-top"
-                      href="/#top"
+                      href="#top"
                       onClick={() => {
                         scrollUp();
                       }}
