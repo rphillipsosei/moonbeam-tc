@@ -217,7 +217,7 @@ margin-left: 0.1rem;
   }
 
   #service-main {
-    height: 150vh;
+    height: 400vh;
   }
 
   .popup_container {
@@ -225,7 +225,7 @@ margin-left: 0.1rem;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    height: 200%;
+
   }
 
   .services-page {
